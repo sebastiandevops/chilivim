@@ -19,3 +19,6 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+require "config.user_colors"
+vim.cmd('source ~/.config/nvim/lua/config/user_keys.vim')
+vim.cmd('source ~/.config/nvim/lua/config/user.vim')

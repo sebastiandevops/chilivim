@@ -16,7 +16,7 @@ local options = {
   splitbelow = true,                       -- force all horizontal splits to go below current window
   splitright = true,                       -- force all vertical splits to go to the right of current window
   swapfile = false,                        -- creates a swapfile
-  -- termguicolors = true,                    -- set term gui colors (most terminals support this)
+  termguicolors = true,                    -- set term gui colors (most terminals support this)
   timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile = true,                         -- enable persistent undo
   updatetime = 300,                        -- faster completion (4000ms default)
@@ -48,3 +48,29 @@ vim.opt.iskeyword:append "-"                           -- hyphenated words recog
 vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 
+
+
+vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+
+-- Plugins configurations {{{1
+-- samirettali/shebang.nvim config
+vim.g.shebang_commands = {
+  py = '/usr/bin/env python3',
+  sh = '/usr/bin/env bash'
+}
+vim.g.shebang_shells = {
+  py = 'python3.10.9',
+}
+--  "RishabhRD/nvim-cheat.sh config
+vim.g.cheat_default_window_layout = 'float'
+
+-- python provider setup
+vim.g.python3_host_prog = '/home/sebastian/anaconda3/bin/python3'
+-- }}}1
+
+-- Load snippets {{{1
+-- See ~/.config/lvim/snippets/package.json
+-- And this site to make snippets: https://snippet-generator.app
+-- For variables see: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables
+require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/snippets" } }
+-- }}}1

@@ -5,21 +5,27 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-	[[                               __                ]],
-	[[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-	[[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-	[[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-	[[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-	[[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+  '                           ',
+  '                           ',
+  '                           ',
+  '                           ',
+  '88b 88 Yb    dP 88 8b    d8',
+  '88Yb88  Yb  dP  88 88b  d88',
+  '88 Y88   YbdP   88 88YbdP88',
+  '88  Y8    YP    88 88 YY 88',
+  '                           ',
 }
 dashboard.section.buttons.val = {
-	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
-	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-	dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
-	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+    dashboard.button("f",   "  Find File",                   "<CMD>Telescope find_files<CR>" ),
+    dashboard.button("n",   "  New File",                    "<CMD>ene!<CR>" ),
+    dashboard.button("p",   "  Recent Projects ",            "<CMD>Telescope projects<CR>" ),
+    dashboard.button("u",   "  Recently Used Files",         "<CMD>Telescope oldfiles<CR>" ),
+    -- dashboard.button( { "SPC s",   "  Load last session",           "<CMD>SessionLoad<CR>" ),
+    dashboard.button("t",   "  NvimTree",                      "<CMD>NvimTreeToggle<CR>" ),
+    dashboard.button("m",   "  Marks              ",         "<CMD>Telescope marks<CR>" ),
+    dashboard.button("w",   "  Find Word",                   "<CMD>Telescope live_grep<CR>" ),
+    dashboard.button("c",   "  Edit Configuration",          "<CMD>e ~/.config/nvim/lua/user/plugins.lua<CR>" ),
+    dashboard.button("g",   "  Git status",                  "<CMD>Telescope git_status<CR>" ),
 }
 
 local function footer()

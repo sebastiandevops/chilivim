@@ -78,7 +78,20 @@ local opts = {
   nowait = true, -- use `nowait` when creating keymaps
 }
 
+local vopts = {
+  mode = "v", -- VISUAL mode
+  prefix = "<leader>",
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, -- use `silent` when creating keymaps
+  noremap = true, -- use `noremap` when creating keymaps
+  nowait = true, -- use `nowait` when creating keymaps
+}
+
+local vmappings = {
+  ["/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" },
+}
 local mappings = {
+  ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment toggle current line" },
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
@@ -95,6 +108,7 @@ local mappings = {
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+  ["?"] = { "<cmd>Cheat<CR>", "Cheatsheets" },
 
   p = {
     name = "Packer",
@@ -170,8 +184,7 @@ local mappings = {
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
   },
-
-  t = {
+  x = {
     name = "Terminal",
     n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
     u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
@@ -181,7 +194,55 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+    -- Personal:
+  t = {
+  name = "+Trouble",
+    r = { "<cmd>Trouble lsp_references<cr>", "References" },
+    f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
+    d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
+    q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
+    l = { "<cmd>Trouble loclist<cr>", "LocationList" },
+    w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
+  },
+
+  u = {
+    name = "+Utils",
+    d = { ":call DeleteEndingWhiteSpace()<cr>",     "Remove trailing whitespaces" },
+    r = { "<cmd>SearchBoxReplace confirm=menu<CR>", "Search&Replace" },
+  },
+  o = {
+    name = "Toggle Display Options",
+    a = { ":call ToggleAll()<CR>",                         "Toggle All"},
+    c = { ":call ToggleColourCursorColumn()<CR>",          "Toggle cursor Column visibility"},
+    e = { ":call ToggleColourWhiteSpaceAtEndOfLine()<CR>", "Toggle whitespace at End of line visibility"},
+    d = { "<cmd>DocsViewToggle<cr>",                       "Toggle docs-view"},
+    h = { ":ColorizerToggle<CR>",                          "Toggle Hex colour and colour name matches"},
+    i = { ":call ToggleColourIncSearch()<CR>",             "Toggle hIghlight matching words under cursor"},
+    l = { ":call ToggleColourCursorLine()<CR>",            "Toggle cursor Line visibility"},
+    m = { ":call ToggleMarkerLines()<CR>",                 "Toggle Marker lines"},
+    r = { ":set wrap!<CR>",                                "Toggle line wRap"},
+    s = { ":set spell!<CR>",                               "Toggle Spell checking"},
+    t = { ":call ToggleColourLineTooLong()<CR>",           "Toggle line Too long highlighting"},
+    w = { ":set list!<CR>",                                "Toggle Whitespace visibility"},
+    y = { ":call ToggleColourSyntax()<CR>",                "Toggle sYntax highlighting"}
+  },
+  j = {
+    name = "Show/Jump various dev info",
+    a = {":silent exec '!jump Artifact %:p:h'<CR>",        "Jump Artifactory (project)"},
+    c = {":silent exec '!jump Ci %:p:h'<CR>",              "Jump Ci (project)"},
+    h = {":call OpenHelpPage()<CR>",                       "Jump vim Help page for word under cursor"},
+    i = {":silent exec '!jump Live %:p:h'<CR>",            "Jump lIve (project)"},
+    j = {":call JumpToSelection()<CR>",                    "Jump to url or hex color or git etc"},
+    l = {":silent exec '!jump Lint %:p:h'<CR>",            "Jump Lint (project)"},
+    m = {":<C-U>exe 'Man' v:count '<C-R><C-W>'<CR>",       "Jump linux Man page for word under cursor"},
+    n = {":silent exec '!jump Notes %:p:h'<CR>",           "Jump Notes (project search in confluence)"},
+    r = {":silent exec '!jump Repo %:p:h'<CR>",            "Jump Repo (git or bitbucket)"},
+    s = {":call ShowJira()<CR>",                           "Show jira ticket in new buffer"},
+    t = {":silent exec '!jump Ticket %:p:h'<CR>",          "Jump jira Ticket in browser"},
+    u = {":silent exec '!jump TestReports %:p:h'<CR>",     "Jump Unit test reports"}
+  },
 }
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
+which_key.register(vmappings, vopts)

@@ -49,14 +49,14 @@ local location = {
 }
 
 -- cool function for progress
-local progress = function()
-	local current_line = vim.fn.line(".")
-	local total_lines = vim.fn.line("$")
-	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
-	local line_ratio = current_line / total_lines
-	local index = math.ceil(line_ratio * #chars)
-	return chars[index]
-end
+-- local progress = function()
+-- 	local current_line = vim.fn.line(".")
+-- 	local total_lines = vim.fn.line("$")
+-- 	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
+-- 	local line_ratio = current_line / total_lines
+-- 	local index = math.ceil(line_ratio * #chars)
+-- 	return chars[index]
+-- end
 
 local spaces = function()
 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
@@ -65,7 +65,56 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
+		theme = {
+      normal = {
+        c = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        a = { fg = "#DFDDF3", bg = "#286983", gui = "bold" },
+        b = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        x = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        y = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        z = { fg = "#DFDDF3", bg = "#286983", gui = "bold" },
+      },
+      visual = {
+        c = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        a = { fg = "#DFDDF3", bg = "#907AA8", gui = "bold" },
+        b = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        x = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        y = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        z = { fg = "#DFDDF3", bg = "#907AA8", gui = "bold" },
+      },
+      insert = {
+        c = { ft = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        a = { fg = "#DFDDF3", bg = "#B3637A", gui = "bold" },
+        b = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        x = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        y = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        z = { fg = "#DFDDF3", bg = "#B3637A", gui = "bold" },
+      },
+      inactive = {
+        c = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        a = { fg = "#DFDDF3", bg = "#6E6A86", gui = "bold" },
+        b = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        x = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        y = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        z = { fg = "#DFDDF3", bg = "#6E6A86", gui = "bold" },
+      },
+      command = {
+        c = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        a = { fg = "#DFDDF3", bg = "#6E6A86", gui = "bold" },
+        b = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        x = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        y = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        z = { fg = "#DFDDF3", bg = "#6E6A86", gui = "bold" },
+      },
+      replace = {
+        c = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        a = { fg = "#DFDDF3", bg = "#6E6A86", gui = "bold" },
+        b = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        x = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        y = { fg = "#908CA9", bg = "#0000ffff", gui = "bold" },
+        z = { fg = "#DFDDF3", bg = "#6E6A86", gui = "bold" },
+      },
+    },
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
@@ -78,7 +127,7 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
-		lualine_z = { progress },
+		lualine_z = { 'progress' },
 	},
 	inactive_sections = {
 		lualine_a = {},
