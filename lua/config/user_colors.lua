@@ -40,7 +40,6 @@ au ColorScheme * hi FloatBorder                         gui=bold     guifg=#5652
 au ColorScheme * hi VertSplit             ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi NvimTreeVertSplit     ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=#393535      guibg=NONE
-au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeFolderIcon                               guifg=#9ccfd8      guibg=NONE
 au ColorScheme * hi Directory                                        guifg=#9ccfd8      guibg=NONE
@@ -194,11 +193,12 @@ au ColorScheme * hi DevIconR                            ctermfg=31    guifg=#286
 
 au ColorScheme * hi SignColumn                          ctermbg=NONE  guibg=NONE"
 au ColorScheme * hi MsgArea                             ctermbg=NONE  guibg=NONE"
-au ColorScheme * hi NvimTreeNormal                      ctermbg=NONE  guibg=NONE"
-
+au ColorScheme * hi NvimTreeNormal                      ctermbg=NONE  guibg=NONE
 au ColorScheme * hi DiagnosticSignError                 ctermbg=NONE  guibg=NONE
 au ColorScheme * hi DiagnosticSignWarn                  ctermbg=NONE  guibg=NONE
 au ColorScheme * hi DiagnosticSignHint                  ctermbg=NONE  guibg=NONE
 au ColorScheme * hi DiagnosticSignInfo                  ctermbg=NONE  guibg=NONE
 
+au ColorScheme * hi BufferLineTab  ctermbg=NONE guibg=NONE guifg=#8f8f8f guibg=NONE
+au ColorScheme * hi BufferLineFill ctermbg=NONE guibg=NONE
 ]])
