@@ -41,8 +41,8 @@ au ColorScheme * hi VertSplit             ctermbg=NONE                          
 au ColorScheme * hi NvimTreeVertSplit     ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE               guifg=#393535      guibg=NONE
-au ColorScheme * hi NvimTreeFolderIcon                               guifg=#9ccfd8      guibg=NONE
-au ColorScheme * hi Directory                                        guifg=#9ccfd8      guibg=NONE
+au ColorScheme * hi NvimTreeFolderIcon                               guifg=#56949f      guibg=NONE
+au ColorScheme * hi Directory gui=bold                                      guifg=#56949f      guibg=NONE
 au ColorScheme * hi ColorColumn           ctermbg=NONE                                  guibg=NONE
 
 " Nvim tree root folder color
