@@ -56,7 +56,7 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim" }
   use { "goolord/alpha-nvim" }
   use {"folke/which-key.nvim"}
-
+  use {'jdhao/better-escape.vim', event = 'InsertEnter'}
     -- Personal
   -- multicursor
   use { "mg979/vim-visual-multi" }

@@ -68,23 +68,15 @@ local lsp_server = function(msg)
     return msg
   end
   local buf_client_names = {}
-  local copilot_active = false
 
   -- add client
   for _, client in pairs(buf_clients) do
     if client.name ~= "null-ls" and client.name ~= "copilot" then
       table.insert(buf_client_names, client.name)
     end
-
-    if client.name == "copilot" then
-      copilot_active = true
-    end
   end
   local unique_client_names = vim.fn.uniq(buf_client_names)
   local language_servers = "[" .. table.concat(unique_client_names, ", ") .. "]"
-  if copilot_active then
-    language_servers = language_servers .. "%#SLCopilot#"
-  end
   return language_servers
 end
 
