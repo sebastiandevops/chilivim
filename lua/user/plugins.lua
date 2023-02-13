@@ -238,7 +238,7 @@ return packer.startup(function(use)
         vim.keymap.set('n', "<C-|>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
         vim.keymap.set('n', "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 
-    end 
+    end
   }
   use {
     "VonHeikemen/searchbox.nvim",
