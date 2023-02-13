@@ -547,7 +547,8 @@ set foldenable             " Folding enabled
 set foldmethod=marker      " Folding method, based on { { {1
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
 set fillchars=stl:\ ,foldclose:,foldopen:,foldsep:┃,fold:\ ,eob:~,msgsep:‾,vert:\│
-
+" This will use space instead of ~ for end of buffer, effectively hiding the annoying ~.
+set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
 " }}}
 
 " Syntax files {{{1
