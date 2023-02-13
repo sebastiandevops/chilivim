@@ -1,3 +1,4 @@
+-- Config {{{1
 local fn = vim.fn
 
 -- Automatically install packer
@@ -37,7 +38,9 @@ packer.init({
 		end,
 	},
 })
+-- }}}1
 
+-- Plugins {{{1
 -- Install your plugins here
 return packer.startup(function(use)
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
@@ -394,10 +397,13 @@ return packer.startup(function(use)
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim" }
+-- }}}1
 
+-- Automatic setup {{{1 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
 end)
+-- }}}1
