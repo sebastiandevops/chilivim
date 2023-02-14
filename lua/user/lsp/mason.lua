@@ -6,11 +6,11 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
-    "lua_ls",
-    "jedi_language_server",
-    "jdtls",
-    "terraformls",
-    "vimls",
+  "lua_ls",
+  "jedi_language_server",
+  "jdtls",
+  "terraformls",
+  "vimls",
 }
 
 local settings = {
