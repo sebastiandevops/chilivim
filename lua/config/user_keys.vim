@@ -80,12 +80,19 @@ nnoremap Q @q
 " vmap <C-/> gccgv
 
 " Move lines up and down using alt-up/down.
-nnoremap <A-Up> :m .-2<CR>==
-nnoremap <A-Down> :m .+1<CR>==
-inoremap <A-Up> <Esc>:m .-2<CR>==gi
-inoremap <A-Down> <Esc>:m .+1<CR>==gi
-vnoremap <A-Up> :m '<-2<CR>gv=gv
-vnoremap <A-Down> :m '>+1<CR>gv=gv
+" nnoremap <A-Up> :m .-2<CR>==
+" nnoremap <A-Down> :m .+1<CR>==
+" inoremap <A-Up> <Esc>:m .-2<CR>==gi
+" inoremap <A-Down> <Esc>:m .+1<CR>==gi
+" vnoremap <A-Up> :m '<-2<CR>gv=gv
+" vnoremap <A-Down> :m '>+1<CR>gv=gv
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Jump
 nmap gj :call JumpToSelection()<CR>
