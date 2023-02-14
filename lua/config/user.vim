@@ -486,17 +486,17 @@ let g:neovide_fullscreen=v:true
 
 " If running diff two or more files then....
 " See: https://neovim.io/doc/user/options.html
-" if &diff
-"     set diffopt+=algorithm:patience
-"     set diffopt+=indent-heuristic
-"     let g:diff_translations=0 " Speed up syntax
-"     set syntax=diff
-"     set wrap               " Lines wrap to following lines"
-"     set nolist             " Do not display whitespace
-" else
-"     set nowrap             " Display long lines as just one line
-"     set list               " Do not display whitespace
-" endif
+if &diff
+    set diffopt+=algorithm:patience
+    set diffopt+=indent-heuristic
+    let g:diff_translations=0 " Speed up syntax
+    set syntax=diff
+    set wrap               " Lines wrap to following lines"
+    set nolist             " Do not display whitespace
+else
+    set nowrap             " Display long lines as just one line
+    set list               " Do not display whitespace
+endif
 
 syntax enable              " Enables syntax highlighting
 set iskeyword+=-           " Treat dash separated words as a word text object"

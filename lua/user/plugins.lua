@@ -79,7 +79,10 @@ return packer.startup(function(use)
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function()
-      require "lsp_signature".setup()
+      require "lsp_signature".setup({
+        floating_window = false,
+        hint_enable = true,
+      })
     end
   }
   -- codi.vim
@@ -397,6 +400,17 @@ return packer.startup(function(use)
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim" }
+-- }}}1
+
+-- Plugins Config {{{1
+vim.keymap.set({ 'n' }, '<C-k>', function()       require('lsp_signature').toggle_float_win()
+end, { silent = true, noremap = true, desc = 'toggle signature' })
+
+vim.keymap.set({ 'n' }, '<Leader>k', function()
+ vim.lsp.buf.signature_help()
+end, { silent = true, noremap = true, desc = 'toggle signature' })
+
+
 -- }}}1
 
 -- Automatic setup {{{1 
