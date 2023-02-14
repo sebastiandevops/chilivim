@@ -1,10 +1,6 @@
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-" switch between windows on VIM - remap
-nnoremap <C-H> <C-W>h
-nnoremap <C-L> <C-W>l
-
 " Dial
 nmap  <C-a>  <Plug>(dial-increment)
 nmap  <C-x>  <Plug>(dial-decrement)
@@ -12,10 +8,6 @@ vmap  <C-a>  <Plug>(dial-increment)
 vmap  <C-x>  <Plug>(dial-decrement)
 vmap g<C-a> g<Plug>(dial-increment)
 vmap g<C-x> g<Plug>(dial-decrement)
-
-" Buffer next and previous with tab.
-" nmap <Tab> :bnext<CR>
-" nmap <S-Tab> :bprevious<CR>
 
 " <Ctrl-c> and yy copies to clipboard, paste with <shift-insert>
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
@@ -43,10 +35,6 @@ let g:devdocs_filetype_map = {
 set formatprg=par\ -w79
 map gw gqip
 
-" Margin numbers.
-nmap <silent> <leader>n :set norelativenumber<cr>
-nmap <silent> <leader>r :set relativenumber<cr>
-
 " Snippets.
 map <silent> sc :call ShowColours()<CR>
 map <silent> sC :call ShowChars()<CR>
@@ -71,21 +59,6 @@ vnoremap <silent> <A-s> :call SqlFlip()<CR>
 
 " Run macro q with just typing Q.
 nnoremap Q @q
-
-" Toggle comment and move to next line, or comment selection.
-" nmap <C-_> gccj
-" vmap <C-_> gccgv
-" In Neovide use this line instead!
-" nmap <C-/> gccj
-" vmap <C-/> gccgv
-
-" Move lines up and down using alt-up/down.
-" nnoremap <A-Up> :m .-2<CR>==
-" nnoremap <A-Down> :m .+1<CR>==
-" inoremap <A-Up> <Esc>:m .-2<CR>==gi
-" inoremap <A-Down> <Esc>:m .+1<CR>==gi
-" vnoremap <A-Up> :m '<-2<CR>gv=gv
-" vnoremap <A-Down> :m '>+1<CR>gv=gv
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==

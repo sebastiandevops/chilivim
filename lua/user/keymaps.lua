@@ -25,6 +25,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Margin numbers.
+keymap("n", "<leader>n", "<cmd>set norelativenumber<cr>", opts)
+keymap("n", "<leader>r", "<cmd>set relativenumber<cr>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
