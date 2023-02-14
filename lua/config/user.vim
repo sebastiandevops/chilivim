@@ -42,7 +42,7 @@ function! SnippetList()
 endfunction
 
 function! SnippetEdit()
-    let fname = $HOME . "/.config/nvim/lua/snippets/" . &ft . ".json"
+    let fname = $HOME . "/.config/nvim/snippets/" . &ft . ".json"
     silent exec ":e " . fname
 endfunction
 
@@ -480,7 +480,7 @@ let bufferline.icon_close_tab_modified=''
 let bufferline.icon_custom_colors="false"
 
 let g:github_enterprise_urls = ['https://bitbucket.org']
-let g:startify_session_dir=['~/.config/nvim/sessions']
+let g:startify_session_dir=['~/.config/lvim/sessions']
 let g:neovide_cursor_animation_length=0
 let g:neovide_fullscreen=v:true
 
@@ -499,34 +499,18 @@ else
 endif
 
 syntax enable              " Enables syntax highlighting
-" set iskeyword+=-           " Treat dash separated words as a word text object"
+set iskeyword+=-           " Treat dash separated words as a word text object"
 set formatoptions-=cro     " Stop newline continuation of comments
+set hidden                 " Required to keep multiple buffers open multiple buffers
+set pumheight=10           " Makes pop-up menu smaller
+set mouse=a                " Enable the mouse
 set t_Co=256               " Support 256 colors
-set conceallevel=0         " So that I can see `` in markdown files
-set tabstop=4              " Insert 4 spaces for a tab
-set softtabstop=0          " Disable soft tabs
-set shiftwidth=4           " Change the number of space chars inserted for indentation
-set smarttab               " Makes tabbing smarter will realize you have 2 vs 4
-set expandtab              " Converts tabs to spaces
-set smartindent            " Makes indenting smart
-set autoindent             " Good auto indent
 set laststatus=2           " Always display the status line
-set number relativenumber  " Line numbers and relative numbers
-set cursorline             " Enable highlighting of the current line
 set background=dark        " tell Vim what the background colour looks like
-set showtabline=2          " Always show tabs
 set noshowmode             " We don't need to see things like -- INSERT -- anymore
 set nobackup               " This is recommended by various posts
 set nowritebackup          " This is recommended by various posts
-set shortmess+=c           " Don't pass messages to |ins-completion-menu|.
-set signcolumn=yes         " Always show, otherwise it would shift the text each time
-set updatetime=300         " Faster completion
-set timeoutlen=750         " By default this is 1000 ms
-set incsearch              " Highlight all matches
-set clipboard=unnamedplus  " Copy paste between Vim and everything else
 set guifont=FiraCode\ Nerd\ Font\ Mono:h11
-set ignorecase             " When searching ignore case of words
-set scrolloff=3            " Keep 3 line buffer at top and bottom of the screen
 
 " Setup spelling
 set spell
@@ -534,7 +518,7 @@ setlocal spell spelllang=en_gb
 set spellfile=~/bin/dictionaries/dictionary.add
 
 " Setup folding
-set foldenable             " Folding enabled
+" set foldenable             " Folding enabled
 set foldmethod=marker      " Folding method, based on { { {1
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
 set fillchars=stl:\ ,foldclose:,foldopen:,foldsep:┃,fold:\ ,eob:~,msgsep:‾,vert:\│
