@@ -1,46 +1,45 @@
-local options = {
-  backup = false,                          -- creates a backup file
-  clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
-  cmdheight = 2,                           -- more space in the neovim command line for displaying messages
-  completeopt = { "menuone", "noselect" }, -- mostly just for cmp
-  conceallevel = 0,                        -- so that `` is visible in markdown files
-  fileencoding = "utf-8",                  -- the encoding written to a file
-  hlsearch = true,                         -- highlight all matches on previous search pattern
-  ignorecase = true,                       -- ignore case in search patterns
-  mouse = "a",                             -- allow the mouse to be used in neovim
-  pumheight = 10,                          -- pop up menu height
-  showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
-  showtabline = 2,                         -- always show tabs
-  smartcase = true,                        -- smart case
-  smartindent = true,                      -- make indenting smarter again
-  splitbelow = true,                       -- force all horizontal splits to go below current window
-  splitright = true,                       -- force all vertical splits to go to the right of current window
-  swapfile = false,                        -- creates a swapfile
-  termguicolors = true,                    -- set term gui colors (most terminals support this)
-  timeoutlen = 300,                        -- time to wait for a mapped sequence to complete (in milliseconds)
-  undofile = true,                         -- enable persistent undo
-  updatetime = 300,                        -- faster completion (4000ms default)
-  writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-  expandtab = true,                        -- convert tabs to spaces
-  shiftwidth = 2,                          -- the number of spaces inserted for each indentation
-  tabstop = 2,                             -- insert 2 spaces for a tab
-  cursorline = true,                       -- highlight the current line
-  number = true,                           -- set numbered lines
-  relativenumber = false,                  -- set relative numbered lines
-  numberwidth = 4,                         -- set number column width to 2 {default 4}
-
-  signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
-  wrap = true,                             -- display lines as one long line
-  linebreak = true,                        -- companion to wrap, don't split words
-  scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
-  sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
-  whichwrap = "bs<>[]hl",                  -- which "horizontal" keys are allowed to travel to prev/next line
-}
-
-for k, v in pairs(options) do
-  vim.opt[k] = v
-end
+vim.opt.backup = false                          -- creates a backup file
+vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
+vim.opt.cmdheight = 1                           -- more space in the neovim command line for displaying messages
+vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
+vim.opt.conceallevel = 0                        -- so that `` is visible in markdown files
+vim.opt.fileencoding = "utf-8"                  -- the encoding written to a file
+vim.opt.hlsearch = true                         -- highlight all matches on previous search pattern
+vim.opt.ignorecase = true                       -- ignore case in search patterns
+vim.opt.mouse = "a"                             -- allow the mouse to be used in neovim
+vim.opt.pumheight = 10                          -- pop up menu height
+vim.opt.showmode = false                        -- we don't need to see things like -- INSERT -- anymore
+vim.opt.showtabline = 0                         -- always show tabs
+vim.opt.smartcase = true                        -- smart case
+vim.opt.smartindent = true                      -- make indenting smarter again
+vim.opt.splitbelow = true                       -- force all horizontal splits to go below current window
+vim.opt.splitright = true                       -- force all vertical splits to go to the right of current window
+vim.opt.swapfile = false                        -- creates a swapfile
+vim.opt.termguicolors = true                    -- set term gui colors (most terminals support this)
+vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
+vim.opt.undofile = true                         -- enable persistent undo
+vim.opt.updatetime = 300                        -- faster completion (4000ms default)
+vim.opt.writebackup = false                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+vim.opt.expandtab = true                        -- convert tabs to spaces
+vim.opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
+vim.opt.tabstop = 2                             -- insert 2 spaces for a tab
+vim.opt.cursorline = true                       -- highlight the current line
+vim.opt.number = true                           -- set numbered lines
+vim.opt.laststatus = 3                          -- only the last window will always have a status line
+vim.opt.showcmd = false                         -- hide (partial) command in the last line of the screen (for performance)
+vim.opt.ruler = false                           -- hide the line and column number of the cursor position
+vim.opt.numberwidth = 4                         -- minimal number of columns to use for the line number {default 4}
+vim.opt.signcolumn = "yes"                      -- always show the sign column, otherwise it would shift the text each time
+vim.opt.wrap = false                            -- display lines as one long line
+vim.opt.scrolloff = 8                           -- minimal number of screen lines to keep above and below the cursor
+vim.opt.sidescrolloff = 8                       -- minimal number of screen columns to keep to the left and right of the cursor if wrap is `false`
+vim.opt.guifont = "monospace:h17"               -- the font used in graphical neovim applications
+vim.opt.fillchars.eob=" "                       -- show empty lines at the end of a buffer as ` ` {default `~`}
+vim.opt.shortmess:append "c"                    -- hide all the completion messages, e.g. "-- XXX completion (YYY)", "match 1 of 2", "The only match", "Pattern not found"
+vim.opt.whichwrap:append("<,>,[,],h,l")         -- keys allowed to move to the previous/next line when the beginning/end of line is reached
+vim.opt.iskeyword:append("-")                   -- treats words with `-` as single words
+vim.opt.formatoptions:remove({ "c", "r", "o" }) -- This is a sequence of letters which describes how automatic formatting is to be done
+vim.opt.linebreak = true
 
 -- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
 vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages
@@ -53,74 +52,7 @@ vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins f
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-
 vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
-
--- Plugins configurations {{{1
--- samirettali/shebang.nvim config
-vim.g.shebang_commands = {
-  py = '/usr/bin/env python3',
-  sh = '/usr/bin/env bash'
-}
-vim.g.shebang_shells = {
-  py = 'python3.10.9',
-}
---  "RishabhRD/nvim-cheat.sh config
-vim.g.cheat_default_window_layout = 'float'
-
--- python provider setup
-vim.g.python3_host_prog = '/home/sebastian/anaconda3/bin/python3'
--- }}}1
-
--- Autocommands {{{1 (https://neovim.io/doc/user/autocmd.html)
-vim.api.nvim_create_autocmd("BufEnter", {
-  pattern = { "*" },
-  -- enable wrap mode for json files only
-  command = "setlocal wrap",
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "zsh",
-  callback = function()
-    -- let treesitter use bash highlight for zsh files as well
-    require("nvim-treesitter.highlight").attach(0, "bash")
-  end,
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "Jenkinsfile",
-  callback = function()
-    -- let treesitter use bash highlight for zsh files as well
-    require("nvim-treesitter.highlight").attach(0, "groovy")
-  end,
-})
-
--- windows to close with "q"
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = {
-    "help",
-    "startuptime",
-    "qf",
-    "lspinfo",
-    "vim",
-    "OverseerList",
-    "OverseerForm",
-    "fugitive",
-    "toggleterm",
-    "floggraph",
-    "git",
-    "cheat",
-  },
-  command = "nnoremap <buffer><silent> q :bdelete!<CR>",
-})
 
 -- don't auto comment new line
 vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })
--- }}}1
-
--- Load snippets {{{1
--- See ~/.config/lvim/snippets/package.json
--- And this site to make snippets: https://snippet-generator.app
--- For variables see: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables
--- require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/snippets" } }
--- }}}1
