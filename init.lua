@@ -23,3 +23,4 @@ require "user.illuminate"
 require "config.user_colors"
 vim.cmd('source ~/.config/nvim/lua/config/user_keys.vim')
 vim.cmd('source ~/.config/nvim/lua/config/user.vim')
+require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/lua/snippets" } }
