@@ -18,7 +18,7 @@ au ColorScheme * hi NonText                             gui=bold     guifg=#403d
 au ColorScheme * hi Whitespace                          gui=bold     guifg=#403d52      guibg=NONE
 " Selected area colour
 au ColorScheme * hi VisualNOS             ctermbg=NONE                                  guibg=NONE
-au ColorScheme * hi Visual                ctermbg=NONE                                  guibg=#44415a
+au ColorScheme * hi Visual                ctermbg=NONE                                  guibg=#403d52
 
 "Comments color
 au ColorScheme * hi Comment                          guifg=#6e6a86     guibg=NONE
@@ -40,7 +40,7 @@ au ColorScheme * hi hiUrl cterm=underline        ctermfg=31    guifg=#286983    
 
 " Cursor colors {{{1
 au ColorScheme * hi CursorLine                                       guifg=NONE         guibg=#403d52
-au ColorScheme * hi CursorColumn          ctermbg=NONE                                  guibg=NONE
+au ColorScheme * hi CursorColumn          ctermbg=NONE                                  guibg=#403d52
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold     guifg=#e0def4      guibg=NONE
 au ColorScheme * hi Cursor                                           guifg=NONE         guibg=#403d52
 

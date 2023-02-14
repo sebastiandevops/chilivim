@@ -43,6 +43,7 @@ vim.opt.shortmess:append "c"                    -- hide all the completion messa
 vim.opt.whichwrap:append("<,>,[,],h,l")         -- keys allowed to move to the previous/next line when the beginning/end of line is reached
 vim.opt.iskeyword:append("-")                   -- treat dash separated words as a word text object
 vim.opt.foldenable = true                       -- Folding enable
+vim.opt.colorcolumn = "99999"                   -- Fixes indentline for now
 
 vim.opt.formatoptions:remove({ "c", "r", "o" }) -- This is a sequence of letters which describes how automatic formatting is to be done
 vim.opt.linebreak = true
