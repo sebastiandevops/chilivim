@@ -42,7 +42,7 @@ function! SnippetList()
 endfunction
 
 function! SnippetEdit()
-    let fname = $HOME . "/.config/lvim/snippets/" . &ft . ".json"
+    let fname = $HOME . "/.config/nvim/lua/snippets/" . &ft . ".json"
     silent exec ":e " . fname
 endfunction
 
