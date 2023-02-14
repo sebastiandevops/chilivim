@@ -122,5 +122,5 @@ vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] }
 -- See ~/.config/lvim/snippets/package.json
 -- And this site to make snippets: https://snippet-generator.app
 -- For variables see: https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables
-require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/snippets" } }
+-- require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/snippets" } }
 -- }}}1
