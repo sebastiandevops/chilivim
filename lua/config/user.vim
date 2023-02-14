@@ -502,8 +502,6 @@ syntax enable              " Enables syntax highlighting
 set iskeyword+=-           " Treat dash separated words as a word text object"
 set formatoptions-=cro     " Stop newline continuation of comments
 set hidden                 " Required to keep multiple buffers open multiple buffers
-set pumheight=10           " Makes pop-up menu smaller
-set mouse=a                " Enable the mouse
 set t_Co=256               " Support 256 colors
 set laststatus=2           " Always display the status line
 set background=dark        " tell Vim what the background colour looks like
