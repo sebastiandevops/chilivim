@@ -480,7 +480,7 @@ let bufferline.icon_close_tab_modified=''
 let bufferline.icon_custom_colors="false"
 
 let g:github_enterprise_urls = ['https://bitbucket.org']
-let g:startify_session_dir=['~/.config/lvim/sessions']
+let g:startify_session_dir=['~/.config/nvim/sessions']
 let g:neovide_cursor_animation_length=0
 let g:neovide_fullscreen=v:true
 
@@ -499,17 +499,8 @@ else
 endif
 
 syntax enable              " Enables syntax highlighting
-set iskeyword+=-           " Treat dash separated words as a word text object"
+" set iskeyword+=-           " Treat dash separated words as a word text object"
 set formatoptions-=cro     " Stop newline continuation of comments
-set hidden                 " Required to keep multiple buffers open multiple buffers
-set encoding=utf-8         " The encoding displayed
-set pumheight=10           " Makes pop-up menu smaller
-set fileencoding=utf-8     " The encoding written to file
-set ruler                  " Show the cursor position all the time
-set cmdheight=2            " More space for displaying messages
-set mouse=a                " Enable the mouse
-set splitbelow             " Horizontal splits will automatically be below
-set splitright             " Vertical splits will automatically be to the right
 set t_Co=256               " Support 256 colors
 set conceallevel=0         " So that I can see `` in markdown files
 set tabstop=4              " Insert 4 spaces for a tab

@@ -62,7 +62,7 @@ au ColorScheme * hi TelescopeBorder       ctermbg=NONE                          
 au ColorScheme * hi FloatBorder                         gui=bold     guifg=#56526e      guibg=NONE
 " }}}1
 
-" vertical split colors {{{1
+" vertical split and NvimTree colors {{{1
 au ColorScheme * hi VertSplit             ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi NvimTreeVertSplit     ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=#393535      guibg=NONE
@@ -70,7 +70,7 @@ au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE               guifg=#3935
 au ColorScheme * hi NvimTreeFolderIcon                               guifg=#66a3ad      guibg=NONE
 au ColorScheme * hi Directory                           gui=bold     guifg=#66a3ad      guibg=NONE
 au ColorScheme * hi ColorColumn           ctermbg=NONE                                  guibg=NONE
-au ColorScheme * hi NvimTreeRootFolder                               guifg=#8f8f8f
+au ColorScheme * hi NvimTreeRootFolder                  gui=bold     guifg=#b4637a
 au ColorScheme * hi NvimTreeNormal                      ctermbg=NONE  guibg=NONE
 " 
 " Git changes and margins
