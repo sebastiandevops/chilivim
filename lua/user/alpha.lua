@@ -8,7 +8,6 @@ dashboard.section.header.val = {
   '                           ',
   '                           ',
   '                           ',
-  '                           ',
   '88b 88 Yb    dP 88 8b    d8',
   '88Yb88  Yb  dP  88 88b  d88',
   '88 Y88   YbdP   88 88YbdP88',
@@ -19,13 +18,15 @@ dashboard.section.buttons.val = {
     dashboard.button("f",   "  Find File",                   "<CMD>Telescope find_files<CR>" ),
     dashboard.button("n",   "  New File",                    "<CMD>ene!<CR>" ),
     dashboard.button("p",   "  Recent Projects ",            "<CMD>Telescope projects<CR>" ),
-    dashboard.button("u",   "  Recently Used Files",         "<CMD>Telescope oldfiles<CR>" ),
+    dashboard.button("r",   "  Recently Used Files",         "<CMD>Telescope oldfiles<CR>" ),
     -- dashboard.button( { "SPC s",   "  Load last session",           "<CMD>SessionLoad<CR>" ),
-    dashboard.button("t",   "  NvimTree",                      "<CMD>NvimTreeToggle<CR>" ),
+    dashboard.button("t",   "  NvimTree",                    "<CMD>NvimTreeToggle<CR>" ),
     dashboard.button("m",   "  Marks              ",         "<CMD>Telescope marks<CR>" ),
     dashboard.button("w",   "  Find Word",                   "<CMD>Telescope live_grep<CR>" ),
     dashboard.button("c",   "  Edit Configuration",          "<CMD>e ~/.config/nvim/lua/plugins/init.lua<CR>" ),
     dashboard.button("g",   "  Git status",                  "<CMD>Telescope git_status<CR>" ),
+    dashboard.button("u",   "  Update",                      "<CMD>Lazy update<CR>" ),
+
 }
 
 local function footer()
