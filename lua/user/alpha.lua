@@ -24,7 +24,7 @@ dashboard.section.buttons.val = {
     dashboard.button("t",   "  NvimTree",                      "<CMD>NvimTreeToggle<CR>" ),
     dashboard.button("m",   "  Marks              ",         "<CMD>Telescope marks<CR>" ),
     dashboard.button("w",   "  Find Word",                   "<CMD>Telescope live_grep<CR>" ),
-    dashboard.button("c",   "  Edit Configuration",          "<CMD>e ~/.config/nvim/lua/user/plugins.lua<CR>" ),
+    dashboard.button("c",   "  Edit Configuration",          "<CMD>e ~/.config/nvim/lua/plugins/init.lua<CR>" ),
     dashboard.button("g",   "  Git status",                  "<CMD>Telescope git_status<CR>" ),
 }
 
