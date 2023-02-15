@@ -19,6 +19,7 @@ au ColorScheme * hi Whitespace                          gui=bold     guifg=#403d
 " Selected area colour
 au ColorScheme * hi VisualNOS             ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi Visual                ctermbg=NONE                                  guibg=#403d52
+au ColorScheme * hi IndentBlanklineChar                 gui=bold     guifg=#403d52      guibg=NONE
 
 "Comments color
 au ColorScheme * hi Comment                          guifg=#6e6a86     guibg=NONE
