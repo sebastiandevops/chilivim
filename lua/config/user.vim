@@ -219,7 +219,7 @@ function! ToggleColourIncSearch()
     if synIDattr(hlID("IncSearch"), "bg", "gui") == "#3f1f1f"
         highlight IncSearch NONE
     else
-        highlight IncSearch      gui=bold              guibg=#3f1f1f
+        highlight IncSearch      gui=bold              guibg=NONE
     endif
 endfunction
 

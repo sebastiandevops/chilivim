@@ -32,7 +32,7 @@ call matchadd('sheBangBad', '^#!.*')
 
 " current word hiing
 " hi IncSearch                   gui=underline       guifg=#b4637a     guibg=NONE
-au ColorScheme * hi IncSearch    gui=bold            guifg=#e0def4     guibg=NONE
+au ColorScheme * hi IncSearch  ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
 
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline        ctermfg=31    guifg=#286983     gui=underline

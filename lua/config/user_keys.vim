@@ -61,9 +61,9 @@ map <C-s> :w<CR>
 " Highlight column in CSV
 command! -nargs=1 Csv :call CSVH(<args>)
 
-" SQL and Java flipping.
-vnoremap <silent> <A-s> :call SqlFlip()<CR>
-" nmap <silent> <leader>F :call PrettyPrintFile()<CR>
+" " SQL and Java flipping.
+" vnoremap <silent> <A-s> :call SqlFlip()<CR>
+" " nmap <silent> <leader>F :call PrettyPrintFile()<CR>
 
 " Run macro q with just typing Q.
 nnoremap Q @q
