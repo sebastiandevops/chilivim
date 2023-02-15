@@ -10,7 +10,7 @@ au ColorScheme * hi String                ctermfg=174                           
 au ColorScheme * hi Tag                   ctermfg=181   cterm=bold   gui=bold           guifg=#93e893
 au ColorScheme * hi SpecialKey                          gui=bold     guifg=#e0def4      guibg=NONE
 " Match parentheses
-au ColorScheme * hi MatchParen   gui=bold,underline  guifg=#FFFFFF     guibg=#44415a
+au ColorScheme * hi MatchParen   gui=bold,underline  guifg=#FFFFFF     guibg=#282828
 
 " Show white space characters
 set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
@@ -34,7 +34,7 @@ call matchadd('sheBangBad', '^#!.*')
 " hi IncSearch                   gui=underline       guifg=#b4637a     guibg=NONE
 au ColorScheme * hi IncSearch       ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
 au ColorScheme * hi Search          ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
-au ColorScheme * hi IlluminatedWord ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
+au ColorScheme * hi IlluminatedWord ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
 
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline        ctermfg=31    guifg=#286983     gui=underline
@@ -108,7 +108,7 @@ au ColorScheme * hi LspDiagnosticsUnderlineInformation                          
 au ColorScheme * hi LspDiagnosticsUnderlineHint                                         guibg=NONE
 
 " Telescope
-au ColorScheme * hi TelescopeSelection    ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
+au ColorScheme * hi TelescopeSelection    ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
 
 " Lsp colors
 au ColorScheme * hi LspReferenceText      ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
