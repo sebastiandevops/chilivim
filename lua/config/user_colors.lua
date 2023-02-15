@@ -32,7 +32,9 @@ call matchadd('sheBangBad', '^#!.*')
 
 " current word hiing
 " hi IncSearch                   gui=underline       guifg=#b4637a     guibg=NONE
-au ColorScheme * hi IncSearch  ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
+au ColorScheme * hi IncSearch       ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
+au ColorScheme * hi Search          ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
+au ColorScheme * hi IlluminatedWord ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
 
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline        ctermfg=31    guifg=#286983     gui=underline
@@ -105,8 +107,11 @@ au ColorScheme * hi LspDiagnosticsUnderlineWarning                              
 au ColorScheme * hi LspDiagnosticsUnderlineInformation                                  guibg=NONE
 au ColorScheme * hi LspDiagnosticsUnderlineHint                                         guibg=NONE
 
+" Telescope
+au ColorScheme * hi TelescopeSelection    ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
+
 " Lsp colors
-hi LspReferenceText      ctermbg=NONE                                  guibg=NONE
+au ColorScheme * hi LspReferenceText      ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
 " }}}1
 
 " Lualine ColorScheme {{{1

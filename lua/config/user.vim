@@ -508,6 +508,7 @@ set background=dark        " tell Vim what the background colour looks like
 set noshowmode             " We don't need to see things like -- INSERT -- anymore
 set nobackup               " This is recommended by various posts
 set nowritebackup          " This is recommended by various posts
+set incsearch              " Highlight all matches
 set guifont=FiraCode\ Nerd\ Font\ Mono:h11
 
 " Setup spelling
