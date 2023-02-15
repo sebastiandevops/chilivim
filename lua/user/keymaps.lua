@@ -59,3 +59,6 @@ keymap("n", "<S-l>",   ":bnext<CR>", opts)
 -- Comment
 keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
 keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", opts)
+
+-- Terminal
+keymap("n", "<A-1>", ":ToggleTerm size=12 direction=horizontal<CR>", opts)

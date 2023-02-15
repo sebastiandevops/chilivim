@@ -92,7 +92,7 @@ local vmappings = {
 }
 local mappings = {
   ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment toggle current line" },
-  ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
+  [";"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["b"] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
