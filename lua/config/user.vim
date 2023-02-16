@@ -511,10 +511,10 @@ set nowritebackup          " This is recommended by various posts
 set incsearch              " Highlight all matches
 set guifont=FiraCode\ Nerd\ Font\ Mono:h11
 
-" Setup spelling
-set spell
-setlocal spell spelllang=en_gb
-set spellfile=~/bin/dictionaries/dictionary.add
+" " Setup spelling
+" set spell
+" setlocal spell spelllang=en_gb
+" set spellfile=~/bin/dictionaries/dictionary.add
 
 " Setup folding
 " set foldenable             " Folding enabled

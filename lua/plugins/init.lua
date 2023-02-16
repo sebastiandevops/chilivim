@@ -349,4 +349,7 @@ return {
 
 	-- Git
 	{ "lewis6991/gitsigns.nvim" },
+  --
+  -- Neovim Treesitter Playground
+  {"nvim-treesitter/playground"}
 }

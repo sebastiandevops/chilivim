@@ -62,3 +62,6 @@ keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(v
 
 -- Terminal
 keymap("n", "<A-1>", ":ToggleTerm size=12 direction=horizontal<CR>", opts)
+
+-- Capture de highlight under the cursor
+keymap("n", "<leader>;", ":TSHighlightCapturesUnderCursor<CR>", opts)
