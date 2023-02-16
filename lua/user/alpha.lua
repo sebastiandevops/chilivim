@@ -7,7 +7,6 @@ local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
   '                           ',
   '                           ',
-  '                           ',
   '88b 88 Yb    dP 88 8b    d8',
   '88Yb88  Yb  dP  88 88b  d88',
   '88 Y88   YbdP   88 88YbdP88',
@@ -24,8 +23,9 @@ dashboard.section.buttons.val = {
     dashboard.button("m",   "  Marks              ",         "<CMD>Telescope marks<CR>" ),
     dashboard.button("w",   "  Find Word",                   "<CMD>Telescope live_grep<CR>" ),
     dashboard.button("c",   "  Edit Configuration",          "<CMD>e ~/.config/nvim/lua/user/options.lua<CR>" ),
-    dashboard.button("g",   "  Git status",                  "<CMD>Telescope git_status<CR>" ),
-    dashboard.button("u",   "  Update",                      "<CMD>Lazy update<CR>" ),
+    dashboard.button("g",   "⑇  Git status",                  "<CMD>Telescope git_status<CR>" ),
+    dashboard.button("u",   "⇡  Update",                      "<CMD>Lazy update<CR>" ),
+    dashboard.button("q",   "  Quit",                        "<CMD>quit<CR>"),
 
 }
 
