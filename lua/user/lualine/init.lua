@@ -3,6 +3,19 @@ if not status_ok then
 	return
 end
 
+local python_env = function()
+  local utils = require "user.lualine.utils"
+  if vim.bo.filetype == "python" then
+    local venv = os.getenv "CONDA_DEFAULT_ENV" or os.getenv "VIRTUAL_ENV"
+    if venv then
+      local icons = require "nvim-web-devicons"
+      local py_icon, _ = icons.get_icon ".py"
+      return string.format(" " .. py_icon .. " (%s)", utils.env_cleanup(venv))
+    end
+  end
+  return ""
+end
+
 local lsp_server = function(msg)
   local buf_clients = vim.lsp.buf_get_clients()
   if next(buf_clients) == nil then
@@ -90,7 +103,7 @@ lualine.setup({
 	},
 	sections = {
 		lualine_a = { 'branch', 'diagnostics' },
-		lualine_b = { 'mode', 'diff'},
+		lualine_b = { 'mode', 'diff', python_env},
 		lualine_c = {},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { lsp_server, spaces, 'filetype' },
