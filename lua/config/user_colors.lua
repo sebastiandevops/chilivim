@@ -34,6 +34,7 @@ call matchadd('sheBangBad', '^#!.*')
 " current word hiing
 " hi IncSearch                   gui=underline       guifg=#b4637a     guibg=NONE
 au ColorScheme * hi IncSearch       ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
+au ColorScheme * hi CurSearch       ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
 au ColorScheme * hi Search          ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
 au ColorScheme * hi IlluminatedWord ctermbg=NONE gui=bold guifg=#e0def4     guibg=#282828
 
@@ -84,8 +85,8 @@ au ColorScheme * hi GitSignsCurrentLineBlame            gui=bold     guifg=#3935
 au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
 
 " Diff colours
-au ColorScheme * hi DiffAdd               ctermbg=NONE                                  guibg=NONE
-au ColorScheme * hi DiffChange            ctermbg=NONE                                  guibg=NONE
+au ColorScheme * hi DiffAdd               ctermbg=NONE               guifg=#00d9fc      guibg=NONE
+au ColorScheme * hi DiffChange            ctermbg=NONE               guifg=#907AA8      guibg=NONE
 au ColorScheme * hi DiffDelete                                       guifg=#552222      guibg=NONE
 au ColorScheme * hi DiffText                                         guifg=#b4637a      guibg=NONE
 " -- }}}1
