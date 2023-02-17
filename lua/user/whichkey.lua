@@ -112,10 +112,10 @@ local mappings = {
 
   L = {
     name = "Lazy",
-    c = { "<cmd>Lazy build<cr>", "Build" },
+    C = { "<cmd>Lazy build<cr>", "Build" },
     i = { "<cmd>Lazy install<cr>", "Install" },
     s = { "<cmd>Lazy sync<cr>", "Sync" },
-    S = { "<cmd>Lazy check<cr>", "Check" },
+    c = { "<cmd>Lazy check<cr>", "Check" },
     u = { "<cmd>Lazy update<cr>", "Update" },
   },
 
@@ -192,18 +192,18 @@ local mappings = {
     -- Personal:
   t = {
   name = "+Trouble",
-    r = { "<cmd>Trouble lsp_references<cr>", "References" },
-    f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
-    d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
-    q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
-    l = { "<cmd>Trouble loclist<cr>", "LocationList" },
-    w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
+    r = { "<cmd>Trouble lsp_references<cr>",               "References" },
+    f = { "<cmd>Trouble lsp_definitions<cr>",              "Definitions" },
+    d = { "<cmd>Trouble document_diagnostics<cr>",         "Diagnostics" },
+    q = { "<cmd>Trouble quickfix<cr>",                     "QuickFix" },
+    l = { "<cmd>Trouble loclist<cr>",                      "LocationList" },
+    w = { "<cmd>Trouble workspace_diagnostics<cr>",        "Workspace Diagnostics" },
   },
 
   u = {
     name = "+Utils",
-    d = { ":call DeleteEndingWhiteSpace()<cr>",     "Remove trailing whitespaces" },
-    r = { "<cmd>SearchBoxReplace confirm=menu<CR>", "Search&Replace" },
+    d = { ":call DeleteEndingWhiteSpace()<cr>",            "Remove trailing whitespaces" },
+    r = { "<cmd>SearchBoxReplace confirm=menu<CR>",        "Search&Replace" },
   },
   o = {
     name = "Toggle Display Options",
