@@ -42,13 +42,10 @@ return {
   { "simrat39/symbols-outline.nvim", cmd = "SymbolsOutline", },
   -- Highlight URL's. http://www.vivaldi.com
   { "itchyny/vim-highlighturl", event = "BufRead", },
-
   -- Kitty config syntax.  Edit kitty, with vk
   { "fladson/vim-kitty", event = "BufRead", ft = "conf", },
-
   -- Dev docs
   "rhysd/devdocs.vim",
-
   -- Vim syntax file for Docker's Dockerfile and snippets for snipMate.
   'ekalinin/Dockerfile.vim',
   -- numb
@@ -66,7 +63,6 @@ return {
   -- nvim-bqf
   -- better quickfix window
   { "kevinhwang91/nvim-bqf", event = { "BufRead", "BufNew" }, },
-
   -- vim-matchup
   -- navigate and highlight matching words
   {
@@ -76,7 +72,6 @@ return {
       vim.g.matchup_matchparen_offscreen = { method = "popup" }
     end,
   },
-
   -- Git
   -- diffview
   -- git diff in a single tabpage
@@ -84,7 +79,6 @@ return {
     "sindrets/diffview.nvim",
     event = "BufRead",
   },
-
   -- git-blame
   -- show git blame
   {
@@ -99,19 +93,12 @@ return {
   { "p00f/nvim-ts-rainbow" },
   -- neoscroll
   { "karb94/neoscroll.nvim", event = "WinScrolled" },
-
   -- LazyGit plugin
   { "kdheepak/lazygit.nvim" },
   { "sbdchd/neoformat" },
   { "norcalli/nvim-colorizer.lua" },
   { "alexghergh/nvim-tmux-navigation" },
   { "VonHeikemen/searchbox.nvim", dependencies = {"MunifTanjim/nui.nvim"} },
-  --  plugin shows a lightbulb in the sign column whenever a textDocument/codeAction is available at the current cursor position.
-  { "kosayoda/nvim-lightbulb",
-    dependencies = {
-       {'antoinemadec/FixCursorHold.nvim'}
-    }
-  },
   { "RishabhRD/nvim-cheat.sh" },
   { "RishabhRD/popfix" },
   {
@@ -150,11 +137,9 @@ return {
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-nvim-lua" },
   {'tzachar/cmp-tabnine', build='./install.sh', dependencies = 'hrsh7th/nvim-cmp'},
-
 	-- Snippets
   { "L3MON4D3/LuaSnip" }, --snippet engine
   { "rafamadriz/friendly-snippets" }, -- a bunch of snippets to use
-
 	-- LSP
 	{ "neovim/nvim-lspconfig" }, -- enable LSP
   { "williamboman/mason.nvim" }, -- simple to use language server installer
@@ -167,16 +152,12 @@ return {
         dependencies = { "nvim-lua/plenary.nvim" },
   }, -- for formatters and linters
   { "RRethy/vim-illuminate" },
-
 	-- Telescope
 	{ "nvim-telescope/telescope.nvim" },
-
 	-- Treesitter
 	{ "nvim-treesitter/nvim-treesitter"	},
-
 	-- Git
 	{ "lewis6991/gitsigns.nvim" },
-  --
   -- Neovim Treesitter Playground
   {"nvim-treesitter/playground"}
 }
