@@ -20,6 +20,12 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.illuminate"
+require "user.jaq-nvim"
+require "user.tmux-navigation"
+require "user.colorizer"
+require "user.neoscroll"
+require "user.bqf"
+require "user.mellifluous"
 require "config.user_colors"
 vim.cmd('source ~/.config/nvim/lua/config/user_keys.vim')
 vim.cmd('source ~/.config/nvim/lua/config/user.vim')
