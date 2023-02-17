@@ -78,15 +78,15 @@ au ColorScheme * hi NvimTreeRootFolder                  gui=bold     guifg=#b463
 au ColorScheme * hi NvimTreeNormal                      ctermbg=NONE  guibg=NONE
 " 
 " Git changes and margins
-au ColorScheme * hi GitSignsAdd                                      guifg=#286983      guibg=NONE
-au ColorScheme * hi GitSignsDelete                                   guifg=#b4637a      guibg=NONE
-au ColorScheme * hi GitSignsChange                                   guifg=#c4a7e7      guibg=NONE
+au ColorScheme * hi GitSignsAdd                                      guifg=#f6c177      guibg=NONE
+au ColorScheme * hi GitSignsDelete                                   guifg=#fa5757      guibg=NONE
+au ColorScheme * hi GitSignsChange                                   guifg=#9893a5      guibg=NONE
 au ColorScheme * hi GitSignsCurrentLineBlame            gui=bold     guifg=#393552      guibg=NONE
 au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
 
 " Diff colours
-au ColorScheme * hi DiffAdd               ctermbg=NONE               guifg=#C1E1C1      guibg=NONE
-au ColorScheme * hi DiffChange            ctermbg=NONE               guifg=#907AA8      guibg=NONE
+au ColorScheme * hi DiffAdd               ctermbg=NONE               guifg=#f6c177      guibg=NONE
+au ColorScheme * hi DiffChange            ctermbg=NONE               guifg=#9893a5      guibg=NONE
 au ColorScheme * hi DiffDelete                                       guifg=#fa5757      guibg=NONE
 au ColorScheme * hi DiffText                                         guifg=#b4637a      guibg=NONE
 " -- }}}1

@@ -12,8 +12,6 @@ local servers = {
   "vimls",
 }
 
-
-
 local settings = {
 	ui = {
 		border = "none",
