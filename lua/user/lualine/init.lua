@@ -66,8 +66,10 @@ lualine.setup({
 		always_divide_middle = true,
 	},
 	sections = {
-		lualine_a = {
-      'branch',
+		lualine_a = { 'branch' },
+    lualine_b = { 
+      'mode', 
+       components.python_env,
       {
         'diff',
         colored = true,
@@ -79,12 +81,11 @@ lualine.setup({
         },
         symbols = {added = '+', modified = '~', removed = '-'}, -- Changes the symbols used by the diff.
         source = nil, -- A function that works as a data source for diff.
-                    -- It must return a table as such:
-                    --   { added = add_count, modified = modified_count, removed = removed_count }
-                    -- or nil on failure. count <= 0 won't be displayed.
+        -- It must return a table as such:
+        --   { added = add_count, modified = modified_count, removed = removed_count }
+        -- or nil on failure. count <= 0 won't be displayed.
       },
     },
-    lualine_b = { 'mode', components.python_env },
 		lualine_c = {  },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { 'diagnostics', components.lsp, components.spaces, 'filetype' },
