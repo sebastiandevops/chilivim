@@ -85,9 +85,9 @@ au ColorScheme * hi GitSignsCurrentLineBlame            gui=bold     guifg=#3935
 au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
 
 " Diff colours
-au ColorScheme * hi DiffAdd               ctermbg=NONE               guifg=#00d9fc      guibg=NONE
+au ColorScheme * hi DiffAdd               ctermbg=NONE               guifg=#C1E1C1      guibg=NONE
 au ColorScheme * hi DiffChange            ctermbg=NONE               guifg=#907AA8      guibg=NONE
-au ColorScheme * hi DiffDelete                                       guifg=#552222      guibg=NONE
+au ColorScheme * hi DiffDelete                                       guifg=#fa5757      guibg=NONE
 au ColorScheme * hi DiffText                                         guifg=#b4637a      guibg=NONE
 " -- }}}1
 

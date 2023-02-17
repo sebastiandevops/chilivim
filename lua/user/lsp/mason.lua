@@ -2,7 +2,6 @@ local servers = {
 	"cssls",
 	"html",
 	"tsserver",
-	"pyright",
 	"bashls",
 	"jsonls",
 	"yamlls",
@@ -12,6 +11,8 @@ local servers = {
   "terraformls",
   "vimls",
 }
+
+
 
 local settings = {
 	ui = {
