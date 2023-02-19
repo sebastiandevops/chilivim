@@ -95,6 +95,7 @@ vim.api.nvim_create_autocmd("FileType", {
     "floggraph",
     "git",
     "cheat",
+    "Jaq",
   },
   command = "nnoremap <buffer><silent> q :bdelete!<CR>",
 })
