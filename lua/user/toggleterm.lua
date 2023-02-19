@@ -8,6 +8,20 @@ toggleterm.setup({
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
+  highlights = {
+    -- highlights which map to a highlight group name and a table of it's values
+    -- NOTE: this is only a subset of values, any group placed here will be set for the terminal window split
+    Normal = {
+      guibg = "NONE",
+    },
+    NormalFloat = {
+      link = 'Normal'
+    },
+    FloatBorder = {
+      guifg = "#4e4e4e",
+      guibg = "NONE",
+    },
+  },
 	shade_terminals = true,
 	shading_factor = 2,
 	start_in_insert = true,
