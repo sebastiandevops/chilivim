@@ -54,9 +54,9 @@ vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the curre
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 
 
--- disable netrw at the very start of your init.lua (strongly advised)
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- -- disable netrw at the very start of your init.lua (strongly advised)
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
 

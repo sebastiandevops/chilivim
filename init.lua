@@ -1,3 +1,7 @@
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 require "user.impatient"
 require "user.options"
 require "user.plugins"
@@ -32,6 +36,7 @@ require "user.matchup"
 require "user.neogen"
 require "user.docs-view"
 require "config.user_colors"
+
 vim.cmd('source ~/.config/nvim/lua/config/user_keys.vim')
 vim.cmd('source ~/.config/nvim/lua/config/user.vim')
 require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/lua/snippets" } }
