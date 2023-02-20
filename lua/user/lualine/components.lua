@@ -33,8 +33,8 @@ return {
   fileformat = {
     'fileformat',
     symbols = {
-      unix = 'LF', -- e712
-      dos = 'CRLF',  -- e70f
+      unix = '🐧', -- e712
+      dos = '',  -- e70f
       mac = 'LF',  -- e711
     }
   },
