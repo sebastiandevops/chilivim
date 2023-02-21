@@ -68,6 +68,7 @@ command! -nargs=1 Csv :call CSVH(<args>)
 " Run macro q with just typing Q.
 nnoremap Q @q
 
+" Keymap to open a close folds with F2
 nnoremap <F2> za
 
 nnoremap <A-j> :m .+1<CR>==
