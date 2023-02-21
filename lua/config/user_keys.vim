@@ -68,6 +68,8 @@ command! -nargs=1 Csv :call CSVH(<args>)
 " Run macro q with just typing Q.
 nnoremap Q @q
 
+nnoremap <F2> za
+
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
@@ -80,8 +82,8 @@ nmap gj :call JumpToSelection()<CR>
 
 " Function keys.
 map <silent> <F1> :Cheat<CR>
-map <silent> <F2> :call FoldingToggle()<CR>
-map <silent> <F3> :call ToggleAll()<CR>
+" map <silent> <F2> :call FoldingToggle()<CR>
+" map <silent> <F3> :call ToggleAll()<CR>
 map <F4> :NvimTreeToggle<CR>
 " F5 reserved for kitty, open selected.
 " Use to replace last :s command on a range
