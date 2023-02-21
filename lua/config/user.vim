@@ -469,7 +469,7 @@ endfunction
 set nofoldenable
 set foldlevel=99
 set foldtext=CustomFoldText()
-set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
+set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾ " replace ~ with spaces at endo of buffer
 setlocal foldmethod=expr
 setlocal foldexpr=GetPotionFold(v:lnum)
 function! GetPotionFold(lnum)
