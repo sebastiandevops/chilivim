@@ -468,8 +468,8 @@ endfunction
 
 set nofoldenable
 set foldlevel=99
-set fillchars=fold:\
 set foldtext=CustomFoldText()
+set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
 setlocal foldmethod=expr
 setlocal foldexpr=GetPotionFold(v:lnum)
 function! GetPotionFold(lnum)
@@ -577,7 +577,6 @@ set guifont=FiraCode\ Nerd\ Font\ Mono:h11
 " set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
 " set fillchars=stl:\ ,foldclose:,foldopen:,foldsep:┃,fold:\ ,eob:~,msgsep:‾,vert:\│
 " " This will use space instead of ~ for end of buffer, effectively hiding the annoying ~.
-" set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
 " }}}
 
 " Syntax files {{{1
