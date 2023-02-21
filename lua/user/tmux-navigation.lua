@@ -4,12 +4,13 @@ if not status_ok then
 end
 
 tmux.setup {
-    disable_when_zoomed = true -- defaults to false
+    disable_when_zoomed = true, -- defaults to false
+    keybindings = {
+      left = "<C-h>",
+      down = "<C-j>",
+      up = "<C-k>",
+      right = "<C-l>",
+      last_active = "<C-|>",
+      next = "<C-Space>",
+  }
 }
-
-vim.keymap.set('n', "<C-h>", tmux.NvimTmuxNavigateLeft)
-vim.keymap.set('n', "<C-j>", tmux.NvimTmuxNavigateDown)
-vim.keymap.set('n', "<C-k>", tmux.NvimTmuxNavigateUp)
-vim.keymap.set('n', "<C-l>", tmux.NvimTmuxNavigateRight)
-vim.keymap.set('n', "<C-|>", tmux.NvimTmuxNavigateLastActive)
-vim.keymap.set('n', "<C-Space>", tmux.NvimTmuxNavigateNext)
