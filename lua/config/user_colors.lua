@@ -28,7 +28,7 @@ au ColorScheme * hi Comment                          guifg=#6e6a86     guibg=NON
 au ColorScheme * hi sheBangGood  gui=bold,underline  guifg=#b4637a     guibg=NONE
 call matchadd('sheBangGood', '^#!/usr/bin/env \(bash\|-S bash -e\|sh\|python3\|zsh\|groovy\|perl\)$', 20)
 
-au ColorScheme * hi sheBangBad   gui=bold            guifg=#b4637a     guibg=NONE
+au ColorScheme * hi sheBangBad   gui=bold            guifg=#FF0000     guibg=NONE
 call matchadd('sheBangBad', '^#!.*')
 
 " current word hiing
