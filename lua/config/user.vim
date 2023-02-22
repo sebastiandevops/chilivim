@@ -47,7 +47,7 @@ function! SnippetEdit()
 endfunction
 
 function! SnippetSave()
-    let fname = $HOME . "/.config/lvim/snippets/" . &ft . ".json"
+    let fname = $HOME . "/.config/nvim/snippets/" . &ft . ".json"
     let keyName = input("Snippet keys: ")
     let desc = input("Snippet description: ")
     echo "."
@@ -535,7 +535,7 @@ let bufferline.icon_close_tab_modified=''
 let bufferline.icon_custom_colors="false"
 
 let g:github_enterprise_urls = ['https://bitbucket.org']
-let g:startify_session_dir=['~/.config/lvim/sessions']
+let g:startify_session_dir=['~/.config/nvim/sessions']
 let g:neovide_cursor_animation_length=0
 let g:neovide_fullscreen=v:true
 
@@ -571,62 +571,6 @@ set guifont=FiraCode\ Nerd\ Font\ Mono:h11
 " setlocal spell spelllang=en_gb
 " set spellfile=~/bin/dictionaries/dictionary.add
 
-" Setup folding
-" set foldenable             " Folding enabled
-" set foldmethod=marker      " Folding method, based on { { {1
-" set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
-" set fillchars=stl:\ ,foldclose:,foldopen:,foldsep:┃,fold:\ ,eob:~,msgsep:‾,vert:\│
-" " This will use space instead of ~ for end of buffer, effectively hiding the annoying ~.
-" }}}
-
-" Syntax files {{{1
-
-"  Auddis!
-" au! Syntax auddis source ~/.config/lvim/syntax/auddis.vim
-" au BufRead,BufNewFile *.aud set filetype=auddis
-" au BufRead,BufNewFile AUDDIS*.ASC set filetype=auddis
-
-" Franchise DAT files.
-" au! Syntax franchisefile source ~/.config/lvim/syntax/franchisefile.vim
-" au BufRead,BufNewFile *.dat set filetype=franchisefile
-
-" TTT text files.
-" au! Syntax cooptttfile source ~/.config/lvim/syntax/cooptttfile.vim
-" au BufRead,BufNewFile tau.cc.* set filetype=cooptttfile
-
-"  Celestia!
-au! Syntax cel source ~/.config/lvim/syntax/cel.vim
-au BufRead,BufNewFile *.cel set filetype=cel
-
-"  Siril
-au! Syntax siril source ~/.config/lvim/syntax/siril.vim
-au BufRead,BufNewFile *.ssf set filetype=siril
-
-" CSV files.
-au! Syntax csvfile source ~/.config/lvim/syntax/csv.vim
-au BufRead,BufNewFile *.csv set filetype=csvfile
-au BufRead,BufNewFile *.tsv set filetype=csvfile
-
-" EDI files.
-au! Syntax edifile source $HOME/.config/lvim/syntax/edifile.vim
-au BufRead,BufNewFile *.edi set filetype=edifile
-au BufRead,BufNewFile *.mdf set filetype=edifile
-au BufRead,BufNewFile *.hse set filetype=edifile
-
-" Log4j files.
-au! Syntax log4j source ~/.config/lvim/syntax/log4j.vim
-au BufRead,BufNewFile *.log set filetype=log4j
-
-" Rundeck log files.
-au! Syntax runlog source ~/.config/lvim/syntax/runlog.vim
-au BufRead,BufNewFile ALLREAD*.txt set filetype=runlog
-au BufRead,BufNewFile ALLKewill*.txt set filetype=runlog
-
-" Freemarker
-au! Syntax runlog source ~/.config/lvim/syntax/ftl.vim
-au BufRead,BufNewFile *.ftl set filetype=ftl
-" }}}
-
 " Abbreviations {{{1
 
 " Misc
@@ -640,11 +584,6 @@ iab Attr Attributes
 iab Appl Application
 iab adn and
 " }}}
-
-" Auto Commands, e.g. source init.vim {{{1
-" https://vimhelp.org/autocmd.txt.html#autocmd-events
-" Auto reload my init.vim file.
-" autocmd! bufwritepost ~/.config/lvim/init.vim source ~/.config/lvim/init.vim | echo "Reloaded my init.vim"
 
 " Disable some things on the dashboard.
 " autocmd! Filetype * if &ft=="alpha"| highlight longLine NONE |endif | autocmd WinLeave <buffer> highlight longLine guibg=#5F3F3F
