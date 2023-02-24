@@ -81,7 +81,7 @@ au ColorScheme * hi NvimTreeNormal                      ctermbg=NONE  guibg=NONE
 au ColorScheme * hi GitSignsAdd                                      guifg=#f6c177      guibg=NONE
 au ColorScheme * hi GitSignsDelete                                   guifg=#fa5757      guibg=NONE
 au ColorScheme * hi GitSignsChange                                   guifg=#9893a5      guibg=NONE
-au ColorScheme * hi GitSignsCurrentLineBlame            gui=bold     guifg=#393552      guibg=NONE
+au ColorScheme * hi GitSignsCurrentLineBlame                         guifg=#56526e      guibg=NONE
 au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
 
 " Diff colours
