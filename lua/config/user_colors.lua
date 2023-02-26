@@ -68,8 +68,8 @@ au ColorScheme * hi FloatBorder                         gui=bold     guifg=#5652
 
 " vertical split and NvimTree colors {{{1
 au ColorScheme * hi VertSplit             ctermbg=NONE                                  guibg=NONE
-au ColorScheme * hi NvimTreeVertSplit     ctermbg=NONE               guifg=#393535      guibg=NONE
-au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=#393535      guibg=NONE
+au ColorScheme * hi NvimTreeVertSplit     ctermbg=NONE               guifg=#444444      guibg=NONE
+au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=#444444      guibg=NONE
 au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeFolderIcon                               guifg=#66a3ad      guibg=NONE
 au ColorScheme * hi Directory                           gui=bold     guifg=#66a3ad      guibg=NONE
