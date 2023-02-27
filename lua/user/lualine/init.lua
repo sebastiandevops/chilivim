@@ -19,7 +19,7 @@ lualine.setup({
 	sections = {
 		lualine_a = { 'branch' },
     lualine_b = { 'mode', components.python_env, components.diff },
-		lualine_c = {},
+		lualine_c = { 'filename' },
 		lualine_x = { 'diagnostics', components.lsp, components.fileformat,
       components.spaces, 'filetype' },
 		lualine_y = { 'location' },
