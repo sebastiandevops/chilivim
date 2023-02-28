@@ -23,7 +23,8 @@ configs.setup({
         "java",
         "yaml",
         "markdown",
-        "markdown_inline"
+        "markdown_inline",
+        "html"
     }, -- one of "all" or a list of languages
 	ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
 	highlight = {
