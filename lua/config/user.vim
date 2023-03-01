@@ -464,12 +464,15 @@ function! s:doincrement(step, ...)
   endif
 endfunction
 
+" Set the vertical split character to  a space (there is a single space after '\ ')
+" :set fillchars+=vert:\
+
 " Better Folding in Neovim
 
 set nofoldenable
 set foldlevel=99
 set foldtext=CustomFoldText()
-set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾ " replace ~ with spaces at endo of buffer
+set fillchars=fold:\ ,vert:\ ,eob:\ ,msgsep:‾ " replace ~ with spaces at endo of buffer
 setlocal foldmethod=expr
 setlocal foldexpr=GetPotionFold(v:lnum)
 function! GetPotionFold(lnum)
