@@ -1,26 +1,32 @@
-# Neovim from scratch
+# Chilivim
 
-**Update** When I initially created this repo I didn't anticipate the amount of breaking changes introduced by the rapidly developing plugin ecosystem. If you'd like to use the same basic config as this one as a base I can also recommend my newer repo: [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide)
+Welcome to my fork of the [Neovim-from-scratch](https://github.com/LunarVim/Neovim-from-scratch) repository, originally created and maintained by Christian Chiarulli. This repository is a tribute to his great work, and I would like to give him special recognition for his contributions to the Neovim community.
 
-**Another Update**  All packages are pinned in `master` so it will remain stable. Branches will be updated eventually (currently broken from branch #7 onwards. Hint: Good opportunity for pull requests!).
+When I first came across LunarVim, I was impressed with its comprehensive configuration and how it simplified the process of setting up Neovim. Through Christian's work, I learned about Neovim, the Lua programming language, and how to create a configuration that is understandable and easy to work with.
 
-This repository and accompanying tutorials outline the building blocks of modern Neovim for your personalized development environment. Each video is associated with a branch so checkout the one you are interested in, you can follow along with this [playlist](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ). 
+Since forking the repository, I have added more functionalities, modularized the code, and migrated the plugin manager from Packer to Lazy. Additionally, I am working on improving the user interface to make it look and function more like an IDE. With these changes, I hope to provide an even better development experience for myself and other users.
 
-General Neovim support is available on our [Matrix chat](https://matrix.to/#/#neovim-atmachine:matrix.org).
+Thank you for visiting my repository, and I hope that my contributions will help you in your development journey.
 
-## Try out this config
+The install config of my fork is almost identical to Christian's, so I have quoted his instructions with necessary updates to make it work with my repository. To get started with my fork, please follow these instructions:
 
-This config requires [Neovim v0.8.0](https://github.com/neovim/neovim/releases). Please [upgrade](#upgrade-to-neovim-v080) if you're on an earlier version of the editor.
+## Install Config
 
-Clone the repository into the correct location (make a backup your current `nvim` directory if you want to keep it).
+Install [Neovim v0.8.0](https://github.com/neovim/neovim/releases) and make sure that it's in your system path.
+
+Clone the repository into the correct location (**NOTE**: make a backup your current `nvim` directory if you want to keep it).
 
 ```
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
+git clone https://github.com/sebasvalencia726/chilivim.git ~/.config/nvim
 ```
 
 Run `nvim` in your terminal and wait for the plugins to be installed. You will notice treesitter pulling in a bunch of language parsers the next time you open Neovim.
 
 **NOTE** [Mason](https://github.com/williamboman/mason.nvim) is used to install and manage LSP servers, DAP servers, linters, and formatters via the `:Mason` command.
+
+**NOTE** [Lazy ](https://github.com/folke/lazy.nvim) is a plugin manager that I have incorporated into my fork to install and update plugins. To add new plugins, you simply need to add them to the `/lua/plugins/init.lua` file. Lazy will automatically install the plugins when you exit and reopen Neovim. For any further plugin configuration, you can create your own config file in the `/lua/user/` directory to keep the configuration modularized.
+
+Finally, it's worth noting that the additional installation steps for this configuration are the same as those in Christian's original repository. Therefore, I will simply quote his instructions:
 
 ## Get healthy
 
