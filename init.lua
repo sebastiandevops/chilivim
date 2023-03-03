@@ -2,7 +2,6 @@
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 
-require "user.impatient"
 require "user.options"
 require "user.plugins"
 require "user.keymaps"
@@ -24,6 +23,7 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.illuminate"
+require "user.impatient"
 require "user.jaq"
 require "user.tmux-navigation"
 require "user.colorizer"
