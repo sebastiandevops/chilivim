@@ -10,6 +10,7 @@ local servers = {
   "jdtls",
   "terraformls",
   "vimls",
+  "marksman",
 }
 
 local settings = {
