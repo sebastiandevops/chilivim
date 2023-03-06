@@ -35,6 +35,7 @@ require "user.numb"
 require "user.matchup"
 require "user.neogen"
 require "user.docs-view"
+require "user.peek"
 require "config.user_colors"
 
 vim.cmd('source ~/.config/nvim/lua/config/user_keys.vim')
