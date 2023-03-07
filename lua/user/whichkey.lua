@@ -208,6 +208,8 @@ local mappings = {
     f = { ":%!jq .<CR>",                                   "Format Json" },
     m = { "<cmd>PeekOpen<cr>",                             "Open markdown preview" },
     x = { "<cmd>PeekClose<cr>",                            "Close markdown preview" },
+    u = { "<cmd>set ff=unix<cr>",                          "dos2unix" },
+    w = { "<cmd>set ff=dos<cr>",                           "unix2dos" },
   },
   o = {
     name = "Toggle Display Options",
