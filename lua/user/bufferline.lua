@@ -75,11 +75,11 @@ bufferline.setup {
   highlights = {
     fill = {
       fg = { attribute = "fg", highlight = "#ff0000" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
     background = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
 
     -- buffer_selected = {
@@ -89,16 +89,16 @@ bufferline.setup {
     --   },
     buffer_visible = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
 
     close_button = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
     close_button_visible = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
     -- close_button_selected = {
     --   fg = {attribute='fg',highlight='TabLineSel'},
@@ -111,7 +111,7 @@ bufferline.setup {
     },
     tab = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
     tab_close = {
       -- fg = {attribute='fg',highlight='LspDiagnosticsDefaultError'},
@@ -121,23 +121,23 @@ bufferline.setup {
 
     duplicate_selected = {
       fg = { attribute = "fg", highlight = "TabLineSel" },
-      bg = { attribute = "bg", highlight = "TabLineSel" },
+      bg = { attribute = "bg", highlight = "NONE" },
       underline = true,
     },
     duplicate_visible = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
       underline = true,
     },
     duplicate = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
       underline = true,
     },
 
     modified = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
     modified_selected = {
       fg = { attribute = "fg", highlight = "Normal" },
@@ -145,12 +145,12 @@ bufferline.setup {
     },
     modified_visible = {
       fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
 
     separator = {
       fg = { attribute = "bg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      bg = { attribute = "bg", highlight = "NONE" },
     },
     separator_selected = {
       fg = { attribute = "bg", highlight = "Normal" },

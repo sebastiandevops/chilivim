@@ -69,4 +69,5 @@ return {
   { "nvim-treesitter/playground"}, -- View treesitter information directly in Neovim
   { "toppair/peek.nvim", build='deno task --quiet build:fast' }, -- Markdown live preview
   { "folke/twilight.nvim" },
+  { "rebelot/kanagawa.nvim" },
 }

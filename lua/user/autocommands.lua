@@ -64,12 +64,12 @@ vim.api.nvim_create_autocmd("BufEnter", {
   command = "setlocal wrap",
 })
 
-vim.api.nvim_create_autocmd("VimEnter", {
-  callback = function()
-    -- enable twilight
-    vim.cmd "TwilightEnable"
-  end,
-})
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--   callback = function()
+--     -- enable twilight
+--     vim.cmd "TwilightEnable"
+--   end,
+-- })
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "zsh",

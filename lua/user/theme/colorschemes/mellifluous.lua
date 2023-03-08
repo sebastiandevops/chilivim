@@ -1,9 +1,4 @@
-local status_ok, mellifluous = pcall(require, "mellifluous")
-if not status_ok then
-  return
-end
-
-mellifluous.setup {
+return {
   transparent_background = {
     enabled = true,
     floating_windows = true,
