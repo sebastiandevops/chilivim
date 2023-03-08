@@ -11,6 +11,20 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+  auto_reload_on_write = true,
+  disable_netrw = false,
+  hijack_cursor = false,
+  hijack_netrw = true,
+  hijack_unnamed_buffer_when_opening = false,
+  sort_by = "name",
+  root_dirs = {},
+  prefer_startup_root = false,
+  sync_root_with_cwd = false,
+  reload_on_bufenter = false,
+  respect_buf_cwd = false,
+  on_attach = "default",
+  remove_keymaps = false,
+  select_prompts = false,
   update_focused_file = {
     enable = true,
     update_cwd = true,
@@ -46,7 +60,8 @@ nvim_tree.setup {
   },
   diagnostics = {
     enable = true,
-    show_on_dirs = true,
+    show_on_dirs = false,
+    show_on_open_dirs = true,
     icons = {
       hint = "",
       info = "",
@@ -54,7 +69,15 @@ nvim_tree.setup {
       error = "",
     },
   },
+  filesystem_watchers = {
+    enable = true,
+    debounce_delay = 50,
+    ignore_dirs = {},
+  },
   view = {
+    centralize_selection = false,
+    cursorline = true,
+    debounce_delay = 15,
     width = 30,
     side = "left",
     mappings = {

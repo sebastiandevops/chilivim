@@ -68,4 +68,6 @@ return {
 	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground"}, -- View treesitter information directly in Neovim
   { "toppair/peek.nvim", build='deno task --quiet build:fast' }, -- Markdown live preview
+  { "folke/twilight.nvim" },
+  { "levouh/tint.nvim" },
 }

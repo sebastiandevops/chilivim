@@ -1,7 +1,6 @@
 vim.cmd([[
 set termguicolors
 
-" Syntax ColorScheme {{{1
 au ColorScheme * hi Boolean               ctermfg=181                                   guifg=#bfbfbf
 au ColorScheme * hi Character             ctermfg=181   cterm=bold   gui=bold           guifg=#a3aca3
 au ColorScheme * hi Constant              ctermfg=181   cterm=bold   gui=NONE           guifg=#a3dcdc
@@ -17,7 +16,7 @@ set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
 au ColorScheme * hi NonText                             gui=bold     guifg=#403d52      guibg=NONE
 au ColorScheme * hi Whitespace                          gui=bold     guifg=#403d52      guibg=NONE
 " Selected area colour
-au ColorScheme * hi VisualNOS             ctermbg=NONE                                  guibg=NONE
+au ColorScheme * hi VisualNOS             ctermbg=NONE               guifg=#403452      guibg=NONE
 au ColorScheme * hi Visual                ctermbg=NONE                                  guibg=#403d52
 au ColorScheme * hi IndentBlanklineChar                 gui=bold     guifg=#403d52      guibg=NONE
 
@@ -73,9 +72,8 @@ au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=NONE 
 au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE               guifg=#393535      guibg=NONE
 au ColorScheme * hi NvimTreeFolderIcon                               guifg=#66a3ad      guibg=NONE
 au ColorScheme * hi Directory                           gui=bold     guifg=#66a3ad      guibg=NONE
-au ColorScheme * hi ColorColumn           ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi NvimTreeRootFolder                  gui=bold     guifg=#b4637a
-au ColorScheme * hi NvimTreeNormal                      ctermbg=NONE  guibg=NONE
+au ColorScheme * hi NvimTreeNormal        ctermbg=NONE               guibg=NONE         guifg=#6e6a86
 " 
 " Git changes and margins
 au ColorScheme * hi GitSignsAdd                                      guifg=#f6c177      guibg=NONE
@@ -207,5 +205,4 @@ au ColorScheme * hi DevIconVim                          ctermfg=31    guifg=#286
 au ColorScheme * hi DevIconCMakeLists                   ctermfg=31    guifg=#286983
 au ColorScheme * hi DevIconStyle                        ctermfg=31    guifg=#286983
 au ColorScheme * hi DevIconR                            ctermfg=31    guifg=#286983
-" }}}1
 ]])

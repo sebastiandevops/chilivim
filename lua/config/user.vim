@@ -175,7 +175,7 @@ function! ToggleColourCursorColumn()
         set nocursorcolumn
     else
         set cursorcolumn
-        highlight CursorColumn    guifg=#ffffff     guibg=#483d8b
+        highlight CursorColumn    guifg=#ffffff     guibg=#403d52
     endif
 endfunction
 
