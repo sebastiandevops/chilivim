@@ -1,12 +1,12 @@
 vim.cmd([[
 set termguicolors
 
-au ColorScheme * hi Boolean               ctermfg=181                                   guifg=#bfbfbf
-au ColorScheme * hi Character             ctermfg=181   cterm=bold   gui=bold           guifg=#a3aca3
-au ColorScheme * hi Constant              ctermfg=181   cterm=bold   gui=NONE           guifg=#a3dcdc
-au ColorScheme * hi SpecialChar           ctermfg=181   cterm=bold   gui=bold           guifg=#a3a3dc
-au ColorScheme * hi String                ctermfg=174                                   guifg=#3e8fb0
-au ColorScheme * hi Tag                   ctermfg=181   cterm=bold   gui=bold           guifg=#93e893
+" au ColorScheme * hi Boolean               ctermfg=181                                   guifg=#bfbfbf
+" au ColorScheme * hi Character             ctermfg=181   cterm=bold   gui=bold           guifg=#a3aca3
+" au ColorScheme * hi Constant              ctermfg=181   cterm=bold   gui=NONE           guifg=#a3dcdc
+" au ColorScheme * hi SpecialChar           ctermfg=181   cterm=bold   gui=bold           guifg=#a3a3dc
+" au ColorScheme * hi String                ctermfg=174                                   guifg=#3e8fb0
+" au ColorScheme * hi Tag                   ctermfg=181   cterm=bold   gui=bold           guifg=#93e893
 au ColorScheme * hi SpecialKey                          gui=bold     guifg=#e0def4      guibg=NONE
 " Match parentheses
 au ColorScheme * hi MatchParen   gui=bold,underline  guifg=#FFFFFF     guibg=#282828
@@ -21,7 +21,7 @@ au ColorScheme * hi Visual                ctermbg=NONE                          
 au ColorScheme * hi IndentBlanklineChar                 gui=bold     guifg=#403d52      guibg=NONE
 
 "Comments color
-au ColorScheme * hi Comment                          guifg=#6e6a86     guibg=NONE
+" au ColorScheme * hi Comment                          guifg=#6e6a86     guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline  guifg=#b4637a     guibg=NONE
@@ -119,27 +119,27 @@ au ColorScheme * hi BufferLineTab  ctermbg=NONE guibg=NONE guifg=#8f8f8f guibg=N
 au ColorScheme * hi BufferLineFill ctermbg=NONE guibg=NONE
 
 " DevIcons colors
-au ColorScheme * hi DevIconTxt                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconZshrc                        ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconZsh                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconZshenv                       ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconClojureC                     ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconD                            ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconBashProfile                  ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconTerminal                     ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconBashrc                       ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconGvimrc                       ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconTwig                         ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconBat                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconZshprofile                   ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconVue                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconClojure                      ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconRproj                        ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconBash                         ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconCsv                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconXls                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconVim                          ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconCMakeLists                   ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconStyle                        ctermfg=31    guifg=#286983
-au ColorScheme * hi DevIconR                            ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconTxt                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconZshrc                        ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconZsh                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconZshenv                       ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconClojureC                     ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconD                            ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconBashProfile                  ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconTerminal                     ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconBashrc                       ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconGvimrc                       ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconTwig                         ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconBat                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconZshprofile                   ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconVue                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconClojure                      ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconRproj                        ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconBash                         ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconCsv                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconXls                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconVim                          ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconCMakeLists                   ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconStyle                        ctermfg=31    guifg=#286983
+" au ColorScheme * hi DevIconR                            ctermfg=31    guifg=#286983
 ]])
