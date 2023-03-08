@@ -39,9 +39,8 @@ au ColorScheme * hi IlluminatedWord ctermbg=NONE gui=bold guifg=#e0def4     guib
 
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline        ctermfg=31    guifg=#286983     gui=underline
-" }}}1
 
-" Cursor colors {{{1
+" Cursor colors
 au ColorScheme * hi CursorLine                                       guifg=NONE         guibg=#403d52
 au ColorScheme * hi CursorColumn          ctermbg=NONE                                  guibg=#403d52
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold     guifg=#e0def4      guibg=NONE
@@ -50,9 +49,8 @@ au ColorScheme * hi Cursor                                           guifg=NONE 
 " Normal mode
 au ColorScheme * hi Normal                ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi LineNr                ctermbg=NONE                                  guibg=NONE
-" }}}1 
 
-" Pop-up and Float menu {{{1
+" Pop-up and Float menu
 au ColorScheme * hi Pmenu                                            guifg=#6e6a86      guibg=NONE
 au ColorScheme * hi PmenuSbar                                                           guibg=NONE
 au ColorScheme * hi PmenuThumb                                                          guibg=NONE
@@ -63,9 +61,8 @@ au ColorScheme * hi VertSplit             ctermbg=NONE               guifg=NONE 
 au ColorScheme * hi Title                                            guifg=#e0def4      guibg=NONE
 au ColorScheme * hi TelescopeBorder       ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi FloatBorder                         gui=bold     guifg=#56526e      guibg=NONE
-" }}}1
 
-" vertical split and NvimTree colors {{{1
+" vertical split and NvimTree colors
 au ColorScheme * hi VertSplit             ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi NvimTreeVertSplit     ctermbg=NONE               guifg=NONE         guibg=NONE
 au ColorScheme * hi NvimTreeWinSeparator  ctermbg=NONE               guifg=NONE         guibg=NONE
@@ -87,9 +84,8 @@ au ColorScheme * hi DiffAdd               ctermbg=NONE               guifg=#f6c1
 au ColorScheme * hi DiffChange            ctermbg=NONE               guifg=#9893a5      guibg=NONE
 au ColorScheme * hi DiffDelete                                       guifg=#fa5757      guibg=NONE
 au ColorScheme * hi DiffText                                         guifg=#b4637a      guibg=NONE
-" -- }}}1
 
-" Lsp and Diagnostics colors {{{1
+" Lsp and Diagnostics colors
 " Diagnostics colors
 au ColorScheme * hi DiagnosticSignError   ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi DiagnosticSignWarn    ctermbg=NONE                                  guibg=NONE
@@ -112,65 +108,7 @@ au ColorScheme * hi TelescopeSelection    ctermbg=NONE gui=bold guifg=#e0def4   
 
 " Lsp colors
 au ColorScheme * hi LspReferenceText      ctermbg=NONE gui=bold guifg=#e0def4     guibg=NONE
-" }}}1
 
-" Lualine ColorScheme {{{1
-au ColorScheme * hi lualine_c_inactive                  ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_a_inactive         gui=bold ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_x_5_inactive       gui=bold ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine                             ctermbg=NONE                    guibg=NONE
-au ColorScheme * hi lualine_x_8_inactive       gui=bold ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_x_12_inactive               ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_x_14_inactive      gui=bold ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_x_20_inactive               ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_b_inactive                  ctermbg=NONE  guifg=#6e6a86     guibg=NONE
-au ColorScheme * hi lualine_c_5_normal                  ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_5_insert                  ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_5_visual                  ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_5_replace                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_5_command                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_5_terminal                ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_5_inactive                ctermfg=247   guifg=#908CA9
-
-au ColorScheme * hi lualine_c_8_normal                  ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_8_insert                  ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_8_visual                  ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_8_replace                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_8_command                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_8_terminal                ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_8_inactive                ctermfg=247   guifg=#908CA9
-
-au ColorScheme * hi lualine_c_15_normal                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_15_insert                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_15_visual                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_15_replace                ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_15_command                ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_15_terminal               ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_15_inactive               ctermfg=247   guifg=#908CA9
-
-au ColorScheme * hi lualine_c_20_normal                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_20_insert                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_20_visual                 ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_20_replace                ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_20_command                ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_20_terminal               ctermfg=247   guifg=#908CA9
-au ColorScheme * hi lualine_c_20_inactive               ctermfg=247   guifg=#908CA9
-
-au ColorScheme * hi lualine_c_diff_added_normal         ctermfg=31    guifg=#286983
-au ColorScheme * hi lualine_c_diff_added_insert         ctermfg=31    guifg=#286983
-au ColorScheme * hi lualine_c_diff_added_visual         ctermfg=31    guifg=#286983
-au ColorScheme * hi lualine_c_diff_added_replace        ctermfg=31    guifg=#286983
-au ColorScheme * hi lualine_c_diff_added_command        ctermfg=31    guifg=#286983
-au ColorScheme * hi lualine_c_diff_added_terminal       ctermfg=31    guifg=#286983
-au ColorScheme * hi lualine_c_diff_added_inactive       ctermfg=31    guifg=#286983
-
-au ColorScheme * hi lualine_c_diff_removed_normal       ctermfg=168   guifg=#b4637a
-au ColorScheme * hi lualine_c_diff_removed_insert       ctermfg=168   guifg=#b4637a
-au ColorScheme * hi lualine_c_diff_removed_visual       ctermfg=168   guifg=#b4637a
-au ColorScheme * hi lualine_c_diff_removed_replace      ctermfg=168   guifg=#b4637a
-au ColorScheme * hi lualine_c_diff_removed_command      ctermfg=168   guifg=#b4637a
-au ColorScheme * hi lualine_c_diff_removed_terminal     ctermfg=168   guifg=#b4637a
-au ColorScheme * hi lualine_c_diff_removed_inactive     ctermfg=168   guifg=#b4637a
 au ColorScheme * hi SignColumn                          ctermbg=NONE  guibg=NONE"
 au ColorScheme * hi MsgArea                             ctermbg=NONE  guibg=NONE"
 " Status line colors
@@ -179,9 +117,8 @@ au ColorScheme * hi StatusLine            ctermbg=NONE                          
 
 au ColorScheme * hi BufferLineTab  ctermbg=NONE guibg=NONE guifg=#8f8f8f guibg=NONE
 au ColorScheme * hi BufferLineFill ctermbg=NONE guibg=NONE
-" }}}1
 
-" DevIcons colors {{{1
+" DevIcons colors
 au ColorScheme * hi DevIconTxt                          ctermfg=31    guifg=#286983
 au ColorScheme * hi DevIconZshrc                        ctermfg=31    guifg=#286983
 au ColorScheme * hi DevIconZsh                          ctermfg=31    guifg=#286983
