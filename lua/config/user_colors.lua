@@ -70,7 +70,7 @@ au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE               guifg=#3935
 au ColorScheme * hi NvimTreeFolderIcon                               guifg=#66a3ad      guibg=NONE
 au ColorScheme * hi Directory                           gui=bold     guifg=#66a3ad      guibg=NONE
 au ColorScheme * hi NvimTreeRootFolder                  gui=bold     guifg=#b4637a
-au ColorScheme * hi NvimTreeNormal        ctermbg=NONE               guibg=NONE         guifg=#6e6a86
+au ColorScheme * hi NvimTreeNormal        ctermbg=NONE               guibg=NONE         guifg=#9893a5
 " 
 " Git changes and margins
 au ColorScheme * hi GitSignsAdd                                      guifg=#f6c177      guibg=NONE

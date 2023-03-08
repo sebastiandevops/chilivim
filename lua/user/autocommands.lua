@@ -49,19 +49,26 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
   end,
 })
 
--- vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
---   callback = function()
---     local line_count = vim.api.nvim_buf_line_count(0)
---     if line_count >= 5000 then
---       vim.cmd "IlluminatePauseBuf"
---     end
---   end,
--- })
+vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
+  callback = function()
+    local line_count = vim.api.nvim_buf_line_count(0)
+    if line_count >= 5000 then
+      vim.cmd "IlluminatePauseBuf"
+    end
+  end,
+})
 
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*" },
   -- enable wrap mode for json files only
   command = "setlocal wrap",
+})
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    -- enable twilight
+    vim.cmd "TwilightEnable"
+  end,
 })
 
 vim.api.nvim_create_autocmd("FileType", {
