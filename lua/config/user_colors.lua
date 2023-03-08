@@ -16,7 +16,7 @@ set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
 au ColorScheme * hi NonText                             gui=bold     guifg=#403d52      guibg=NONE
 au ColorScheme * hi Whitespace                          gui=bold     guifg=#403d52      guibg=NONE
 " Selected area colour
-au ColorScheme * hi VisualNOS             ctermbg=NONE               guifg=#403452      guibg=NONE
+au ColorScheme * hi VisualNOS             ctermbg=NONE                                  guibg=NONE
 au ColorScheme * hi Visual                ctermbg=NONE                                  guibg=#403d52
 au ColorScheme * hi IndentBlanklineChar                 gui=bold     guifg=#403d52      guibg=NONE
 
