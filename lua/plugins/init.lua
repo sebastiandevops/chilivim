@@ -6,6 +6,7 @@ return {
   { 'nyoom-engineering/oxocarbon.nvim' },
   { "sainnhe/gruvbox-material" },
   { "Yazeed1s/minimal.nvim" },
+  { "catppuccin/nvim", name = "catppuccin" },
    -- End THEMES 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
