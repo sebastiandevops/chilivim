@@ -1,5 +1,5 @@
 -- After add your colorscheme to plugins filee, just change the variable theme
--- with the name of you colorscheme. 
+-- with the name of you colorscheme.
 -- If you don't want to use the color default configuration you can add your
 -- under colorschemes folder.
 local theme = "kanagawa"
@@ -10,7 +10,12 @@ if not theme_status_ok then
 end
 
 local config = require("user.theme.colorschemes." .. theme)
-theme_call.setup(config)
+if config == nil then
+  theme_call.setup()
+else
+  theme_call.setup(config)
+end
+
 
 local colorscheme = theme
 vim.o.transparent = true
