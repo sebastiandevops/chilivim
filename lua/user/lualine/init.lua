@@ -3,14 +3,21 @@ if not status_ok then
 	return
 end
 
-local components = require "user.lualine.components"
-local colors = require "user.lualine.colors"
+local components_ok, components = pcall(require, "user.lualine.components")
+if not components_ok then
+  return
+end
+
+local colors_ok, colors = pcall(require, "user.lualine.colors")
+if not colors_ok then
+  return
+end
 
 lualine.setup({
 	options = {
     globalstatuses = true,
 		icons_enabled = true,
-		theme = colors.theme,
+		theme = 'auto', -- or you can change this to colors.theme and customize your colors under colors.lua file.
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard" },
