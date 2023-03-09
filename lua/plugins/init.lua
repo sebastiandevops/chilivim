@@ -1,4 +1,12 @@
 return {
+  -- THEMES
+  { 'ramojus/mellifluous.nvim', dependencies = {'rktjmp/lush.nvim'}, }, -- Colorschemes
+  { "rebelot/kanagawa.nvim" },
+  { 'marko-cerovac/material.nvim' },
+  { 'nyoom-engineering/oxocarbon.nvim' },
+  { "sainnhe/gruvbox-material" },
+  { "Yazeed1s/minimal.nvim" },
+   -- End THEMES 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
   "numToStr/Comment.nvim", -- Smart and Powerful commenting plugin for neovim
@@ -45,7 +53,6 @@ return {
   { "is0n/jaq-nvim" }, -- Code runner
   { "yaocccc/nvim-hlchunk" }, -- hignlight chunk signcolumn plug of nvim
   { "mfussenegger/nvim-jdtls" }, -- Extensions for the built-in Language Server Protocol support in Neovim
-  { 'ramojus/mellifluous.nvim', dependencies = {'rktjmp/lush.nvim'}, }, -- Colorschemes
 	-- Cmp
   { "hrsh7th/nvim-cmp" }, -- The completion plugin
   { "hrsh7th/cmp-buffer" }, -- buffer completions
@@ -69,5 +76,4 @@ return {
   { "nvim-treesitter/playground"}, -- View treesitter information directly in Neovim
   { "toppair/peek.nvim", build='deno task --quiet build:fast' }, -- Markdown live preview
   { "folke/twilight.nvim" },
-  { "rebelot/kanagawa.nvim" },
 }
