@@ -9,11 +9,11 @@ if not theme_status_ok then
 	return
 end
 
-local config = require("user.theme.colorschemes." .. theme)
-if config == nil then
+local config_status_ok, config_call = pcall(require, ("user.theme.colorschemes." .. theme))
+if not config_status_ok then
   theme_call.setup()
 else
-  theme_call.setup(config)
+  theme_call.setup(config_call)
 end
 
 
