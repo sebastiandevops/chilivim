@@ -1,34 +1,18 @@
--- After add your colorscheme to plugins filee, just change the variable theme
--- with the name of you colorscheme.
-local theme = "catppuccin"
+local utils = require("user.theme.utils")
 
---- IF YOU WANT TO USE THE DEFAULT CONFIGURATION, JUST COMMENT THE LINES BELOW.
--- If not, add your configuration file under colorschemes folder.
+local colorscheme = "catppuccin"
 
-local theme_status_ok,  theme_call = pcall(require, theme)
-if not theme_status_ok then
-	return
-end
+-- Some colorschemes have a strange behavior when loading configuration file.
+-- Most times, utility set_theme will load the configuration.
+-- if not just uncomment the require line. Make sure you have the config
+-- file under colorschemes folder.
 
-local config_status_ok, config_call = pcall(require, ("user.theme.colorschemes." .. theme))
-if not config_status_ok then
-  return
-else
-  theme_call.setup(config_call)
-end
+-- require(colorscheme).setup(require("user.theme.colorschemes." .. colorscheme))
 
--- Finish of custom configuration.
+utils.set_theme(colorscheme)
 
-local colorscheme = theme
+-- Custom configuration
 vim.o.transparent = true
 vim.cmd "let &fcs='eob: '"
-
--- Custom configuration for colorschemes without its own config file under colorschemes folder
 -- vim.cmd "let g:gruvbox_material_transparent_background = 2"
 -- vim.cmd "let g:gruvbox_material_enable_bold = 1"
--- vim.g.minimal_transparent_background = true
-
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-  return
-end
