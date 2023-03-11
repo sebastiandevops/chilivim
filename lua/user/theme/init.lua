@@ -1,3 +1,5 @@
+require "user.theme.highlights"
+
 local utils = require("user.theme.utils")
 
 local colorscheme = "kanagawa"
