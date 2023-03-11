@@ -4,12 +4,11 @@ if not status_ok then
 end
 
 local linters = {
-  "pydocstyle",
-  "pyproject-flake8",
+  "flake8",
 }
 
 local formatters = {
-  "autopep8",
+  "black",
   "yamlfmt",
   "jq",
 }
@@ -17,7 +16,7 @@ local formatters = {
 require("mason").setup()
 mason_null_ls.setup {
   ensure_installed = linters, formatters, -- Opt to list sources here, when available in mason.
-  automatic_installation = { exclude = { "flake8", "black"} },
+  automatic_installation = { exclude = { "pyproject-flake8", "pydocstyle" } },
   automatic_setup = true, -- Recommended, but optional
 }
 
