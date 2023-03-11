@@ -618,6 +618,11 @@ fun! IgnoreCamelCaseSpell()
 endfun
 autocmd BufRead,BufNewFile * :call IgnoreCamelCaseSpell()
 
+" <Ctrl-c> and yy copies to clipboard, paste with <shift-insert>
+vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+vmap yy    y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+
+
 " augroup lsp
   " au!
   " au FileType java lua require('jdtls').start_or_attach({cmd = {'java-linux-ls'}})
