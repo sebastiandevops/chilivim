@@ -70,6 +70,17 @@ return {
   { "williamboman/mason.nvim" }, -- simple to use language server installer
   { "williamboman/mason-lspconfig.nvim" }, -- mason-lspconfig bridges mason.nvim with the lspconfig plugin.
 	{ "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" },}, -- for formatters and linters
+  {
+    "jay-babu/mason-null-ls.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "williamboman/mason.nvim",
+      "jose-elias-alvarez/null-ls.nvim",
+    },
+    config = function()
+      require("user.lsp.null-ls.mason-null-ls") -- require your null-ls config here (example below)
+    end,
+  },
   { "RRethy/vim-illuminate" }, -- plugin for automatically highlighting other uses of the word under the cursor
 	{ "nvim-telescope/telescope.nvim" }, -- Telescope
 	{ "nvim-treesitter/nvim-treesitter"	}, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
