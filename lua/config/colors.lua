@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local colorscheme = "kanagawa"
+local colorscheme = "github-theme"
 
 utils.set_theme(colorscheme)
 
