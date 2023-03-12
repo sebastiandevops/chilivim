@@ -7,14 +7,15 @@ return {
   { "sainnhe/gruvbox-material" },
   { "Yazeed1s/minimal.nvim" },
   { "catppuccin/nvim" },
+  { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' },
    -- End THEMES
 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
+  "windwp/nvim-ts-autotag", -- Use treesitter to autoclose and autorename html tag
   "numToStr/Comment.nvim", -- Smart and Powerful commenting plugin for neovim
   "JoosepAlviste/nvim-ts-context-commentstring", -- setting the commentstring option based on the cursor location in the file
   "kyazdani42/nvim-web-devicons", -- A lua fork of vim-devicons. This plugin provides the same icons as well as colors for each icon
-  -- { "kyazdani42/nvim-tree.lua", commit = "9c97e6449b0b0269bd44e1fd4857184dfa57bb4c" }, -- A File Explorer For Neovim Written In Lua.
   "kyazdani42/nvim-tree.lua", -- A File Explorer For Neovim Written In Lua.
   "akinsho/bufferline.nvim", --  snazzy buffer line (with tabpage integration) for Neovim
   "moll/vim-bbye", -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
@@ -30,10 +31,8 @@ return {
   { "folke/trouble.nvim", cmd = "TroubleToggle", }, -- TroubleDiagnostics
   { "kshenoy/vim-signature", event = "BufRead", }, -- Markers in margin. 'ma' adds marker
   { "ray-x/lsp_signature.nvim", event = "BufRead"  }, -- hint when you type
-  { "metakirby5/codi.vim", cmd = "Codi", }, -- interactive scratchpad for hackers
   { "simrat39/symbols-outline.nvim", cmd = "SymbolsOutline", }, -- a tree like view for symbols
   { "itchyny/vim-highlighturl", event = "BufRead", }, -- Highlight URL's. http://www.vivaldi.com
-  { "fladson/vim-kitty", event = "BufRead", ft = "conf", }, -- Kitty config syntax.  Edit kitty, with vk
   "rhysd/devdocs.vim", -- open and search devdocs from neovim
   'ekalinin/Dockerfile.vim', -- Vim syntax file for Docker's Dockerfile and snippets for snipMate.
   { "nacro90/numb.nvim", event = "BufRead", }, -- jump to the line
@@ -88,5 +87,9 @@ return {
 	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground"}, -- View treesitter information directly in Neovim
   { "toppair/peek.nvim", build='deno task --quiet build:fast' }, -- Markdown live preview
-  { "folke/twilight.nvim" },
+  { "folke/twilight.nvim" }, --  dims inactive portions of the code you're editing
+  { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
+  { 'kosayoda/nvim-lightbulb', dependencies = { 'antoinemadec/FixCursorHold.nvim' } },
+  { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- Show code action menu in buffer
+  { "folke/neodev.nvim" }, -- Neovim setup for init.lua and plugin development with full signature help, docs and completion for the nvim lua API
 }

@@ -32,6 +32,9 @@ require "core.neogen"
 require "core.docs-view"
 require "core.peek"
 require "core.twilight"
+require "core.transparent"
+require "core.lightbulb"
+require "core.neodev"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')
 require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/lua/snippets" } }
