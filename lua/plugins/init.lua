@@ -1,12 +1,33 @@
 return {
   -- THEMES
-  { 'ramojus/mellifluous.nvim', dependencies = {'rktjmp/lush.nvim'}, }, -- Colorschemes
-  { "rebelot/kanagawa.nvim" },
-  { 'marko-cerovac/material.nvim' },
+  { 
+    'ramojus/mellifluous.nvim', dependencies = {'rktjmp/lush.nvim'}, 
+    config = function()
+      require"mellifluous".setup(require ("user.colorschemes.mellifluous")) -- require your null-ls config here (example below)
+    end,
+  }, -- Colorschemes
+  { 
+    "rebelot/kanagawa.nvim",
+    config = function()
+      require"kanagawa".setup(require "user.colorschemes.kanagawa") -- require your null-ls config here (example below)
+    end,
+  },
+  { 
+    'marko-cerovac/material.nvim',
+    config = function()
+      require"material".setup(require "user.colorschemes.material") -- require your null-ls config here (example below)
+    end,
+  },
   { 'nyoom-engineering/oxocarbon.nvim' },
   { "sainnhe/gruvbox-material" },
   { "Yazeed1s/minimal.nvim" },
-  { "catppuccin/nvim", name = "catppuccin" },
+  {
+    "catppuccin/nvim", 
+    name = "catppuccin",
+    config = function()
+      require "catppuccin".setup(require "user.colorschemes.catppuccin") -- require your null-ls config here (example below)
+    end,
+  },
    -- End THEMES 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
