@@ -79,7 +79,7 @@ return {
       "jose-elias-alvarez/null-ls.nvim",
     },
     config = function()
-      require("user.lsp.null-ls.mason-null-ls") -- require your null-ls config here (example below)
+      require("core.lsp.null-ls.mason-null-ls") -- require your null-ls config here (example below)
     end,
   },
   { "RRethy/vim-illuminate" }, -- plugin for automatically highlighting other uses of the word under the cursor

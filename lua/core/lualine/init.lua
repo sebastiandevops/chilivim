@@ -3,12 +3,12 @@ if not status_ok then
 	return
 end
 
-local components_ok, components = pcall(require, "user.lualine.components")
+local components_ok, components = pcall(require, "core.lualine.components")
 if not components_ok then
   return
 end
 
-local colors_ok, colors = pcall(require, "user.lualine.colors")
+local colors_ok, colors = pcall(require, "core.lualine.colors")
 if not colors_ok then
   return
 end

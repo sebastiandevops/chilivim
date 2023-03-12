@@ -110,11 +110,14 @@ vim.api.nvim_create_autocmd("FileType", {
 -- don't auto comment new line
 vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })
 
--- auto insert shebang line
-vim.cmd[[
-augroup shebang_insert
-  autocmd!
-  autocmd BufNewFile *.py exec "normal i#!/usr/bin/env python3\n"
-  autocmd BufNewFile *.sh exec "normal i#!/usr/bin/env bash\n"
-augroup END
-]]
+-- Autoinsert python shebang
+vim.api.nvim_create_autocmd("BufNewFile", {
+  pattern = "*.py",
+  command = "exec 'normal i#!/usr/bin/env python3\n'",
+})
+
+-- Autoinsert bash shebang
+vim.api.nvim_create_autocmd("BufNewFile", {
+  pattern = "*.sh",
+  command = "exec 'normal i#!/usr/bin/env bash\n'",
+})

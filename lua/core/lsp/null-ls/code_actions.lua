@@ -1,7 +1,7 @@
 local M = {}
 
 local null_ls = require "null-ls"
-local services = require "user.lsp.null-ls.services"
+local services = require "core.lsp.null-ls.services"
 local method = null_ls.methods.CODE_ACTION
 
 function M.list_registered(filetype)

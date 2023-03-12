@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local colors_status_ok, colors = pcall(require, "user.bufferline.colors")
+local colors_status_ok, colors = pcall(require, "core.bufferline.colors")
 if not colors_status_ok then
   return
 end
