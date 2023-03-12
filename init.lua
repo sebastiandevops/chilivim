@@ -11,6 +11,7 @@ require "user.autopairs"
 require "user.comment"
 require "user.nvimtree"
 require "user.bufferline"
+require "user.colors"
 require "user.lualine"
 require "user.toggleterm"
 require "user.project"
@@ -32,5 +33,5 @@ require "user.docs-view"
 require "user.peek"
 require "user.twilight"
 
-vim.cmd('source ~/.config/nvim/lua/config/user.vim')
+vim.cmd('source ~/.config/nvim/lua/config/functions.vim')
 require("luasnip/loaders/from_vscode").load { paths = { "~/.config/nvim/lua/snippets" } }
