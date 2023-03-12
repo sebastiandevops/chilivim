@@ -1,34 +1,14 @@
 return {
   -- THEMES
-  { 
-    'ramojus/mellifluous.nvim', dependencies = {'rktjmp/lush.nvim'}, 
-    config = function()
-      require"mellifluous".setup(require ("user.colorschemes.mellifluous")) -- require your null-ls config here (example below)
-    end,
-  }, -- Colorschemes
-  { 
-    "rebelot/kanagawa.nvim",
-    config = function()
-      require"kanagawa".setup(require "user.colorschemes.kanagawa") -- require your null-ls config here (example below)
-    end,
-  },
-  { 
-    'marko-cerovac/material.nvim',
-    config = function()
-      require"material".setup(require "user.colorschemes.material") -- require your null-ls config here (example below)
-    end,
-  },
+  { 'ramojus/mellifluous.nvim', dependencies = {'rktjmp/lush.nvim'} },
+  { "rebelot/kanagawa.nvim" },
+  { 'marko-cerovac/material.nvim' },
   { 'nyoom-engineering/oxocarbon.nvim' },
   { "sainnhe/gruvbox-material" },
   { "Yazeed1s/minimal.nvim" },
-  {
-    "catppuccin/nvim", 
-    name = "catppuccin",
-    config = function()
-      require "catppuccin".setup(require "user.colorschemes.catppuccin") -- require your null-ls config here (example below)
-    end,
-  },
-   -- End THEMES 
+  { "catppuccin/nvim" },
+   -- End THEMES
+
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
   "numToStr/Comment.nvim", -- Smart and Powerful commenting plugin for neovim
@@ -66,7 +46,7 @@ return {
   { "kdheepak/lazygit.nvim" }, -- simple terminal UI for git commands, written in Go
   { "sbdchd/neoformat" }, --  variety of formatters for many filetypes
   { "norcalli/nvim-colorizer.lua" }, -- high-performance color highlighter for Neovim which has no external dependencies
-  { "alexghergh/nvim-tmux-navigation" }, -- plugin that allows you to navigate seamlessly between vim and tmux splitsusing 
+  { "alexghergh/nvim-tmux-navigation" }, -- plugin that allows you to navigate seamlessly between vim and tmux splitsusing
   { "VonHeikemen/searchbox.nvim", dependencies = {"MunifTanjim/nui.nvim"} }, -- search and and replace with a small popup window
   { "RishabhRD/nvim-cheat.sh" }, -- cheat.sh integration for neovim
   { "RishabhRD/popfix" }, -- API that helps plugin developers to write UI for their plugins easily

@@ -8,7 +8,7 @@ return {
         terminal = false, -- Enable contrast for the built-in terminal
         sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
         floating_windows = false, -- Enable contrast for floating windows
-        cursor_line = false, -- Enable darker background for the cursor line
+        cursor_line = true, -- Enable darker background for the cursor line
         non_current_windows = false, -- Enable darker background for non-current windows
         filetypes = {}, -- Specify which filetypes get the contrasted (darker) background
     },
@@ -36,12 +36,12 @@ return {
         -- "neorg",
         -- "nvim-cmp",
         -- "nvim-navic",
-        -- "nvim-tree",
-        -- "nvim-web-devicons",
+        "nvim-tree",
+        "nvim-web-devicons",
         -- "sneak",
         -- "telescope",
         -- "trouble",
-        -- "which-key",
+        "which-key",
     },
 
     disable = {
@@ -57,7 +57,7 @@ return {
         darker = false -- Enable higher contrast text for darker style
     },
 
-    lualine_style = "default", -- Lualine style ( can be 'stealth' or 'default' )
+    lualine_style = "stealth", -- Lualine style ( can be 'stealth' or 'default' )
 
     async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
 

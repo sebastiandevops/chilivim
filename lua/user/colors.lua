@@ -1,9 +1,8 @@
-local colorscheme = "catppuccin"
+local utils = require "user.utils.utils"
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-  return
-end
+local colorscheme = "kanagawa"
+
+utils.set_theme(colorscheme)
 
 -- Custom configuration
 -- vim.o.transparent = true
