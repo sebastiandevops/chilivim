@@ -16,7 +16,7 @@ return {
   "numToStr/Comment.nvim", -- Smart and Powerful commenting plugin for neovim
   "JoosepAlviste/nvim-ts-context-commentstring", -- setting the commentstring option based on the cursor location in the file
   "kyazdani42/nvim-web-devicons", -- A lua fork of vim-devicons. This plugin provides the same icons as well as colors for each icon
-  "kyazdani42/nvim-tree.lua", -- A File Explorer For Neovim Written In Lua.
+  { "kyazdani42/nvim-tree.lua", commit = "bbb6d4891009de7dab05ad8fc2d39f272d7a751c" }, -- A File Explorer For Neovim Written In Lua.
   "akinsho/bufferline.nvim", --  snazzy buffer line (with tabpage integration) for Neovim
   "moll/vim-bbye", -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
   "nvim-lualine/lualine.nvim", -- neovim statusline plugin
