@@ -31,7 +31,7 @@
     "venv"
   ],
   "diagnostic-languageserver.filetypes": {
-    "python": "flake8",
+    "python": "flake8"
   },
   "diagnostic-languageserver.linters": {
     "flake8": {
@@ -72,6 +72,6 @@
     "black": {
       "command": "black",
       "args": ["-q", "-"]
-    },
-  },
+    }
+  }
 }

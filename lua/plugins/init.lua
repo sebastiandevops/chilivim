@@ -61,7 +61,7 @@ return {
 	{ "saadparwaiz1/cmp_luasnip" }, -- snippet completions
 	{ "hrsh7th/cmp-nvim-lsp" }, -- completion engine
 	{ "hrsh7th/cmp-nvim-lua" },  -- completion engine
-  {'tzachar/cmp-tabnine', build='./install.sh', dependencies = 'hrsh7th/nvim-cmp'}, -- completion engine
+  { 'tzachar/cmp-tabnine', build = './install.sh', dependencies = 'hrsh7th/nvim-cmp' },
 	-- Snippets
   { "L3MON4D3/LuaSnip" }, --snippet engine
   { "rafamadriz/friendly-snippets" }, -- a bunch of snippets to use
@@ -89,7 +89,6 @@ return {
   { "toppair/peek.nvim", build='deno task --quiet build:fast' }, -- Markdown live preview
   { "folke/twilight.nvim" }, --  dims inactive portions of the code you're editing
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
-  { 'kosayoda/nvim-lightbulb', dependencies = { 'antoinemadec/FixCursorHold.nvim' } },
-  { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- Show code action menu in buffer
   { "folke/neodev.nvim" }, -- Neovim setup for init.lua and plugin development with full signature help, docs and completion for the nvim lua API
+  { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
 }

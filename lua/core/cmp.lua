@@ -8,7 +8,31 @@ if not snip_status_ok then
   return
 end
 
+local cmp_tabnine_status_ok, tabnine = pcall(require, "cmp_tabnine.config")
+if not cmp_tabnine_status_ok then
+  return
+end
+
+tabnine:setup({
+  max_lines = 1000,
+	max_num_results = 20,
+	sort = true,
+	run_on_every_keystroke = true,
+	snippet_placeholder = '..',
+	ignored_file_types = {
+		-- default is not to ignore
+		-- uncomment to ignore in lua:
+		-- lua = true
+	},
+	show_prediction_strength = false
+})
+
 require("luasnip/loaders/from_vscode").lazy_load()
+
+require("luasnip/loaders/from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/snippets" } })
+
+-- Add snippets from a framework to a filetype
+luasnip.filetype_extend("html", {"django"})
 
 local check_backspace = function()
   local col = vim.fn.col "." - 1
@@ -98,21 +122,23 @@ cmp.setup {
     fields = { "kind", "abbr", "menu" },
     format = function(entry, vim_item)
       -- Kind icons
-      vim_item.kind = kind_icons[vim_item.kind]
-      -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+      -- vim_item.kind = kind_icons[vim_item.kind]
+      vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
-        cmp_tabnine = "",
-        nvim_lsp = "",
-        luasnip = "",
-        buffer = "",
-        path = "",
+        nvim_lsp = "[LSP]",
+        cmp_tabnine = "[Tabnine]",
+        nvim_lua = "[Nvim_Lua]",
+        luasnip = "[Snippet]",
+        buffer = "[Buffer]",
+        path = "[Path]",
       })[entry.source.name]
       return vim_item
     end,
   },
   sources = {
-    { name = 'cmp_tabnine' },
     { name = "nvim_lsp" },
+    { name = "cmp_tabnine" },
+    { name = "nvim_lua" },
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },

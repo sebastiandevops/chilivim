@@ -4,5 +4,6 @@ return {
     css = true,
     javascript = true
   },
-  provideFormatter = true
+  provideFormatter = true,
+  single_file_support = false,
 }
