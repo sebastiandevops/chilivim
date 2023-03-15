@@ -31,6 +31,7 @@ nvim_tree.setup {
   select_prompts = false,
   update_focused_file = {
     enable = true,
+    update_root = true,
   },
   renderer = {
     root_folder_modifier = ":t",
@@ -92,10 +93,10 @@ nvim_tree.setup {
     },
   },
   git = {
-  enable = true,
-  ignore = false,
-  show_on_dirs = true,
-  show_on_open_dirs = true,
-  timeout = 400,
+    enable = true,
+    ignore = false,
+    show_on_dirs = true,
+    show_on_open_dirs = true,
+    timeout = 400,
   },
 }
