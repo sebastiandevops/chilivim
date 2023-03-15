@@ -31,7 +31,7 @@ nvim_tree.setup {
   select_prompts = false,
   update_focused_file = {
     enable = true,
-    update_root = true,
+    -- update_root = true, -- enable this feature may cause an error related with function 'cmd'
   },
   renderer = {
     root_folder_modifier = ":t",
