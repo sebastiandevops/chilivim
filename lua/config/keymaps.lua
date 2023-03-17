@@ -23,10 +23,6 @@ vim.g.maplocalleader = " "
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Margin numbers.
-keymap("n", "<leader>n", "<cmd>set norelativenumber<cr>", opts)
-keymap("n", "<leader>r", "<cmd>set relativenumber<cr>", opts)
-
 -- Resize with arrows
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
@@ -139,6 +135,3 @@ keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(v
 
 -- Terminal
 keymap("n", "<A-1>", ":ToggleTerm size=12 direction=horizontal<CR>", opts)
-
--- Capture de highlight under the cursor
-keymap("n", "<leader>;", ":TSHighlightCapturesUnderCursor<CR>", opts)

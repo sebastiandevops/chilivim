@@ -11,6 +11,7 @@ local servers = {
   "terraformls",
   "vimls",
   "marksman",
+  "tflint",
 }
 
 local settings = {

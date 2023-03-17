@@ -55,6 +55,3 @@ set.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current c
 set.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 
 set.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
-
--- don't auto comment new line
-vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })

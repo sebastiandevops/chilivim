@@ -121,3 +121,34 @@ vim.api.nvim_create_autocmd("BufNewFile", {
   pattern = "*.sh",
   command = "exec 'normal i#!/usr/bin/env bash\n'",
 })
+
+-- Terraform configuration
+vim.cmd([[silent! autocmd! filetypedetect BufRead,BufNewFile *.tf]])
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = {
+    "*.hcl",
+    "*.terraform",
+    "terraform.rc",
+  },
+  command = "set filetype=hcl"
+})
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = {
+    "*.tf",
+    "*.tfvars",
+  },
+  command = "set filetype=terraform"
+})
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = {
+    "*.tfstate",
+    "*.tfstate.backup",
+  },
+  command = "set filetype=json"
+})
+
+vim.cmd([[let g:terraform_fmt_on_save=1]])
+vim.cmd([[let g:terraform_align=1]])
+-- End of terraform config.
