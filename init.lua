@@ -33,5 +33,6 @@ require "core.docs-view"
 require "core.peek"
 require "core.twilight"
 require "core.transparent"
+require "core.filetype"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')

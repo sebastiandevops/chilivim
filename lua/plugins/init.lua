@@ -91,4 +91,5 @@ return {
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
   { "folke/neodev.nvim" }, -- Neovim setup for init.lua and plugin development with full signature help, docs and completion for the nvim lua API
   { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
+  { "nathom/filetype.nvim" },
 }
