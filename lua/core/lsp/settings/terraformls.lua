@@ -1,5 +1,5 @@
 return {
   pattern = {"*.tf", "*.tfvars"},
   root_dir = require"lspconfig".util.root_pattern("*.tf"),
-  callback = vim.lsp.buf.format(),
+  -- callback = vim.lsp.buf.format(),
 }
