@@ -92,4 +92,5 @@ return {
   { "folke/neodev.nvim" }, -- Neovim setup for init.lua and plugin development with full signature help, docs and completion for the nvim lua API
   { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
   { "hashivim/vim-terraform"}, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
+  { "b0o/schemastore.nvim" },
 }
