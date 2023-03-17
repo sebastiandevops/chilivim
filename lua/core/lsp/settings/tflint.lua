@@ -1,4 +1,1 @@
-return {
-  pattern = {"*.tf"},
-  root_dir = require"lspconfig".util.root_pattern("*.tf"),
-}
+return {}

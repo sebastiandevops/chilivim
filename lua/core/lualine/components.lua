@@ -1,7 +1,23 @@
-return {
+local M = {}
+
+local utils_status_ok, utils = pcall(require, "core.lualine.utils")
+if not utils_status_ok then
+  return
+end
+
+local formatters_status_ok, formatters = pcall(require, "core.lsp.null-ls.formatters")
+if not formatters_status_ok then
+  return
+end
+
+local linters_status_ok, linters = pcall(require ,"core.lsp.null-ls.linters")
+if not linters_status_ok then
+  return
+end
+
+M = {
   python_env = {
     function()
-      local utils = require "core.lualine.utils"
       if vim.bo.filetype == "python" then
         local venv = os.getenv "CONDA_DEFAULT_ENV" or os.getenv "VIRTUAL_ENV"
         if venv then
@@ -61,12 +77,10 @@ return {
 
       end
       -- add formatter
-      local formatters = require "core.lsp.null-ls.formatters"
       local supported_formatters = formatters.list_registered(buf_ft)
       vim.list_extend(buf_client_names, supported_formatters)
 
       -- add linter
-      local linters = require "core.lsp.null-ls.linters"
       local supported_linters = linters.list_registered(buf_ft)
       vim.list_extend(buf_client_names, supported_linters)
 
@@ -81,3 +95,5 @@ return {
     end
   },
 }
+
+return M
