@@ -12,6 +12,8 @@ local servers = {
   "vimls",
   "marksman",
   "tflint",
+  "dockerls",
+  "docker_compose_language_service",
 }
 
 local settings = {

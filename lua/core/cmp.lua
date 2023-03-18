@@ -13,6 +13,11 @@ if not cmp_tabnine_status_ok then
   return
 end
 
+local ls_from_vscode_status_ok, ls_from_vscode = pcall(require, "luasnip.loaders.from_vscode")
+if not ls_from_vscode_status_ok then
+  return
+end
+
 tabnine:setup({
   max_lines = 1000,
 	max_num_results = 20,
@@ -27,9 +32,9 @@ tabnine:setup({
 	show_prediction_strength = false
 })
 
-require("luasnip/loaders/from_vscode").lazy_load()
+ls_from_vscode.lazy_load()
 
-require("luasnip/loaders/from_vscode").lazy_load({ paths = { "~/.config/nvim/lua/snippets" } })
+ls_from_vscode.lazy_load({ paths = { "~/.config/nvim/lua/snippets" } })
 
 -- Add snippets from a framework to a filetype
 luasnip.filetype_extend("html", {"django"})
