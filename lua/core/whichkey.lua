@@ -125,6 +125,8 @@ local mappings = {
   g = {
     name = "Git",
     g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>",                           "Lazygit" },
+    n = { "<cmd>lua require('neogit').open()<cr>",                    "Neogit" },
+    S = { "<cmd>lua require('neogit').open({ kind = 'split' })<cr>",  "Open Neogit in Split Mode" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>",              "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>",              "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>",             "Blame" },
@@ -155,13 +157,6 @@ local mappings = {
     s = { "<cmd>Telescope lsp_document_symbols<cr>",                  "Document Symbols" },
     S = { "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",         "Workspace Symbols",
     },
-  },
-
-  n = {
-    name = "Neogit",
-    o = { "<cmd>lua require('neogit').open()<cr>",                    "Open" },
-    c = { "<cmd>lua require('neogit').open({ 'commit' })<cr>",        "Commit" },
-    s = { "<cmd>lua require('neogit').open({ kind = 'split' })<cr>",  "Open Split" },
   },
 
   s = {

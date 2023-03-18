@@ -93,5 +93,6 @@ return {
   { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
   { "hashivim/vim-terraform"}, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
   { "b0o/schemastore.nvim" },
-  { 'TimUntersberger/neogit', dependencies = 'nvim-lua/plenary.nvim' } --  complete text-based user interface to Git.
+  { 'TimUntersberger/neogit', dependencies = 'nvim-lua/plenary.nvim' }, --  complete text-based user interface to Git.
+  { 'tjdevries/train.nvim' },
 }
