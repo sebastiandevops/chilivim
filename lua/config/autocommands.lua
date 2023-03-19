@@ -2,8 +2,8 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "qf", "help", "man", "lspinfo", "spectre_panel" },
   callback = function()
     vim.cmd [[
-      nnoremap <silent> <buffer> q :close<CR> 
-      set nobuflisted 
+      nnoremap <silent> <buffer> q :close<CR>
+      set nobuflisted
     ]]
   end,
 })
@@ -155,5 +155,6 @@ vim.cmd([[let g:terraform_align=1]])
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*" },
-  command = [[%s/\s\+$//e]],
+  -- command = [[%s/\s\+$//e]],
+  command = ":call DeleteEndingWhiteSpace()"
 })
