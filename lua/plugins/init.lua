@@ -1,6 +1,6 @@
 return {
   -- THEMES
-  -- lazy=false and priority=1000 should be used 
+  -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
   { 'ramojus/mellifluous.nvim', lazy = true, dependencies = {'rktjmp/lush.nvim'} },
   { "rebelot/kanagawa.nvim", lazy = true },
@@ -92,7 +92,7 @@ return {
   { "folke/twilight.nvim", lazy = true }, --  dims inactive portions of the code you're editing
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
   { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
-  { "hashivim/vim-terraform", event = {"BufEnter *.tf", "BufEnter *.hcl", "BufEnter *.tfvars"} }, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
+  { "hashivim/vim-terraform" }, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
   { "b0o/schemastore.nvim" },
   { 'TimUntersberger/neogit', lazy = true, dependencies = 'nvim-lua/plenary.nvim' }, --  complete text-based user interface to Git.
 }

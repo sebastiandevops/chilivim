@@ -152,3 +152,8 @@ vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
 vim.cmd([[let g:terraform_fmt_on_save=1]])
 vim.cmd([[let g:terraform_align=1]])
 -- End of terraform config.
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  command = [[%s/\s\+$//e]],
+})
