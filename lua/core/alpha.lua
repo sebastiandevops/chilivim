@@ -32,11 +32,11 @@ dashboard.section.buttons.val = {
     dashboard.button("p",   "  Recent Projects ",            "<CMD>Telescope projects<CR>" ),
     dashboard.button("r",   "  Recently Used Files",         "<CMD>Telescope oldfiles<CR>" ),
     -- dashboard.button( { "SPC s",   "  Load last session",           "<CMD>SessionLoad<CR>" ),
-    dashboard.button("t",   "  NvimTree",                    "<CMD>NvimTreeToggle<CR>" ),
+    dashboard.button("t",   "  NvimTree",                    "<CMD>NvimTreeToggle<CR>" ),
     dashboard.button("m",   "  Marks              ",         "<CMD>Telescope marks<CR>" ),
     dashboard.button("w",   "  Find Word",                   "<CMD>Telescope live_grep<CR>" ),
     dashboard.button("c",   "  Edit Configuration",          "<CMD>e ~/.config/nvim/lua/config/options.lua<CR>" ),
-    dashboard.button("g",   "⑇  Git status",                  "<CMD>Telescope git_status<CR>" ),
+    dashboard.button("g",   "  Git status",                  "<CMD>Telescope git_status<CR>" ),
     dashboard.button("u",   "⇡  Update",                      "<CMD>Lazy update<CR>" ),
     dashboard.button("q",   "  Quit",                        "<CMD>quit<CR>"),
 
