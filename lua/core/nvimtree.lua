@@ -36,6 +36,18 @@ nvim_tree.setup {
   renderer = {
     root_folder_modifier = ":t",
     group_empty = true,
+    root_folder_label = ":~:s?$?/..?",
+    indent_markers = {
+      enable = false,
+      inline_arrows = true,
+      icons = {
+        corner = "└",
+        edge = "│",
+        item = "│",
+        bottom = "─",
+        none = " ",
+      },
+  },
     icons = {
       glyphs = {
         default = "",
