@@ -77,5 +77,13 @@ bufferline.setup {
     --   return buffer_a.modified > buffer_b.modified
     -- end
   },
-  highlights = colors.highlights, -- you can customize your highlights under colors.lua file or comment this line and use default colors instead.
+  -- highlights = colors.highlights, -- you can customize your highlights under colors.lua file or comment this line and use default colors instead.
 }
+
+-- Function to extend transparent.nvim to bufferline
+vim.g.transparent_groups = vim.list_extend(
+  vim.g.transparent_groups or {},
+  vim.tbl_map(function(v)
+    return v.hl_group
+  end, vim.tbl_values(require('bufferline.config').highlights))
+)

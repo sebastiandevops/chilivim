@@ -42,16 +42,16 @@ dashboard.section.buttons.val = {
 
 }
 
-local function footer()
+-- local function footer()
 -- NOTE: requires the fortune-mod package to work
 	-- local handle = io.popen("fortune")
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "chrisatmachine.com"
-end
+	-- return "chrisatmachine.com"
+-- end
 
-dashboard.section.footer.val = footer()
+-- dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
