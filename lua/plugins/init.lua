@@ -95,4 +95,5 @@ return {
   { "hashivim/vim-terraform" }, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
   { "b0o/schemastore.nvim" },
   { 'TimUntersberger/neogit', lazy = true, dependencies = 'nvim-lua/plenary.nvim' }, --  complete text-based user interface to Git.
+  { "wintermute-cell/gitignore.nvim" }, -- gitignore generator
 }
