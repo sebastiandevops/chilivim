@@ -158,3 +158,5 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   -- command = [[%s/\s\+$//e]],
   command = ":call DeleteEndingWhiteSpace()"
 })
+
+vim.cmd([[let g:nvim_tree_respect_buf_cwd=1]])
