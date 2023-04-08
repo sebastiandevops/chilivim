@@ -96,4 +96,5 @@ return {
   { "b0o/schemastore.nvim" },
   { 'TimUntersberger/neogit', lazy = true, dependencies = 'nvim-lua/plenary.nvim' }, --  complete text-based user interface to Git.
   { "wintermute-cell/gitignore.nvim" }, -- gitignore generator
+  { "duane9/nvim-rg" }, -- run ripgrep from Neovim or Vim and shows the results in a quickfix window.
 }

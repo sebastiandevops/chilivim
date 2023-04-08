@@ -236,7 +236,13 @@ local mappings = {
     v = { ":!terraform validate<CR>",                                 "Terraform validate"},
     p = { ":!terraform plan<CR>",                                     "Terraform plan"},
     a = { ":!terraform apply -auto-approve<CR>",                      "Terraform apply -auto-approve"}
-  }
+  },
+
+  r = {
+    name = "RipGrep",
+    g = { ":Rg<CR>",                                                  "Ripgrep Prompt"},
+    w = { ":Rg <cword><CR>",                                          "Search for word under the cursor"}
+  },
 }
 
 which_key.setup(setup)
