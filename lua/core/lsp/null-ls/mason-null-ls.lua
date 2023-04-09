@@ -19,5 +19,3 @@ mason_null_ls.setup {
   automatic_installation = { exclude = { "pyproject-flake8", "pydocstyle" } },
   automatic_setup = true, -- Recommended, but optional
 }
-
-require 'mason-null-ls'.setup_handlers() -- If `automatic_setup` is true.
