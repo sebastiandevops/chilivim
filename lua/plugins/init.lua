@@ -85,7 +85,7 @@ return {
   },
   { "RRethy/vim-illuminate" }, -- plugin for automatically highlighting other uses of the word under the cursor
 	{ "nvim-telescope/telescope.nvim" }, -- Telescope
-	{ "nvim-treesitter/nvim-treesitter"	}, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
 	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground", cmd = { "TSHighlightCapturesUnderCursor" } }, -- View treesitter information directly in Neovim
   { "toppair/peek.nvim", lazy = true, build='deno task --quiet build:fast' }, -- Markdown live preview
