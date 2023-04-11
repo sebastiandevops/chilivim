@@ -8,6 +8,8 @@ set termguicolors
 " au ColorScheme * hi String                ctermfg=174                                      guifg=#3e8fb0
 " au ColorScheme * hi Tag                   ctermfg=181   gui=bold            cterm=bold     guifg=#93e893
 au ColorScheme * hi SpecialKey                          gui=bold            guifg=#e0def4  guibg=NONE
+au ColorScheme * hi Substitute                          gui=bold            guifg=#e0def4  guibg=#b4637a
+
 " Match parentheses
 au ColorScheme * hi MatchParen                          gui=bold,underline  guifg=#FFFFFF  guibg=#282828
 
