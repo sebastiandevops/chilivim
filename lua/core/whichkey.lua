@@ -238,7 +238,7 @@ local mappings = {
     a = { ":!terraform apply -auto-approve<CR>",                      "Terraform apply -auto-approve"}
   },
 
-  G = {
+  r = {
     name = "RipGrep",
     g = { ":Rg<CR>",                                                  "Ripgrep Prompt"},
     w = { ":Rg <cword><CR>",                                          "Search for word under the cursor"}
