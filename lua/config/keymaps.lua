@@ -100,7 +100,7 @@ keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
 keymap('n', 'gj', ':call JumpToSelection()<CR>', opts)
 
 -- Function keys.
-keymap('n', '<F1>', ':Cheat<CR>', opts)
+-- keymap('n', '<F1>', ':Cheat<CR>', opts)
 -- keymap('n', '<F2>', ':call FoldingToggle()<CR>', {})
 -- keymap('n', '<F3>', ':call ToggleAll()<CR>', {})
 keymap('n', '<F4>', ':NvimTreeToggle<CR>', opts)
