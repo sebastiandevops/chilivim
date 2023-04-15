@@ -1,9 +1,17 @@
 return {
-  theme_style = "dark", --  (options: dark/dimmed/dark_default/dark_colorblind/light/light_default/light_colorblind)
-  function_style = "italic",
-  sidebars = {"qf", "vista_kind", "terminal", "packer"},
-  transparent = true,
-
+  options = {
+    transparent = true,
+    styles = {
+      functions = "Italic",
+    },
+    darken = {
+      floats = true,
+      sidebars = {
+        enable = true,
+        list = {"qf", "vista_kind", "terminal", "packer"},
+      },
+    },
+  },
   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
   colors = {
     hint = "orange",

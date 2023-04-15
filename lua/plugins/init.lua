@@ -6,7 +6,7 @@ return {
   { "rebelot/kanagawa.nvim", lazy = true },
   { 'marko-cerovac/material.nvim', lazy = true },
   { 'nyoom-engineering/oxocarbon.nvim', lazy = true },
-  { "sainnhe/gruvbox-material", lazy = false, priority = 1000, t},
+  { "sainnhe/gruvbox-material", lazy = false, priority = 1000 },
   { "Yazeed1s/minimal.nvim", lazy = true },
   { "catppuccin/nvim", lazy = true },
   { 'projekt0n/github-nvim-theme', lazy = true, ag = 'v0.0.7' },
