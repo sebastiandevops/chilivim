@@ -40,7 +40,7 @@ au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guif
 au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#282828
 
 "hi URL
-au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#286983
+au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#72A7BC
 
 " Cursor colors
 au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#403d52
@@ -61,8 +61,8 @@ au ColorScheme * hi NormalFloat                         gui=NONE            guif
 au ColorScheme * hi NormalNC                                                               guibg=NONE
 au ColorScheme * hi VertSplit             ctermbg=NONE                      guifg=NONE     guibg=NONE
 au ColorScheme * hi Title                                                   guifg=#e0def4  guibg=NONE
-au ColorScheme * hi TelescopeBorder       ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi FloatBorder                         gui=bold            guifg=#56526e  guibg=NONE
+au ColorScheme * hi TelescopeBorder       ctermbg=NONE                      guifg=#484848  guibg=NONE
+au ColorScheme * hi FloatBorder                         gui=bold            guifg=#484848  guibg=NONE
 
 " vertical split and NvimTree colors
 au ColorScheme * hi VertSplit             ctermbg=NONE                                     guibg=NONE
