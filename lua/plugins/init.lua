@@ -3,10 +3,10 @@ return {
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
   { 'ramojus/mellifluous.nvim', lazy = true, dependencies = {'rktjmp/lush.nvim'} },
-  { "rebelot/kanagawa.nvim", lazy = false, priority = 1000 },
+  { "rebelot/kanagawa.nvim", lazy = true },
   { 'marko-cerovac/material.nvim', lazy = true },
   { 'nyoom-engineering/oxocarbon.nvim', lazy = true },
-  { "sainnhe/gruvbox-material", lazy = true },
+  { "sainnhe/gruvbox-material", lazy = false, priority = 1000 },
   { "Yazeed1s/minimal.nvim", lazy = true },
   { "catppuccin/nvim", lazy = true },
   { 'projekt0n/github-nvim-theme', lazy = true, ag = 'v0.0.7' },
