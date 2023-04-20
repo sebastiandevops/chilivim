@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local colorscheme = "gruvbox-material"
+local colorscheme = "kanagawa"
 
 utils.set_theme(colorscheme)
 
