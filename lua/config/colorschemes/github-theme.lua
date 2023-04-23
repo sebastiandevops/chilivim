@@ -13,13 +13,17 @@ return {
     },
   },
   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
-  colors = {
-    hint = "orange",
-    error = "#ff0000",
+  palettes = {
+    all = {
+      diag = {
+        hint = "orange",
+        error = "#ff0000",
+      },
+    },
   },
 
   -- Overwrite the highlight groups
-  overrides = function(c)
+  groups = function(c)
     return {
       htmlTag = {fg = c.red, bg = "#282c34", sp = c.hint, style = "underline"},
       LineNr = {fg = "#56526e"},
