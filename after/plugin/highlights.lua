@@ -43,7 +43,7 @@ au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guif
 au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#72A7BC
 
 " Cursor colors
-au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#403d52
+" au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#403d52
 au ColorScheme * hi CursorColumn          ctermbg=NONE                                     guibg=#403d52
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
 au ColorScheme * hi Cursor                                                  guifg=NONE     guibg=#403d52
