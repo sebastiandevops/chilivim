@@ -98,4 +98,5 @@ return {
   { "wintermute-cell/gitignore.nvim" }, -- gitignore generator
   { "duane9/nvim-rg" }, -- run ripgrep from Neovim or Vim and shows the results in a quickfix window.
   { "rhysd/vim-grammarous" }, -- grammar checker for Vim
+  { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
 }
