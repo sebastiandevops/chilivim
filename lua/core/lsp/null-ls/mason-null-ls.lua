@@ -5,6 +5,7 @@ end
 
 local linters = {
   "flake8",
+  "quick-lint-js",
 }
 
 local formatters = {
