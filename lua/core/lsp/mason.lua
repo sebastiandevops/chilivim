@@ -2,6 +2,7 @@ local servers = {
 	"cssls",
 	"html",
 	"tsserver",
+  "quick_lint_js",
 	"bashls",
 	"jsonls",
 	"yamlls",
