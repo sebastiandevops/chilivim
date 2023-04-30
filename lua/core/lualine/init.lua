@@ -13,11 +13,19 @@ if not colors_ok then
   return
 end
 
+local auto_theme_ok, auto_theme_custom = pcall(require, "lualine.themes.auto")
+if not auto_theme_ok then
+  return
+end
+
+-- Transparent background color for lualine
+auto_theme_custom.normal.c.bg = "none"
+
 lualine.setup({
 	options = {
     globalstatuses = true,
 		icons_enabled = true,
-		theme = 'auto', -- or you can change this to colors.theme and customize your colors under colors.lua file.
+		theme = auto_theme_custom, -- or you can change this to colors.theme and customize your colors under colors.lua file.
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard" },

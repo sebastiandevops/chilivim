@@ -11,6 +11,7 @@ return {
   { "catppuccin/nvim", lazy = true },
   { 'projekt0n/github-nvim-theme', lazy = true },
   { "Mofiqul/dracula.nvim", lazy = true},
+  { "kdheepak/monochrome.nvim", lazy = true },
    -- End THEMES
 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
