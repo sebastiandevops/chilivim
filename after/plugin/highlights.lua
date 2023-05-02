@@ -118,12 +118,12 @@ au ColorScheme * hi StatusLineNC          ctermbg=NONE                          
 au ColorScheme * hi StatusLine            ctermbg=NONE                                     guibg=NONE
 
 au ColorScheme * hi BufferLineTab         ctermbg=NONE                      guifg=#8f8f8f  guibg=NONE
-au ColorScheme * hi BufferLineTabSelected ctermbg=NONE                      guifg=#d7af87  guibg=NONE
+" au ColorScheme * hi BufferLineTabSelected ctermbg=NONE                      guifg=#d7af87  guibg=NONE
 au ColorScheme * hi BufferLineFill        ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi BufferLineBufferSelected      ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
-au ColorScheme * hi BufferLineNumbersSelected     ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
-au ColorScheme * hi BufferLineCloseButtonSelected ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
-au ColorScheme * hi BufferLineHintSelected        ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+" au ColorScheme * hi BufferLineBufferSelected      ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+" au ColorScheme * hi BufferLineNumbersSelected     ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+" au ColorScheme * hi BufferLineCloseButtonSelected ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+" au ColorScheme * hi BufferLineHintSelected        ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
 
 " DevIcons colors
 " au ColorScheme * hi DevIconTxt            ctermfg=31                        guifg=#286983
