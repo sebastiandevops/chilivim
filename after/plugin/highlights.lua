@@ -15,6 +15,7 @@ au ColorScheme * hi Label                   ctermfg=249                      gui
 au Colorscheme * hi! link @punctuation.delimiter Label
 au Colorscheme * hi Identifier              ctermfg=249                      guifg=#C4C7C5
 au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
+au Colorscheme * hi @punctuation.special                                     guifg=#e0def4
 " }}}
 
 " Match parentheses
