@@ -11,11 +11,12 @@ au ColorScheme * hi SpecialKey                          gui=bold            guif
 au ColorScheme * hi Substitute                          gui=bold            guifg=#e0def4  guibg=#b4637a
 
 " Custum highlights for sobrio colorscheme {{{
-au ColorScheme * hi Label                   ctermfg=249                      guifg=#C4C7C5
+au ColorScheme * hi Label                   ctermfg=249                      guifg=#908caa
 au Colorscheme * hi! link @punctuation.delimiter Label
-au Colorscheme * hi Identifier              ctermfg=249                      guifg=#C4C7C5
+au Colorscheme * hi Identifier              ctermfg=249                      guifg=#e0def4
 au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
-au Colorscheme * hi @punctuation.special                                     guifg=#e0def4
+au Colorscheme * hi @punctuation.special                                     guifg=#c4a7e7
+au Colorscheme * hi @variable                                                guifg=#cecacd
 " }}}
 
 " Match parentheses
