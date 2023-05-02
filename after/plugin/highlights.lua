@@ -10,6 +10,12 @@ set termguicolors
 au ColorScheme * hi SpecialKey                          gui=bold            guifg=#e0def4  guibg=NONE
 au ColorScheme * hi Substitute                          gui=bold            guifg=#e0def4  guibg=#b4637a
 
+" Custum highlights for sobrio colorscheme {{{
+au ColorScheme * hi Label                   ctermfg=249                      guifg=#C4C7C5
+au Colorscheme * hi! link @punctuation.delimiter Label
+au Colorscheme * hi Identifier              ctermfg=249                      guifg=#C4C7C5
+" }}}
+
 " Match parentheses
 au ColorScheme * hi MatchParen                          gui=bold,underline  guifg=#FFFFFF  guibg=#282828
 
@@ -23,7 +29,7 @@ au ColorScheme * hi Visual                ctermbg=NONE                      guif
 au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
 
 "Comments color
-au ColorScheme * hi Comment                                                 guifg=#545454  guibg=NONE
+au ColorScheme * hi Comment                                                 guifg=#646464  guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE

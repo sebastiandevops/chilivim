@@ -52,11 +52,11 @@ return {
     },
     replace = {
       c = { fg = colors.medium, bg = colors.red,  gui = "bold" },
-      a = { fg = colors.grey,   bg = colors.deep, gui = "bold" },
+      a = { fg = colors.grey,   bg = colors.love, gui = "bold" },
       b = { fg = colors.medium, bg = colors.red,  gui = "bold" },
       x = { fg = colors.medium, bg = colors.red,  gui = "bold" },
       y = { fg = colors.medium, bg = colors.red,  gui = "bold" },
-      z = { fg = colors.grey,   bg = colors.deep, gui = "bold" },
+      z = { fg = colors.grey,   bg = colors.love, gui = "bold" },
     },
   },
 }
