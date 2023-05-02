@@ -14,6 +14,7 @@ au ColorScheme * hi Substitute                          gui=bold            guif
 au ColorScheme * hi Label                   ctermfg=249                      guifg=#C4C7C5
 au Colorscheme * hi! link @punctuation.delimiter Label
 au Colorscheme * hi Identifier              ctermfg=249                      guifg=#C4C7C5
+au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
 " }}}
 
 " Match parentheses
