@@ -23,7 +23,7 @@ au ColorScheme * hi Visual                ctermbg=NONE                      guif
 au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
 
 "Comments color
-" au ColorScheme * hi Comment                                               guifg=#6e6a86  guibg=NONE
+au ColorScheme * hi Comment                                                 guifg=#545454  guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE
@@ -50,7 +50,7 @@ au ColorScheme * hi Cursor                                                  guif
 
 " Normal mode
 au ColorScheme * hi Normal                ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi LineNr                ctermbg=NONE                                     guibg=NONE
+au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#484848   guibg=NONE
 
 " Pop-up and Float menu
 au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
@@ -118,7 +118,12 @@ au ColorScheme * hi StatusLineNC          ctermbg=NONE                          
 au ColorScheme * hi StatusLine            ctermbg=NONE                                     guibg=NONE
 
 au ColorScheme * hi BufferLineTab         ctermbg=NONE                      guifg=#8f8f8f  guibg=NONE
+au ColorScheme * hi BufferLineTabSelected ctermbg=NONE                      guifg=#d7af87  guibg=NONE
 au ColorScheme * hi BufferLineFill        ctermbg=NONE                                     guibg=NONE
+au ColorScheme * hi BufferLineBufferSelected      ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+au ColorScheme * hi BufferLineNumbersSelected     ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+au ColorScheme * hi BufferLineCloseButtonSelected ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
+au ColorScheme * hi BufferLineHintSelected        ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
 
 " DevIcons colors
 " au ColorScheme * hi DevIconTxt            ctermfg=31                        guifg=#286983

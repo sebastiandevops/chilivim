@@ -6,13 +6,14 @@ return {
   { "rebelot/kanagawa.nvim", lazy = true },
   { 'marko-cerovac/material.nvim', lazy = true },
   { 'nyoom-engineering/oxocarbon.nvim', lazy = true },
-  { "sainnhe/gruvbox-material", lazy = false, priority = 1000 },
+  { "sainnhe/gruvbox-material", lazy = true },
   { "Yazeed1s/minimal.nvim", lazy = true },
   { "catppuccin/nvim", lazy = true },
   { 'projekt0n/github-nvim-theme', lazy = true },
   { "Mofiqul/dracula.nvim", lazy = true},
   { "kdheepak/monochrome.nvim", lazy = true },
   { "maxmx03/fluoromachine.nvim", lazy = true },
+  { "elvessousa/sobrio", lazy = false, priority = 1000 },
    -- End THEMES
 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
