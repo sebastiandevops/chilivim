@@ -29,7 +29,7 @@ lualine.setup({
 	options = {
     globalstatuses = true,
 		icons_enabled = true,
-		theme = auto_theme_custom, -- or you can change this to colors.theme and customize your colors under colors.lua file.
+		theme = colors.theme, -- or you can change this to colors.theme and customize your colors under colors.lua file.
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = { "alpha", "dashboard" },

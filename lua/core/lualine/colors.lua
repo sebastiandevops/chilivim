@@ -1,11 +1,11 @@
 local colors = {
-  medium = '#908CA9',
-  grey   = '#DFDDF3',
+  medium = '#9E9E9E',
+  grey   = '#282828',
   red    = '#0000ffff',
-  pine   = '#286983',
-  deep   = '#6E6A86',
-  iris   = '#907AA8',
-  love   = '#B3637A',
+  pine   = '#d7af87',
+  deep   = '#7cdce7',
+  iris   = '#87afd7',
+  love   = '#fd6389',
   white  = '#FFFFFF',
 }
 return {
