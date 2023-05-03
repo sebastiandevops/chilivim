@@ -12,11 +12,12 @@ au ColorScheme * hi Substitute                          gui=bold            guif
 
 " Custum highlights for sobrio colorscheme {{{
 au ColorScheme * hi Label                   ctermfg=249                      guifg=#908caa
-au Colorscheme * hi! link @punctuation.delimiter Label
+au Colorscheme * hi @punctuation.delimiter                                   guifg=#e0def4
 au Colorscheme * hi Identifier              ctermfg=249                      guifg=#e0def4
 au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
-au Colorscheme * hi @punctuation.special                                     guifg=#c4a7e7
-au Colorscheme * hi @variable                                                guifg=#cecacd
+au Colorscheme * hi @punctuation.special                                     guifg=#9893a5
+au Colorscheme * hi @variable                                                guifg=#e0def4
+au Colorscheme * hi @function.call                                           guifg=#3e8fb0
 " }}}
 
 " Match parentheses
@@ -59,7 +60,7 @@ au ColorScheme * hi Cursor                                                  guif
 
 " Normal mode
 au ColorScheme * hi Normal                ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#484848   guibg=NONE
+au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#646464   guibg=NONE
 
 " Pop-up and Float menu
 au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
