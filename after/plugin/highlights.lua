@@ -1,7 +1,6 @@
 vim.cmd([[
 set termguicolors
 
-" au ColorScheme * hi Boolean               ctermfg=181                                      guifg=#bfbfbf
 " au ColorScheme * hi Character             ctermfg=181   gui=bold            cterm=bold     guifg=#a3aca3
 " au ColorScheme * hi Constant              ctermfg=181   gui=NONE            cterm=bold     guifg=#a3dcdc
 " au ColorScheme * hi SpecialChar           ctermfg=181   gui=bold            cterm=bold     guifg=#a3a3dc
@@ -15,9 +14,14 @@ au ColorScheme * hi Label                   ctermfg=249                      gui
 au Colorscheme * hi @punctuation.delimiter                                   guifg=#e0def4
 au Colorscheme * hi Identifier              ctermfg=249                      guifg=#e0def4
 au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
-au Colorscheme * hi @punctuation.special                                     guifg=#9893a5
-au Colorscheme * hi @variable                                                guifg=#e0def4
-au Colorscheme * hi @function.call                                           guifg=#3e8fb0
+au Colorscheme * hi @punctuation.special                                     guifg=#d5cfe1
+au Colorscheme * hi @variable                                                guifg=#d5cfe1
+au Colorscheme * hi @function.call                                           guifg=#a09abc
+au Colorscheme * hi @method.call                                             guifg=#a09abc
+au Colorscheme * hi @function.builtin                                        guifg=#6096ba
+au Colorscheme * hi @function                                                guifg=#a09abc
+au ColorScheme * hi Boolean                                                  guifg=#a6b1e1
+au ColorScheme * hi Number                                                   guifg=#a6b1e1
 " }}}
 
 " Match parentheses
@@ -33,7 +37,7 @@ au ColorScheme * hi Visual                ctermbg=NONE                      guif
 au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
 
 "Comments color
-au ColorScheme * hi Comment                                                 guifg=#646464  guibg=NONE
+au ColorScheme * hi Comment                                                 guifg=#6e6a86  guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE
@@ -53,14 +57,14 @@ au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guif
 au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#72A7BC
 
 " Cursor colors
-au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#484848
+au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#2a324b
 au ColorScheme * hi CursorColumn          ctermbg=NONE                                     guibg=#403d52
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
 au ColorScheme * hi Cursor                                                  guifg=NONE     guibg=#403d52
 
 " Normal mode
 au ColorScheme * hi Normal                ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#646464   guibg=NONE
+au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#6e6a86  guibg=NONE
 
 " Pop-up and Float menu
 au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
