@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local colorscheme = "sobrio_ghost"
+local colorscheme = "rose-pine"
 
 utils.set_theme(colorscheme)
 

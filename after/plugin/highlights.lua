@@ -6,22 +6,22 @@ set termguicolors
 " au ColorScheme * hi SpecialChar           ctermfg=181   gui=bold            cterm=bold     guifg=#a3a3dc
 " au ColorScheme * hi String                ctermfg=174                                      guifg=#3e8fb0
 " au ColorScheme * hi Tag                   ctermfg=181   gui=bold            cterm=bold     guifg=#93e893
-au ColorScheme * hi SpecialKey                          gui=bold            guifg=#e0def4  guibg=NONE
-au ColorScheme * hi Substitute                          gui=bold            guifg=#e0def4  guibg=#b4637a
+" au ColorScheme * hi SpecialKey                          gui=bold            guifg=#e0def4  guibg=NONE
+" au ColorScheme * hi Substitute                          gui=bold            guifg=#e0def4  guibg=#b4637a
 
 " Custum highlights for sobrio colorscheme {{{
-au ColorScheme * hi Label                   ctermfg=249                      guifg=#908caa
-au Colorscheme * hi @punctuation.delimiter                                   guifg=#e0def4
-au Colorscheme * hi Identifier              ctermfg=249                      guifg=#e0def4
-au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
-au Colorscheme * hi @punctuation.special                                     guifg=#d5cfe1
-au Colorscheme * hi @variable                                                guifg=#d5cfe1
-au Colorscheme * hi @function.call                                           guifg=#a09abc
-au Colorscheme * hi @method.call                                             guifg=#a09abc
-au Colorscheme * hi @function.builtin                                        guifg=#6096ba
-au Colorscheme * hi @function                                                guifg=#a09abc
-au ColorScheme * hi Boolean                                                  guifg=#a6b1e1
-au ColorScheme * hi Number                                                   guifg=#a6b1e1
+" au ColorScheme * hi Label                   ctermfg=249                      guifg=#908caa
+" au Colorscheme * hi @punctuation.delimiter                                   guifg=#e0def4
+" au Colorscheme * hi Identifier              ctermfg=249                      guifg=#e0def4
+" au Colorscheme * hi @punctuation.bracket                                     guifg=#d7af87
+" au Colorscheme * hi @punctuation.special                                     guifg=#d5cfe1
+" au Colorscheme * hi @variable                                                guifg=#d5cfe1
+" au Colorscheme * hi @function.call                                           guifg=#a09abc
+" au Colorscheme * hi @method.call                                             guifg=#a09abc
+" au Colorscheme * hi @function.builtin                                        guifg=#6096ba
+" au Colorscheme * hi @function                                                guifg=#a09abc
+" au ColorScheme * hi Boolean                                                  guifg=#a6b1e1
+" au ColorScheme * hi Number                                                   guifg=#a6b1e1
 " }}}
 
 " Match parentheses
@@ -32,51 +32,51 @@ set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
 au ColorScheme * hi NonText                             gui=bold            guifg=#403d52  guibg=NONE
 au ColorScheme * hi Whitespace                          gui=bold            guifg=#403d52  guibg=NONE
 " Selected area colour
-au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#282828  guibg=#87afd7
-au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
+" au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
+au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#232136    guibg=#907aa9
+" au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
 
 "Comments color
-au ColorScheme * hi Comment                                                 guifg=#6e6a86  guibg=NONE
+" au ColorScheme * hi Comment                                                 guifg=#6e6a86  guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE
 call matchadd('sheBangGood', '^#!/usr/bin/env \(bash\|-S bash -e\|sh\|python3\|zsh\|groovy\|perl\)$', 20)
 
-au ColorScheme * hi sheBangBad   gui=bold                                   guifg=#403d52  guibg=NONE
+au ColorScheme * hi sheBangBad   gui=bold                                   guifg=#fa5757  guibg=NONE
 call matchadd('sheBangBad', '^#!.*')
 
 " current word hiing
 " hi IncSearch                                          gui=underline       guifg=#b4637a  guibg=NONE
-au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
-au ColorScheme * hi CurSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#282828
-au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#282828
-au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#282828
-
+au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold,underline  guifg=#e0def4  guibg=#2a283e
+" au ColorScheme * hi CurSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#191724
+" au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#191724
+au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#191724
+"
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#72A7BC
 
 " Cursor colors
-au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#2a324b
-au ColorScheme * hi CursorColumn          ctermbg=NONE                                     guibg=#403d52
-au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
-au ColorScheme * hi Cursor                                                  guifg=NONE     guibg=#403d52
+" au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#2a324b
+" au ColorScheme * hi CursorColumn          ctermbg=NONE                                     guibg=#403d52
+" au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
+" au ColorScheme * hi Cursor                                                  guifg=NONE     guibg=#403d52
 
 " Normal mode
-au ColorScheme * hi Normal                ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#6e6a86  guibg=NONE
+" au ColorScheme * hi Normal                ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#6e6a86  guibg=NONE
 
 " Pop-up and Float menu
-au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
-au ColorScheme * hi PmenuSbar                                                              guibg=NONE
-au ColorScheme * hi PmenuThumb                                                             guibg=NONE
-au ColorScheme * hi PmenuSel                            gui=bold            guifg=#e0def4  guibg=NONE
-au ColorScheme * hi NormalFloat                         gui=NONE            guifg=#6e6a86  guibg=NONE
-au ColorScheme * hi NormalNC                                                               guibg=NONE
-au ColorScheme * hi VertSplit             ctermbg=NONE                      guifg=NONE     guibg=NONE
-au ColorScheme * hi Title                                                   guifg=#e0def4  guibg=NONE
-au ColorScheme * hi TelescopeBorder       ctermbg=NONE                      guifg=#484848  guibg=NONE
-au ColorScheme * hi FloatBorder                         gui=bold            guifg=#484848  guibg=NONE
+" au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
+" au ColorScheme * hi PmenuSbar                                                              guibg=NONE
+" au ColorScheme * hi PmenuThumb                                                             guibg=NONE
+" au ColorScheme * hi PmenuSel                            gui=bold            guifg=#e0def4  guibg=NONE
+" au ColorScheme * hi NormalFloat                         gui=NONE            guifg=#6e6a86  guibg=NONE
+" au ColorScheme * hi NormalNC                                                               guibg=NONE
+" au ColorScheme * hi VertSplit             ctermbg=NONE                      guifg=NONE     guibg=NONE
+" au ColorScheme * hi Title                                                   guifg=#e0def4  guibg=NONE
+" au ColorScheme * hi TelescopeBorder       ctermbg=NONE                      guifg=#484848  guibg=NONE
+" au ColorScheme * hi FloatBorder                         gui=bold            guifg=#484848  guibg=NONE
 
 " vertical split and NvimTree colors
 au ColorScheme * hi VertSplit             ctermbg=NONE                                     guibg=NONE
@@ -89,41 +89,41 @@ au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE                      guif
 " au ColorScheme * hi NvimTreeNormal      ctermbg=NONE                      guifg=#9893a5  guibg=NONE
 "
 " Git changes and margins
-au ColorScheme * hi GitSignsAdd                                             guifg=#f6c177  guibg=NONE
-au ColorScheme * hi GitSignsDelete                                          guifg=#fa5757  guibg=NONE
-au ColorScheme * hi GitSignsChange                                          guifg=#9893a5  guibg=NONE
-au ColorScheme * hi GitSignsCurrentLineBlame                                guifg=#56526e  guibg=NONE
-au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
+" au ColorScheme * hi GitSignsAdd                                             guifg=#f6c177  guibg=NONE
+" au ColorScheme * hi GitSignsDelete                                          guifg=#fa5757  guibg=NONE
+" au ColorScheme * hi GitSignsChange                                          guifg=#9893a5  guibg=NONE
+" au ColorScheme * hi GitSignsCurrentLineBlame                                guifg=#56526e  guibg=NONE
+" au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
 
 " Diff colours
-au ColorScheme * hi DiffAdd               ctermbg=NONE                      guifg=#f6c177  guibg=NONE
-au ColorScheme * hi DiffChange            ctermbg=NONE                      guifg=#9893a5  guibg=NONE
-au ColorScheme * hi DiffDelete                                              guifg=#fa5757  guibg=NONE
-au ColorScheme * hi DiffText                                                guifg=#b4637a  guibg=NONE
+" au ColorScheme * hi DiffAdd               ctermbg=NONE                      guifg=#f6c177  guibg=NONE
+" au ColorScheme * hi DiffChange            ctermbg=NONE                      guifg=#9893a5  guibg=NONE
+" au ColorScheme * hi DiffDelete                                              guifg=#fa5757  guibg=NONE
+" au ColorScheme * hi DiffText                                                guifg=#b4637a  guibg=NONE
 
 " Lsp and Diagnostics colors
 " Diagnostics colors
-au ColorScheme * hi DiagnosticSignError   ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignWarn    ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignInfo    ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignHint    ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi NormalFloat           ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignError   ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignWarn    ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignHint    ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi DiagnosticSignInfo    ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignError   ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignWarn    ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignInfo    ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignHint    ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi NormalFloat           ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignError   ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignWarn    ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignHint    ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi DiagnosticSignInfo    ctermbg=NONE                                     guibg=NONE
 
 " LSP In-line error hi.
-au ColorScheme * hi LspDiagnosticsUnderlineError                                           guibg=NONE
-au ColorScheme * hi LspDiagnosticsUnderlineWarning                                         guibg=NONE
-au ColorScheme * hi LspDiagnosticsUnderlineInformation                                     guibg=NONE
-au ColorScheme * hi LspDiagnosticsUnderlineHint                                            guibg=NONE
+" au ColorScheme * hi LspDiagnosticsUnderlineError                                           guibg=NONE
+" au ColorScheme * hi LspDiagnosticsUnderlineWarning                                         guibg=NONE
+" au ColorScheme * hi LspDiagnosticsUnderlineInformation                                     guibg=NONE
+" au ColorScheme * hi LspDiagnosticsUnderlineHint                                            guibg=NONE
 
 " Telescope
 au ColorScheme * hi TelescopeSelection    ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#282828
 
 " Lsp colors
-au ColorScheme * hi LspReferenceText      ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
+" au ColorScheme * hi LspReferenceText      ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
 
 au ColorScheme * hi SignColumn            ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi MsgArea               ctermbg=NONE                                     guibg=NONE
