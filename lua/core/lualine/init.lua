@@ -28,7 +28,7 @@ lualine.setup({
 	options = {
     globalstatuses = true,
 		icons_enabled = true,
-		theme = "auto", -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
+		theme = "rose-pine", -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" }, -- "","","","","",""
 		disabled_filetypes = { "alpha", "dashboard" },

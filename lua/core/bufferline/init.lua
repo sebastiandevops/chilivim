@@ -8,6 +8,11 @@ if not colors_status_ok then
   return
 end
 
+local highlight_status_ok, highlights = pcall(require, "rose-pine.plugins.bufferline")
+if not highlight_status_ok then
+  return
+end
+
 bufferline.setup {
   options = {
     numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
@@ -18,7 +23,7 @@ bufferline.setup {
     -- NOTE: this plugin is designed with this icon in mind,
     -- and so changing this is NOT recommended, this is intended
     -- as an escape hatch for people who cannot bear it for whatever reason
-	indicator_icon = nil,
+	  -- indicator_icon = nil,
     indicator = { style = "icon", icon = "▎"},
     buffer_close_icon = "",
     -- buffer_close_icon = '',
@@ -61,7 +66,14 @@ bufferline.setup {
     --     return true
     --   end
     -- end,
-    offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+    offsets = {
+      {
+        filetype = "NvimTree",
+        -- text = "File Explorer",
+        padding = 1,
+        -- text_align = "center", --| "left" | "center" | "right",
+      }
+    },
     show_buffer_icons = true,
     show_buffer_close_icons = true,
     show_close_icon = true,
@@ -77,10 +89,10 @@ bufferline.setup {
     --   return buffer_a.modified > buffer_b.modified
     -- end
   },
-  -- highlights = colors.highlights, -- you can customize your highlights under colors.lua file or comment this line and use default colors instead.
+  -- highlights = highlights, -- you can customize your highlights under colors.lua file or comment this line and use default colors instead.
 }
 
--- Function to extend transparent.nvim to bufferline
+-- -- Function to extend transparent.nvim to bufferline
 vim.g.transparent_groups = vim.list_extend(
   vim.g.transparent_groups or {},
   vim.tbl_map(function(v)

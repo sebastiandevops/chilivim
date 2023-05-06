@@ -3,7 +3,7 @@ return {
 	variant = 'auto',
 	--- @usage 'main'|'moon'|'dawn'
 	dark_variant = 'main',
-	bold_vert_split = false,
+	bold_vert_split = true,
 	dim_nc_background = true,
 	disable_background = true,
 	disable_float_background = true,
