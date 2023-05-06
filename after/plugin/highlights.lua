@@ -43,18 +43,18 @@ au ColorScheme * hi Visual                ctermbg=NONE                      guif
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE
 call matchadd('sheBangGood', '^#!/usr/bin/env \(bash\|-S bash -e\|sh\|python3\|zsh\|groovy\|perl\)$', 20)
 
-au ColorScheme * hi sheBangBad   gui=bold                                   guifg=#fa5757  guibg=NONE
+au ColorScheme * hi sheBangBad   gui=bold                                   guifg=#9893a5  guibg=NONE
 call matchadd('sheBangBad', '^#!.*')
 
 " current word hiing
 " hi IncSearch                                          gui=underline       guifg=#b4637a  guibg=NONE
-au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold,underline  guifg=#e0def4  guibg=#2a283e
-" au ColorScheme * hi CurSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#191724
-" au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#191724
-au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#191724
+au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#21202e
+au ColorScheme * hi CurSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#524f67
+au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#191724  guibg=#d7827e
+au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#21202e
 "
 "hi URL
-au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#72A7BC
+au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#31748f
 
 " Cursor colors
 " au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#2a324b
@@ -131,9 +131,9 @@ au ColorScheme * hi MsgArea               ctermbg=NONE                          
 au ColorScheme * hi StatusLineNC          ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi StatusLine            ctermbg=NONE                                     guibg=NONE
 
-au ColorScheme * hi BufferLineTab         ctermbg=NONE                      guifg=#8f8f8f  guibg=NONE
+" au ColorScheme * hi BufferLineTab         ctermbg=NONE                      guifg=#8f8f8f  guibg=NONE
 " au ColorScheme * hi BufferLineTabSelected ctermbg=NONE                      guifg=#d7af87  guibg=NONE
-au ColorScheme * hi BufferLineFill        ctermbg=NONE                                     guibg=NONE
+" au ColorScheme * hi BufferLineFill        ctermbg=NONE                                     guibg=NONE
 " au ColorScheme * hi BufferLineBufferSelected      ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
 " au ColorScheme * hi BufferLineNumbersSelected     ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
 " au ColorScheme * hi BufferLineCloseButtonSelected ctermbg=NONE gui=bold       guifg=#d7af87 guibg=NONE
