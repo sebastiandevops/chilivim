@@ -6,6 +6,7 @@ end
 local linters = {
   "flake8",
   "quick-lint-js",
+  "vale",
 }
 
 local formatters = {
@@ -17,6 +18,6 @@ local formatters = {
 require("mason").setup()
 mason_null_ls.setup {
   ensure_installed = linters, formatters, -- Opt to list sources here, when available in mason.
-  automatic_installation = { exclude = { "pyproject-flake8", "pydocstyle" } },
+  automatic_installation = { exclude = { "pylint" } },
   automatic_setup = true, -- Recommended, but optional
 }
