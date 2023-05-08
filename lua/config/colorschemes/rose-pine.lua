@@ -4,7 +4,7 @@ return {
 	--- @usage 'main'|'moon'|'dawn'
 	dark_variant = 'main',
 	bold_vert_split = true,
-	dim_nc_background = true,
+	dim_nc_background = false,
 	disable_background = true,
 	disable_float_background = true,
 	disable_italics = true,
