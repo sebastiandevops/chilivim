@@ -25,7 +25,7 @@ return {
   { "kyazdani42/nvim-tree.lua" }, -- A File Explorer For Neovim Written In Lua.
   "akinsho/bufferline.nvim", --  snazzy buffer line (with tabpage integration) for Neovim
   "moll/vim-bbye", -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
-  { "nvim-lualine/lualine.nvim", dependencies = "nvim-tree/nvim-web-devicons", lazy = true }, -- neovim statusline plugin
+  { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
   { "akinsho/toggleterm.nvim", lazy = true }, -- Integrated terminal
   { "ahmedkhalf/project.nvim", lazy = true }, -- Provides project management functionality
   "lewis6991/impatient.nvim", -- Speed up loading Lua modules in Neovim to improve startup time
