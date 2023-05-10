@@ -25,7 +25,7 @@ set termguicolors
 " }}}
 
 " Match parentheses
-au ColorScheme * hi MatchParen                          gui=bold,underline  guifg=#FFFFFF  guibg=#282828
+au ColorScheme * hi MatchParen            ctermbg=232   gui=bold,underline  guifg=#FFFFFF  guibg=#191919
 
 " Show white space characters
 set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
@@ -33,7 +33,7 @@ au ColorScheme * hi NonText                             gui=bold            guif
 au ColorScheme * hi Whitespace                          gui=bold            guifg=#403d52  guibg=NONE
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#232136    guibg=#907aa9
+au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#242424    guibg=#907aa9
 " au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
 
 "Comments color
@@ -48,10 +48,10 @@ call matchadd('sheBangBad', '^#!.*')
 
 " current word hiing
 " hi IncSearch                                          gui=underline       guifg=#b4637a  guibg=NONE
-au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#21202e
+au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#242424
 au ColorScheme * hi CurSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#524f67
-au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#191724  guibg=#d7827e
-au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#21202e
+au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#242424  guibg=#d7827e
+au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#242424
 "
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#31748f
@@ -89,17 +89,17 @@ au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE                      guif
 " au ColorScheme * hi NvimTreeNormal      ctermbg=NONE                      guifg=#9893a5  guibg=NONE
 "
 " Git changes and margins
-" au ColorScheme * hi GitSignsAdd                                             guifg=#f6c177  guibg=NONE
-" au ColorScheme * hi GitSignsDelete                                          guifg=#fa5757  guibg=NONE
-" au ColorScheme * hi GitSignsChange                                          guifg=#9893a5  guibg=NONE
-" au ColorScheme * hi GitSignsCurrentLineBlame                                guifg=#56526e  guibg=NONE
+au ColorScheme * hi GitSignsAdd                                             guifg=#f6c177  guibg=NONE
+au ColorScheme * hi GitSignsDelete                                          guifg=#fa5757  guibg=NONE
+au ColorScheme * hi GitSignsChange                                          guifg=#9893a5  guibg=NONE
+au ColorScheme * hi GitSignsCurrentLineBlame                                guifg=#56526e  guibg=NONE
 " au ColorScheme * hi default link gitblame GitSignsCurrentLineBlame
 
 " Diff colours
-" au ColorScheme * hi DiffAdd               ctermbg=NONE                      guifg=#f6c177  guibg=NONE
-" au ColorScheme * hi DiffChange            ctermbg=NONE                      guifg=#9893a5  guibg=NONE
-" au ColorScheme * hi DiffDelete                                              guifg=#fa5757  guibg=NONE
-" au ColorScheme * hi DiffText                                                guifg=#b4637a  guibg=NONE
+au ColorScheme * hi DiffAdd               ctermbg=NONE                      guifg=#f6c177  guibg=NONE
+au ColorScheme * hi DiffChange            ctermbg=NONE                      guifg=#9893a5  guibg=NONE
+au ColorScheme * hi DiffDelete                                              guifg=#fa5757  guibg=NONE
+au ColorScheme * hi DiffText                                                guifg=#b4637a  guibg=NONE
 
 " Lsp and Diagnostics colors
 " Diagnostics colors

@@ -13,22 +13,22 @@ if not colors_ok then
   return
 end
 
-local auto_theme_ok, auto_theme_custom = pcall(require, "lualine.themes.auto")
+local auto_theme_ok, auto_theme_custom = pcall(require, "lualine.themes.horizon")
 if not auto_theme_ok then
   return
 end
 
 -- Transparent background color for lualine
--- auto_theme_custom.normal.c.bg = "none"
--- auto_theme_custom.visual.c.bg = "none"
--- auto_theme_custom.insert.c.bg = "none"
--- auto_theme_custom.command.c.bg = "none"
+auto_theme_custom.normal.c.bg = "none"
+auto_theme_custom.visual.c.bg = "none"
+auto_theme_custom.insert.c.bg = "none"
+auto_theme_custom.command.c.bg = "none"
 
 lualine.setup({
 	options = {
     globalstatuses = true,
 		icons_enabled = true,
-		theme = "rose-pine", -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
+		theme = auto_theme_custom, -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" }, -- "","","","","",""
 		disabled_filetypes = { "alpha", "dashboard" },
