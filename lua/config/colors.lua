@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local colorscheme = "rose-pine"
+local colorscheme = "horizon"
 
 utils.set_theme(colorscheme)
 

@@ -13,7 +13,8 @@ return {
   { "kdheepak/monochrome.nvim", lazy = true },
   { "maxmx03/fluoromachine.nvim", lazy = true },
   { "elvessousa/sobrio", lazy = true },
-  { "rose-pine/neovim", lazy = false, priority = 1000 },
+  { "rose-pine/neovim", lazy = true },
+  { "akinsho/horizon.nvim", version = "", lazy = false, priority = 1000 },
    -- End THEMES
 
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
