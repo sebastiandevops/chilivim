@@ -8,6 +8,8 @@ au ColorScheme * hi MatchParen            ctermbg=232   gui=bold,underline  guif
 set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
 au ColorScheme * hi NonText                             gui=bold            guifg=#403d52  guibg=NONE
 au ColorScheme * hi Whitespace                          gui=bold            guifg=#403d52  guibg=NONE
+au ColorScheme * hi Operator                                                guifg=#bbbbbb
+au ColorScheme * hi Delimiter                                               guifg=#bbbbbb
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#242424    guibg=#907aa9
