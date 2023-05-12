@@ -12,7 +12,7 @@ au ColorScheme * hi Operator                                                guif
 au ColorScheme * hi Delimiter                                               guifg=#bbbbbb
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#242424    guibg=#907aa9
+au ColorScheme * hi Visual                              gui=bold            guifg=#393552    guibg=#fcb2aa
 au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#56526e    guibg=NONE
 au ColorScheme * hi IndentBlanklineContextStart cterm=underline gui=underline guisp=#9893a5
 au ColorScheme * hi IndentBlanklineContextChar guifg=#9893a5
