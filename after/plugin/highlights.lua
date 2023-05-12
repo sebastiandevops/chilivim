@@ -31,7 +31,7 @@ call matchadd('sheBangBad', '^#!.*')
 " hi IncSearch                                          gui=underline       guifg=#b4637a  guibg=NONE
 au ColorScheme * hi IncSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#242424
 au ColorScheme * hi CurSearch             ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#524f67
-au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#242424  guibg=#d7827e
+" au ColorScheme * hi Search                ctermbg=NONE  gui=bold            guifg=#242424  guibg=#d7827e
 au ColorScheme * hi IlluminatedWord       ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#242424
 "
 "hi URL
@@ -60,6 +60,7 @@ au ColorScheme * hi PmenuSel                            gui=bold            guif
 " au ColorScheme * hi NvimTreeFolderIcon                                    guifg=#66a3ad  guibg=NONE
 " au ColorScheme * hi Directory                         gui=bold            guifg=#66a3ad  guibg=NONE
 " au ColorScheme * hi NvimTreeRootFolder                gui=bold            guifg=#b4637a
+au ColorScheme * hi NvimTreeNormal                                          guifg=#9893a5
 "
 " Git changes and margins
 " au ColorScheme * hi GitSignsAdd                                             guifg=#f6c177  guibg=NONE
