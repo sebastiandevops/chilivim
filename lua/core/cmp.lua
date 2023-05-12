@@ -157,6 +157,6 @@ cmp.setup {
     documentation = cmp.config.window.bordered(),
   },
   experimental = {
-    ghost_text = { enable = true },
+    ghost_text = true,
   },
 }
