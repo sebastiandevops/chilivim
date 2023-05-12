@@ -48,12 +48,12 @@ au ColorScheme * hi Pmenu                                                   guif
 au ColorScheme * hi PmenuSbar                                                              guibg=NONE
 au ColorScheme * hi PmenuThumb                                                             guibg=NONE
 au ColorScheme * hi PmenuSel                            gui=bold            guifg=#e0def4  guibg=NONE
-" au ColorScheme * hi NormalFloat                         gui=NONE            guifg=#6e6a86  guibg=NONE
+au ColorScheme * hi NormalFloat                         gui=NONE            guifg=#6e6a86  guibg=NONE
 " au ColorScheme * hi NormalNC                                                               guibg=NONE
 " au ColorScheme * hi VertSplit             ctermbg=NONE                      guifg=NONE     guibg=NONE
 " au ColorScheme * hi Title                                                   guifg=#e0def4  guibg=NONE
 " au ColorScheme * hi TelescopeBorder       ctermbg=NONE                      guifg=#484848  guibg=NONE
-" au ColorScheme * hi FloatBorder                         gui=bold            guifg=#484848  guibg=NONE
+au ColorScheme * hi FloatBorder                         gui=bold            guifg=#6e6a86  guibg=NONE
 
 " vertical split and NvimTree colors
 " au ColorScheme * hi NvimTreeEndOfBuffer   ctermbg=NONE                      guifg=#393535  guibg=NONE
@@ -77,7 +77,7 @@ au ColorScheme * hi NvimTreeNormal                                          guif
 
 " Telescope
 " au ColorScheme * hi TelescopeSelection    ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=#282828
-au ColorScheme * hi TelescopeBorder         ctermbg=NONE                      guifg=#484848  guibg=NONE
+au ColorScheme * hi TelescopeBorder         ctermbg=NONE                      guifg=#6e6a86  guibg=NONE
 
 " Lsp colors
 " au ColorScheme * hi LspReferenceText      ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
