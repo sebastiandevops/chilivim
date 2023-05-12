@@ -85,6 +85,10 @@ transparent.setup({
     "LspDiagnosticsUnderlineWarning",
     "LspDiagnosticsUnderlineInformation",
     "LspDiagnosticsUnderlineHint",
+    "LspReferenceText",
+    "LspReferenceRead",
+    "LspReferenceWrite",
+    "MatchBackground",
   },
   exclude_groups = {}, -- table: groups you don't want to clear
 })
