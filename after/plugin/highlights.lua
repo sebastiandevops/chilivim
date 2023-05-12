@@ -11,7 +11,11 @@ au ColorScheme * hi Whitespace                          gui=bold            guif
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi Visual                ctermbg=NONE                      guifg=#242424    guibg=#907aa9
-" au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#403d52  guibg=NONE
+au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#56526e    guibg=NONE
+au ColorScheme * hi IndentBlanklineContextStart cterm=underline gui=underline guisp=#9893a5
+au ColorScheme * hi IndentBlanklineContextChar guifg=#9893a5
+" au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocombine guifg=#e0def4
+" au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#e0def4
 
 "Comments color
 au ColorScheme * hi Comment                                                 guifg=#6e6a86  guibg=NONE
