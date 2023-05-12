@@ -41,7 +41,7 @@ au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guif
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
 
 " Normal mode
-au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#56526e   guibg=NONE
+au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#66627e   guibg=NONE
 
 " Pop-up and Float menu
 au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
