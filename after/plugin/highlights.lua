@@ -41,7 +41,7 @@ au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guif
 
 " Cursor colors
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
-au ColorScheme * hi CursorLine                          gui=underline       guisp=#e0def4  guibg=NONE
+au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#56526e
 
 " Normal mode
 au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#66627e   guibg=NONE
