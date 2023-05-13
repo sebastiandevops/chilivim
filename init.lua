@@ -34,5 +34,6 @@ require "core.peek"
 require "core.twilight"
 require "core.transparent"
 require "core.neogit"
+require "core.modicator"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')

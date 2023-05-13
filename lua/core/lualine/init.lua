@@ -8,27 +8,30 @@ if not components_ok then
   return
 end
 
-local colors_ok, colors = pcall(require, "core.lualine.colors")
+local colors_ok, M = pcall(require, "core.lualine.colors")
 if not colors_ok then
   return
 end
 
-local auto_theme_ok, auto_theme_custom = pcall(require, "lualine.themes.horizon")
+local auto_theme_ok, horizon_custom = pcall(require, "lualine.themes.horizon")
 if not auto_theme_ok then
   return
 end
 
 -- Transparent background color for lualine
-auto_theme_custom.normal.c.bg = "none"
-auto_theme_custom.visual.c.bg = "none"
-auto_theme_custom.insert.c.bg = "none"
-auto_theme_custom.command.c.bg = "none"
+horizon_custom.normal.a.bg = M.colors.highlight
+horizon_custom.normal.a.fg = M.colors.white
+horizon_custom.insert.a.bg = M.colors.love
+horizon_custom.normal.c.bg = "none"
+horizon_custom.visual.c.bg = "none"
+horizon_custom.insert.c.bg = "none"
+horizon_custom.command.c.bg = "none"
 
 lualine.setup({
 	options = {
     globalstatuses = true,
 		icons_enabled = true,
-		theme = auto_theme_custom, -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
+		theme = horizon_custom, -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" }, -- "","","","","",""
 		disabled_filetypes = { "alpha", "dashboard" },
