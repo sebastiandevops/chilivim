@@ -35,5 +35,7 @@ require "core.twilight"
 require "core.transparent"
 require "core.neogit"
 require "core.modicator"
+require "core.notify"
+require "core.noice"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')

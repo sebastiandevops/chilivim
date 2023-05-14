@@ -105,4 +105,7 @@ return {
   { "rhysd/vim-grammarous" }, -- grammar checker for Vim
   { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
   { "mawkler/modicator.nvim", dependencies = "akinsho/horizon.nvim",},
+  { "MunifTanjim/nui.nvim" }, -- UI Component Library for Neovim
+  { "rcarriga/nvim-notify" }, -- notification manager for NeoVim
+  { "folke/noice.nvim", dependencies = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" } }, -- experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.
 }
