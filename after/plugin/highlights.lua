@@ -51,7 +51,7 @@ au ColorScheme * hi Pmenu                                                   guif
 au ColorScheme * hi PmenuSbar                                                              guibg=NONE
 au ColorScheme * hi PmenuThumb                                                             guibg=NONE
 au ColorScheme * hi PmenuSel                            gui=bold            guifg=#e0def4  guibg=NONE
-au ColorScheme * hi NormalFloat                         gui=NONE            guifg=#6e6a86  guibg=NONE
+au ColorScheme * hi NormalFloat                         gui=NONE            guifg=#c0bed4  guibg=NONE
 " au ColorScheme * hi NormalNC                                                               guibg=NONE
 " au ColorScheme * hi VertSplit             ctermbg=NONE                      guifg=NONE     guibg=NONE
 " au ColorScheme * hi Title                                                   guifg=#e0def4  guibg=NONE
