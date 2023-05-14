@@ -24,7 +24,8 @@ configs.setup({
         "yaml",
         "markdown",
         "markdown_inline",
-        "html"
+        "html",
+        "regex",
     }, -- one of "all" or a list of languages
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = true,

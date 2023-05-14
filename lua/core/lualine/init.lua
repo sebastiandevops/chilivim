@@ -43,7 +43,7 @@ lualine.setup({
 		lualine_c = { 'filename' },
 		lualine_x = { 'diagnostics', components.lsp, components.fileformat,
       components.spaces, 'filetype' },
-		lualine_y = { 'location' },
+		lualine_y = { 'searchcount', 'location' },
 		lualine_z = { 'progress' },
 	},
 	inactive_sections = {
