@@ -12,19 +12,8 @@ local colors = {
 }
 
 modicator.setup({
-  show_warnings = false,
+  show_warnings = true,
   highlights = {
     defaults = { bold = true },
-    modes = {
-      ['n']  = { foreground = colors.normal },
-      ['i']  = { foreground = colors.insert },
-      ['v']  = { foreground = colors.select },
-      ['V']  = { foreground = colors.select },
-      ['^V'] = { foreground = colors.select },
-      ['s']  = { foreground = colors.substitute },
-      ['S']  = { foreground = colors.substitute },
-      ['R']  = { foreground = colors.insert },
-      ['c']  = { foreground = colors.command },
-    }
   }
 })

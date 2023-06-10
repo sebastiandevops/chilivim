@@ -43,6 +43,13 @@ au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guif
 au ColorScheme * hi CursorLineNr          ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
 au ColorScheme * hi CursorLine                                              guifg=NONE     guibg=#121212
 
+au ColorScheme * hi NormalMode            ctermbg=NONE  gui=bold            guifg=#e0def4  guibg=NONE
+au ColorScheme * hi InsertMode            ctermbg=NONE  gui=bold            guifg=#e95378  guibg=NONE
+au ColorScheme * hi CommandMode           ctermbg=NONE  gui=bold            guifg=#27d797  guibg=NONE
+au ColorScheme * hi ReplaceMode           ctermbg=NONE  gui=bold            guifg=#27d797  guibg=NONE
+au ColorScheme * hi SelectMode            ctermbg=NONE  gui=bold            guifg=#d7827e  guibg=NONE
+au ColorScheme * hi VisualMode            ctermbg=NONE  gui=bold            guifg=#d7827e  guibg=NONE
+
 " Normal mode
 au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#66627e   guibg=NONE
 
