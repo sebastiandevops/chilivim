@@ -645,6 +645,8 @@ function! g:grammarous#hooks.on_reset(errs) abort
     nunmap <buffer><C-p>
 endfunction
 
+let g:grammarous#jar_url = 'https://www.languagetool.org/download/LanguageTool-5.9.zip'
+
 set nocompatible
 filetype plugin on       " may already be in your .vimrc
 
