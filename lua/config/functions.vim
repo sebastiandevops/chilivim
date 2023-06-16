@@ -651,11 +651,12 @@ set nocompatible
 filetype plugin on       " may already be in your .vimrc
 
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
+let g:pencil#autoformat = 0
 
 augroup pencil
   autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init({'wrap': 'hard'})
+  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft', 'autoformat': 0})
+  autocmd FileType text         call pencil#init({'wrap': 'soft', 'autoformat': 0})
 augroup END
 
 " augroup lsp
