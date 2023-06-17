@@ -17,24 +17,21 @@ return {
   { "akinsho/horizon.nvim", version = "", lazy = false, priority = 1000 },
    -- End THEMES
 
-  "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
-  "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
-  "windwp/nvim-ts-autotag", -- Use treesitter to autoclose and autorename html tag
+  { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins
+  { "windwp/nvim-autopairs" }, -- Autopairs, integrates with both cmp and treesitter
+  { "windwp/nvim-ts-autotag" }, -- Use treesitter to autoclose and autorename html tag
   { "numToStr/Comment.nvim", lazy = true }, -- Smart and Powerful commenting plugin for neovim
-  "JoosepAlviste/nvim-ts-context-commentstring", -- setting the commentstring option based on the cursor location in the file
-  -- { "kyazdani42/nvim-web-devicons", lazy = true }, -- A lua fork of vim-devicons. This plugin provides the same icons as well as colors for each icon
+  { "JoosepAlviste/nvim-ts-context-commentstring" }, -- setting the commentstring option based on the cursor location in the file
   { "kyazdani42/nvim-tree.lua" }, -- A File Explorer For Neovim Written In Lua.
-  "akinsho/bufferline.nvim", --  snazzy buffer line (with tabpage integration) for Neovim
-  "moll/vim-bbye", -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
+  { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
   { "akinsho/toggleterm.nvim", lazy = true }, -- Integrated terminal
   { "ahmedkhalf/project.nvim", lazy = true }, -- Provides project management functionality
-  "lewis6991/impatient.nvim", -- Speed up loading Lua modules in Neovim to improve startup time
-  "lukas-reineke/indent-blankline.nvim", -- adds indentation guides to all lines (including empty lines)
-  "goolord/alpha-nvim", -- Init dashboard for neovim
+  { "lukas-reineke/indent-blankline.nvim" }, -- adds indentation guides to all lines (including empty lines)
+  { "goolord/alpha-nvim" }, -- Init dashboard for neovim
   { "folke/which-key.nvim", lazy = true }, -- Displays a popup with possible key bindings of the command you started typing
-  {'jdhao/better-escape.vim', event = 'InsertEnter',}, -- escape insert mode quickly using jk
-  "mg979/vim-visual-multi", -- multicursor
+  { "jdhao/better-escape.vim", event = "InsertEnter",}, -- escape insert mode quickly using jk
+  { "mg979/vim-visual-multi" }, -- multicursor
   { "folke/trouble.nvim", cmd = "TroubleToggle", }, -- TroubleDiagnostics
   { "kshenoy/vim-signature", event = "BufRead", }, -- Markers in margin. 'ma' adds marker
   { "ray-x/lsp_signature.nvim", event = "BufRead"  }, -- hint when you type
@@ -51,7 +48,6 @@ return {
   { "sbdchd/neoformat" }, --  variety of formatters for many filetypes
   { "norcalli/nvim-colorizer.lua" }, -- high-performance color highlighter for Neovim which has no external dependencies
   { "alexghergh/nvim-tmux-navigation" }, -- plugin that allows you to navigate seamlessly between vim and tmux splitsusing
-  { "VonHeikemen/searchbox.nvim", dependencies = {"MunifTanjim/nui.nvim"} }, -- search and and replace with a small popup window
   { "RishabhRD/nvim-cheat.sh", cmd = {"Cheat"} }, -- cheat.sh integration for neovim
   { "RishabhRD/popfix" }, -- API that helps plugin developers to write UI for their plugins easily
   { "danymat/neogen", cmd = { "Neogen" }, dependencies = "nvim-treesitter/nvim-treesitter", config = true, },

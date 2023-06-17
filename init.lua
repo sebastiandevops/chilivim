@@ -1,7 +1,6 @@
 require "core.plugins"
 require "config.options"
 require "config.keymaps"
-require "core.impatient"
 require "core.cmp"
 require "core.lsp"
 require "core.telescope"

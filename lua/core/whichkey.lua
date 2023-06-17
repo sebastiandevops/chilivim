@@ -186,7 +186,6 @@ local mappings = {
   u = {
     name = "+Utils",
     d = { ":call DeleteEndingWhiteSpace()<cr>",                       "Remove Trailing Whitespaces" },
-    r = { "<cmd>SearchBoxReplace confirm=menu<CR>",                   "Search & Replace" },
     f = { ":%!jq .<CR>",                                              "Format Json" },
     m = { "<cmd>PeekOpen<cr>",                                        "Open Markdown Preview" },
     x = { "<cmd>PeekClose<cr>",                                       "Close Markdown Preview" },
