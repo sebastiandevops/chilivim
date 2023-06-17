@@ -40,14 +40,12 @@ return {
   { "ray-x/lsp_signature.nvim", event = "BufRead"  }, -- hint when you type
   { "simrat39/symbols-outline.nvim", cmd = "SymbolsOutline", }, -- a tree like view for symbols
   { "itchyny/vim-highlighturl", event = "BufRead", }, -- Highlight URL's. http://www.vivaldi.com
-  "rhysd/devdocs.vim", -- open and search devdocs from neovim
   { 'ekalinin/Dockerfile.vim', event = "BufEnter Dockerfile"}, -- Vim syntax file for Docker's Dockerfile and snippets for snipMate.
   { "nacro90/numb.nvim", event = "BufRead", }, -- jump to the line
   { "kevinhwang91/nvim-bqf", event = { "BufRead", "BufNew" }, }, -- better quickfix window
   { "andymass/vim-matchup", event = "CursorMoved", }, -- navigate and highlight matching words
   { "sindrets/diffview.nvim", event = "BufRead", }, -- git diff in a single tabpage
   { "f-person/git-blame.nvim", event = "BufRead", }, -- show git blame
-  { "p00f/nvim-ts-rainbow" }, -- rainbow parentheses
   { "karb94/neoscroll.nvim", event = "WinScrolled" }, -- smooth scrolling neovim plugin written in lua
   { "kdheepak/lazygit.nvim", lazy = true }, -- simple terminal UI for git commands, written in Go
   { "sbdchd/neoformat" }, --  variety of formatters for many filetypes

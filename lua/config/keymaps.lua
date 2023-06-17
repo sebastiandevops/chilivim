@@ -44,20 +44,6 @@ keymap("n", "<S-l>",   ":bnext<CR>", opts)
 keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=sh<CR>:echo "File is now executable!"<CR>]], opts)
 keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=py<CR>:echo "File is now executable!"<CR>]], opts)
 
--- Lookup documentation for current word on DevDocs
-keymap('n', 'gm', '<Plug>(devdocs-under-cursor)', {})
-
-vim.g.devdocs_filetype_map = {
-  ['python'] = 'python',
-  ['javascript.js'] = 'react',
-  ['java'] = 'openjdk',
-  ['lua'] = 'lua',
-  ['yaml'] = 'yaml',
-  ['css'] = 'css',
-  ['html'] = 'html',
-  ['terraform'] = 'terraform',
-}
-
 -- Snippets.
 keymap('n', 'sc', ':call ShowColours()<CR>', opts)
 keymap('n', 'sC', ':call ShowChars()<CR>', opts)
