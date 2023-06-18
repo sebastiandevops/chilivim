@@ -100,4 +100,5 @@ return {
   { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
   { "mawkler/modicator.nvim", dependencies = "akinsho/horizon.nvim",},
   { "kylechui/nvim-surround", version = "*", event = "VeryLazy" }, -- Surround selections
+  { "moll/vim-bbye" }, -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
 }
