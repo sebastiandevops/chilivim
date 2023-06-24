@@ -1,4 +1,21 @@
 return {
+  dim_inactive = true,
+  color_set = 'mountain',
+  styles = { -- see :h attr-list for options. set {} for NONE, { option = true } for option
+    comments = { italic = true },
+    conditionals = {},
+    folds = {},
+    loops = {},
+    functions = {},
+    keywords = {},
+    strings = {},
+    variables = {},
+    numbers = {},
+    booleans = {},
+    properties = {},
+    types = {},
+    operators = {},
+  },
   transparent_background = {
     enabled = true,
     floating_windows = true,
@@ -6,5 +23,25 @@ return {
     file_tree = true,
     cursor_line = true,
     status_line = true,
+  },
+  flat_background = {
+    line_numbers = false,
+    floating_windows = false,
+    file_tree = false,
+    cursor_line_number = false,
+  },
+  plugins = {
+    cmp = true,
+    gitsigns = true,
+    indent_blankline = true,
+    nvim_tree = {
+      enabled = true,
+      show_root = true,
+    },
+    telescope = {
+      enabled = true,
+      nvchad_like = true,
+    },
+    startify = true,
   },
 }
