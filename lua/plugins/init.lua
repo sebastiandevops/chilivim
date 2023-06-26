@@ -7,11 +7,8 @@ return {
   { 'nyoom-engineering/oxocarbon.nvim', lazy = true },
   { "sainnhe/gruvbox-material", lazy = true },
   { "Yazeed1s/minimal.nvim", lazy = true },
-  { "catppuccin/nvim", lazy = true },
-  { "Mofiqul/dracula.nvim", lazy = true},
   { "kdheepak/monochrome.nvim", lazy = true },
   { "maxmx03/fluoromachine.nvim", lazy = true },
-  { "elvessousa/sobrio", lazy = true },
   { "rose-pine/neovim", lazy = true },
   { "akinsho/horizon.nvim", version = "", lazy = false, priority = 1000 },
    -- End THEMES
