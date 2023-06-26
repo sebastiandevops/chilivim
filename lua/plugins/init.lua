@@ -86,7 +86,6 @@ return {
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
 	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground", cmd = { "TSHighlightCapturesUnderCursor" } }, -- View treesitter information directly in Neovim
-  { "folke/twilight.nvim", lazy = true }, --  dims inactive portions of the code you're editing
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
   { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
   { "hashivim/vim-terraform" }, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON

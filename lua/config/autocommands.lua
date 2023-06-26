@@ -66,13 +66,6 @@ autocmd("BufEnter", {
   command = "setlocal wrap",
 })
 
--- autocmd("VimEnter", {
---   callback = function()
---     -- enable twilight
---     vim.cmd "TwilightEnable"
---   end,
--- })
-
 autocmd("FileType", {
   pattern = "zsh",
   callback = function()
