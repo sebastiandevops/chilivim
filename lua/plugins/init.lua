@@ -2,7 +2,6 @@ return {
   -- THEMES
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
-  { 'ramojus/mellifluous.nvim', lazy = true, dependencies = {'rktjmp/lush.nvim'} },
   { "rebelot/kanagawa.nvim", lazy = true },
   { 'marko-cerovac/material.nvim', lazy = true },
   { 'nyoom-engineering/oxocarbon.nvim', lazy = true },
@@ -87,7 +86,6 @@ return {
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
 	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground", cmd = { "TSHighlightCapturesUnderCursor" } }, -- View treesitter information directly in Neovim
-  { "toppair/peek.nvim", lazy = true, build='deno task --quiet build:fast' }, -- Markdown live preview
   { "folke/twilight.nvim", lazy = true }, --  dims inactive portions of the code you're editing
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
   { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu

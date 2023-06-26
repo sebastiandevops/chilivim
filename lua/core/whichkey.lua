@@ -187,8 +187,6 @@ local mappings = {
     name = "+Utils",
     d = { ":call DeleteEndingWhiteSpace()<cr>",                       "Remove Trailing Whitespaces" },
     f = { ":%!jq .<CR>",                                              "Format Json" },
-    m = { "<cmd>PeekOpen<cr>",                                        "Open Markdown Preview" },
-    x = { "<cmd>PeekClose<cr>",                                       "Close Markdown Preview" },
     u = { "<cmd>set ff=unix<cr>",                                     "dos2unix" },
     w = { "<cmd>set ff=dos<cr>",                                      "unix2dos" },
     c = { ":TSHighlightCapturesUnderCursor<CR>",                      "Capture Highlights Under Cursor"},
