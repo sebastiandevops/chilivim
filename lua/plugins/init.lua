@@ -3,8 +3,8 @@ return {
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
   { "rebelot/kanagawa.nvim", lazy = true },
-  { 'marko-cerovac/material.nvim', lazy = true },
-  { 'nyoom-engineering/oxocarbon.nvim', lazy = true },
+  { "marko-cerovac/material.nvim", lazy = true },
+  { "nyoom-engineering/oxocarbon.nvim", lazy = true },
   { "sainnhe/gruvbox-material", lazy = true },
   { "Yazeed1s/minimal.nvim", lazy = true },
   { "kdheepak/monochrome.nvim", lazy = true },
@@ -33,7 +33,7 @@ return {
   { "ray-x/lsp_signature.nvim", event = "BufRead"  }, -- hint when you type
   { "simrat39/symbols-outline.nvim", cmd = "SymbolsOutline", }, -- a tree like view for symbols
   { "itchyny/vim-highlighturl", event = "BufRead", }, -- Highlight URL's. http://www.vivaldi.com
-  { 'ekalinin/Dockerfile.vim', event = "BufEnter Dockerfile"}, -- Vim syntax file for Docker's Dockerfile and snippets for snipMate.
+  { "ekalinin/Dockerfile.vim", event = "BufEnter Dockerfile"}, -- Vim syntax file for Docker's Dockerfile and snippets for snipMate.
   { "nacro90/numb.nvim", event = "BufRead", }, -- jump to the line
   { "kevinhwang91/nvim-bqf", event = { "BufRead", "BufNew" }, }, -- better quickfix window
   { "andymass/vim-matchup", event = "CursorMoved", }, -- navigate and highlight matching words
@@ -58,7 +58,7 @@ return {
 	{ "saadparwaiz1/cmp_luasnip" }, -- snippet completions
 	{ "hrsh7th/cmp-nvim-lsp" }, -- completion engine
 	{ "hrsh7th/cmp-nvim-lua" },  -- completion engine
-  { 'tzachar/cmp-tabnine', build = './install.sh', dependencies = 'hrsh7th/nvim-cmp' },
+  { "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" },
 	-- Snippets
   { "L3MON4D3/LuaSnip" }, --snippet engine
   { "rafamadriz/friendly-snippets" }, -- a bunch of snippets to use
@@ -84,15 +84,21 @@ return {
 	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground", cmd = { "TSHighlightCapturesUnderCursor" } }, -- View treesitter information directly in Neovim
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
-  { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }, -- The plugin has a single command only: CodeActionMenu
+  { "weilbith/nvim-code-action-menu", cmd = "CodeActionMenu" }, -- The plugin has a single command only: CodeActionMenu
   { "hashivim/vim-terraform" }, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
   { "b0o/schemastore.nvim" },
-  { 'TimUntersberger/neogit', lazy = true, dependencies = 'nvim-lua/plenary.nvim' }, --  complete text-based user interface to Git.
+  { "TimUntersberger/neogit", lazy = true, dependencies = "nvim-lua/plenary.nvim" }, --  complete text-based user interface to Git.
   { "wintermute-cell/gitignore.nvim" }, -- gitignore generator
   { "duane9/nvim-rg" }, -- run ripgrep from Neovim or Vim and shows the results in a quickfix window.
   { "rhysd/vim-grammarous" }, -- grammar checker for Vim
   { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
   { "mawkler/modicator.nvim", dependencies = "akinsho/horizon.nvim",},
-  { "kylechui/nvim-surround", version = "*", event = "VeryLazy" }, -- Surround selections
+  { "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({})
+    end
+  }, -- Surround selections
   { "moll/vim-bbye" }, -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
 }
