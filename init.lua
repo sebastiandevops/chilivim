@@ -32,5 +32,6 @@ require "core.docs-view"
 require "core.transparent"
 require "core.neogit"
 require "core.modicator"
+require "core.hypersonic"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')
