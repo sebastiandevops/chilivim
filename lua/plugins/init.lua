@@ -101,5 +101,5 @@ return {
     end
   }, -- Surround selections
   { "moll/vim-bbye" }, -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
-  { "tomiis4/Hypersonic.nvim", event = "CmdlineEnter", cmd = "Hypersonic", },
+  { "tomiis4/Hypersonic.nvim", event = "CmdlineEnter", cmd = "Hypersonic", }, -- NeoVim plugin created to increase your regular expression (RegExp) writing and testing experience.
 }
