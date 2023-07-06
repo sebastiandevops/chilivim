@@ -10,7 +10,7 @@ indent_blankline.setup {
   use_treesitter = true,
   show_current_context = true,
   show_current_context_start = true,
-  buftype_exclude = { "terminal", "nofile" },
+  buftype_exclude = { "terminal", "nofile", "toggleterm" },
   filetype_exclude = {
     "help",
     "packer",
