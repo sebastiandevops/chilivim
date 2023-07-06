@@ -13,9 +13,9 @@ au ColorScheme * hi Delimiter                                               guif
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi Visual                              gui=bold            guifg=#393552    guibg=#fcb2aa
-au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#66627e    guibg=NONE
-au ColorScheme * hi IndentBlanklineContextStart cterm=underline gui=underline guisp=#9893a5
-au ColorScheme * hi IndentBlanklineContextChar guifg=#9893a5
+au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#56526e    guibg=NONE
+au ColorScheme * hi IndentBlanklineContextStart gui=underline guisp=#a86ec9
+au ColorScheme * hi IndentBlanklineContextChar guifg=#a86ec9
 " au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocombine guifg=#e0def4
 " au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#e0def4
 
