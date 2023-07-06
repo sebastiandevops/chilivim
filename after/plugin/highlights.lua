@@ -6,18 +6,18 @@ au ColorScheme * hi MatchParen            ctermbg=232   gui=bold,underline  guif
 
 " Show white space characters
 " set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
-au ColorScheme * hi NonText                             gui=bold            guifg=#403d52  guibg=NONE
-au ColorScheme * hi Whitespace                          gui=bold            guifg=#403d52  guibg=NONE
+au ColorScheme * hi NonText                                                 guifg=#403d52  guibg=NONE
+au ColorScheme * hi Whitespace                                              guifg=#403d52  guibg=NONE
 au ColorScheme * hi Operator                                                guifg=#bbbbbb
 au ColorScheme * hi Delimiter                                               guifg=#bbbbbb
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
-au ColorScheme * hi Visual                              gui=bold            guifg=#393552    guibg=#fcb2aa
-au ColorScheme * hi IndentBlanklineChar                 gui=bold            guifg=#56526e    guibg=NONE
-au ColorScheme * hi IndentBlanklineContextStart gui=underline guisp=#a86ec9
-au ColorScheme * hi IndentBlanklineContextChar guifg=#a86ec9
-" au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocombine guifg=#e0def4
-" au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#e0def4
+au ColorScheme * hi Visual                                                  guifg=#393552    guibg=#fcb2aa
+au ColorScheme * hi IndentBlanklineChar                                     guifg=#403d52    guibg=NONE
+au ColorScheme * hi IndentBlanklineContextStart gui=underline               guisp=#a86ec9
+au ColorScheme * hi IndentBlanklineContextChar                              guifg=#a86ec9
+au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocombine guifg=#403d52
+au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#403d52
 
 "Comments color
 au ColorScheme * hi Comment                                                 guifg=#6e6a86  guibg=NONE

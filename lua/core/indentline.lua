@@ -12,7 +12,7 @@ vim.opt.listchars:append "extends:>"
 vim.opt.listchars:append "precedes:<"
 
 indent_blankline.setup {
-  -- space_char_blankline = " ",
+  space_char_blankline = " ",
   context_char = "▎",
   -- char = "",
   show_trailing_blankline_indent = true,
@@ -21,6 +21,7 @@ indent_blankline.setup {
   use_treesitter_scope = true,
   show_current_context = true,
   show_current_context_start = true,
+  show_end_of_line = true,
   buftype_exclude = { "terminal", "nofile", "toggleterm", "alpha" },
   filetype_exclude = {
     "help",
