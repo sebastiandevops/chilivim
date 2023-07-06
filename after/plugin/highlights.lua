@@ -5,7 +5,7 @@ set termguicolors
 au ColorScheme * hi MatchParen            ctermbg=232   gui=bold,underline  guifg=#FFFFFF  guibg=#191919
 
 " Show white space characters
-set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
+" set listchars=eol:¶,tab:»\ ,trail:·,extends:>,precedes:<,space:·
 au ColorScheme * hi NonText                             gui=bold            guifg=#403d52  guibg=NONE
 au ColorScheme * hi Whitespace                          gui=bold            guifg=#403d52  guibg=NONE
 au ColorScheme * hi Operator                                                guifg=#bbbbbb
