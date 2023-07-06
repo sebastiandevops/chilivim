@@ -15,5 +15,8 @@ indent_blankline.setup {
     "help",
     "packer",
     "NvimTree",
+    "conf",
+    "alpha",
+    "toggleterm",
   },
 }
