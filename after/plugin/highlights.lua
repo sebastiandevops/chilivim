@@ -14,8 +14,10 @@ au ColorScheme * hi Delimiter                                               guif
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi Visual                                                  guifg=#393552    guibg=#fcb2aa
 au ColorScheme * hi IndentBlanklineChar                                     guifg=#403d52    guibg=NONE
-au ColorScheme * hi IndentBlanklineContextStart gui=underline               guisp=#a86ec9
-au ColorScheme * hi IndentBlanklineContextChar                              guifg=#a86ec9
+" au ColorScheme * hi IndentBlanklineContextStart gui=underline               guisp=#a86ec9
+" au ColorScheme * hi IndentBlanklineContextChar                              guifg=#a86ec9
+au ColorScheme * hi IndentBlanklineContextStart gui=underline               guisp=#908ec4
+au ColorScheme * hi IndentBlanklineContextChar                              guifg=#908ec4
 au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocombine guifg=#403d52
 au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#403d52
 
