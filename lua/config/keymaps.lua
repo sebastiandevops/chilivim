@@ -51,9 +51,7 @@ keymap('n', 'sl', ':call SnippetList()<CR>', opts)
 keymap('n', 'sL', ':LuaSnipListAvailable<CR>', opts)
 keymap('n', 'ss', ':call SnippetSave()<CR>', opts)
 keymap('n', 'se', ':call SnippetEdit()<CR>', opts)
-keymap('n', 'gB', ':call FigletCurrentLine()<CR>', opts)
 keymap('n', 'ge', ':call DeleteEndingWhiteSpace()<CR>', opts)
-keymap('n', 'gh', ':call OpenHelpAndCheatSheets()<CR>', opts)
 
 -- Push line
 keymap('n', '<A-p>', ':call PushLine()<CR>', opts)
