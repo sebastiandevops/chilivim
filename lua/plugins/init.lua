@@ -49,7 +49,6 @@ return {
   { "danymat/neogen", cmd = { "Neogen" }, dependencies = "nvim-treesitter/nvim-treesitter", config = true, },
   { "amrbashir/nvim-docs-view", lazy = true, cmd = { "DocsViewToggle" }, }, -- Neovim plugin to open documentation in bottom window
   { "is0n/jaq-nvim", lazy = true }, -- Code runner
-  -- { "yaocccc/nvim-hlchunk" }, -- hignlight chunk signcolumn plug of nvim
   { "mfussenegger/nvim-jdtls", lazy = true, event = "BufEnter *.java" }, -- Extensions for the built-in Language Server Protocol support in Neovim
 	-- Cmp
   { "hrsh7th/nvim-cmp" }, -- The completion plugin
