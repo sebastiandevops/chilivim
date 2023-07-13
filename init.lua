@@ -30,7 +30,6 @@ require "core.matchup"
 require "core.neogen"
 require "core.docs-view"
 require "core.transparent"
-require "core.neogit"
 require "core.modicator"
 require "core.hypersonic"
 

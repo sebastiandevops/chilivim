@@ -126,10 +126,7 @@ local mappings = {
   g = {
     name = "Git",
     g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>",                           "Lazygit" },
-    n = { "<cmd>lua require('neogit').open()<cr>",                    "Neogit" },
-    S = { "<cmd>lua require('neogit').open({ kind = 'split' })<cr>",  "Open Neogit in Split Mode" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>",              "Next Hunk" },
-    i = { "<cmd>lua require('gitignore').generate()<cr>",             "Generate gitignore" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>",              "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>",             "Blame" },
     p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>",           "Preview Hunk" },

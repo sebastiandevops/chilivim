@@ -86,8 +86,6 @@ return {
   { "weilbith/nvim-code-action-menu", cmd = "CodeActionMenu" }, -- The plugin has a single command only: CodeActionMenu
   { "hashivim/vim-terraform" }, -- This plugin adds a :Terraform command, It also sets up *.hcl, *.tf, *.tfvars, .terraformrc and terraform.rc files to be highlighted as HCL and *.tfstate as JSON
   { "b0o/schemastore.nvim" },
-  { "NeogitOrg/neogit", lazy = true, dependencies = "nvim-lua/plenary.nvim" }, --  complete text-based user interface to Git.
-  { "wintermute-cell/gitignore.nvim" }, -- gitignore generator
   { "duane9/nvim-rg" }, -- run ripgrep from Neovim or Vim and shows the results in a quickfix window.
   { "rhysd/vim-grammarous" }, -- grammar checker for Vim
   { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
