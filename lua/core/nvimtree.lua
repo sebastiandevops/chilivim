@@ -1,7 +1,11 @@
-local status_ok, nvim_tree = pcall(require, "nvim-tree")
-if not status_ok then
+local M = {}
+
+local nvim_tree_status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not nvim_tree_status_ok then
   return
 end
+
+M.setup = nvim_tree.setup(M.setup)
 
 local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
 if not config_status_ok then
@@ -35,7 +39,7 @@ local function on_attach(bufnr)
 
 end
 
-nvim_tree.setup({
+M.setup = {
   auto_reload_on_write = true,
   disable_netrw = false,
   hijack_cursor = false,
@@ -132,4 +136,6 @@ nvim_tree.setup({
     show_on_open_dirs = true,
     timeout = 400,
   },
-})
+}
+
+return M

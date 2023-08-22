@@ -25,6 +25,9 @@ return {
     dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
+    config = function()
+      require("nvim-tree").setup({ require "core.nvimtree" })
+    end,
   }, -- A File Explorer For Neovim Written In Lua.
   { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
