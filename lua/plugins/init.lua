@@ -18,7 +18,14 @@ return {
   { "windwp/nvim-ts-autotag" }, -- Use treesitter to autoclose and autorename html tag
   { "numToStr/Comment.nvim", lazy = true }, -- Smart and Powerful commenting plugin for neovim
   { "JoosepAlviste/nvim-ts-context-commentstring" }, -- setting the commentstring option based on the cursor location in the file
-  { "kyazdani42/nvim-tree.lua" }, -- A File Explorer For Neovim Written In Lua.
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+  }, -- A File Explorer For Neovim Written In Lua.
   { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
   { "akinsho/toggleterm.nvim", lazy = true }, -- Integrated terminal

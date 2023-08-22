@@ -35,7 +35,7 @@ local function on_attach(bufnr)
 
 end
 
-nvim_tree.setup {
+nvim_tree.setup({
   auto_reload_on_write = true,
   disable_netrw = false,
   hijack_cursor = false,
@@ -132,6 +132,4 @@ nvim_tree.setup {
     show_on_open_dirs = true,
     timeout = 400,
   },
-}
-
-
+})
