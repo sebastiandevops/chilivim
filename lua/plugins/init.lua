@@ -26,7 +26,13 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
-      require("nvim-tree").setup { require("core.nvimtree") }
+      vim.g.loaded_netrw = 1
+      vim.g.loaded_netrwPlugin = 1
+      local my_setup_ok, my_setup = pcall(require, "core.nvimtree.options")
+      if not my_setup_ok then
+        return
+      end
+      require("nvim-tree").setup(my_setup)
     end,
   }, -- A File Explorer For Neovim Written In Lua.
   { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
