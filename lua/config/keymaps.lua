@@ -119,6 +119,3 @@ keymap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(v
 
 -- Terminal
 keymap("n", "<A-1>", ":ToggleTerm size=12 direction=horizontal<CR>", opts)
-
--- Hypersonic
-keymap("v", "<leader>h", ":Hypersonic<CR>", opts)

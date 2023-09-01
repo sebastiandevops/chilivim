@@ -224,14 +224,6 @@ local mappings = {
     u = { ":silent exec '!jump TestReports %:p:h'<CR>",               "Jump Unit test reports"}
   },
 
-  T = {
-    name = "Terraform",
-    i = { ":!terraform init<CR>",                                     "Terraform init"},
-    v = { ":!terraform validate<CR>",                                 "Terraform validate"},
-    p = { ":!terraform plan<CR>",                                     "Terraform plan"},
-    a = { ":!terraform apply -auto-approve<CR>",                      "Terraform apply -auto-approve"}
-  },
-
   r = {
     name = "RipGrep",
     g = { ":Rg<CR>",                                                  "Ripgrep Prompt"},

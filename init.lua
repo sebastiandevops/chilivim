@@ -30,7 +30,5 @@ require "core.matchup"
 require "core.neogen"
 require "core.docs-view"
 require "core.transparent"
-require "core.modicator"
-require "core.hypersonic"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')
