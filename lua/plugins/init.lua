@@ -52,7 +52,7 @@ return {
   { "sindrets/diffview.nvim", event = "BufRead", }, -- git diff in a single tabpage
   { "f-person/git-blame.nvim", event = "BufRead", }, -- show git blame
   { "karb94/neoscroll.nvim", event = "WinScrolled" }, -- smooth scrolling neovim plugin written in lua
-  { "kdheepak/lazygit.nvim", lazy = true }, -- simple terminal UI for git commands, written in Go
+  { "kdheepak/lazygit.nvim" }, -- simple terminal UI for git commands, written in Go
   { "sbdchd/neoformat" }, --  variety of formatters for many filetypes
   { "norcalli/nvim-colorizer.lua" }, -- high-performance color highlighter for Neovim which has no external dependencies
   { "alexghergh/nvim-tmux-navigation" }, -- plugin that allows you to navigate seamlessly between vim and tmux splitsusing
