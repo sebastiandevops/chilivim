@@ -32,7 +32,8 @@ return {
       require("nvim-tree").setup(my_setup)
     end,
   }, -- A File Explorer For Neovim Written In Lua.
-  { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
+  -- { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
+  { "willothy/nvim-cokeline" },
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
   { "akinsho/toggleterm.nvim", lazy = true }, -- Integrated terminal
   { "ahmedkhalf/project.nvim", lazy = true }, -- Provides project management functionality
