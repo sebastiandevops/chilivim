@@ -95,13 +95,18 @@ cokeline.setup({
     fg = function(buffer)
       return
         buffer.is_focused
-        and get_hex('Normal', 'fg')
-         or get_hex('Comment', 'fg')
+        and get_hex('ColorColum', 'bg')
+         or get_hex('Normal', 'fg')
     end,
     -- default: `Normal`'s foreground color for focused buffers,
     -- `ColorColumn`'s background color for unfocused ones.
     -- default: `Normal`'s foreground color.
-    bg = 'NONE',
+    bg = function(buffer)
+      return
+        buffer.is_focused
+        and get_hex('lualine_b_normal', 'bg')
+         or "NONE"
+    end,
 
     -- default: `'NONE'`.
     style = 'NONE',
