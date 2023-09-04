@@ -95,8 +95,8 @@ cokeline.setup({
     fg = function(buffer)
       return
         buffer.is_focused
-        and get_hex('ColorColum', 'bg')
-         or get_hex('Normal', 'fg')
+        and get_hex('lualine_a_normal', 'fg')
+         or get_hex('lualine_c_replace', 'fg')
     end,
     -- default: `Normal`'s foreground color for focused buffers,
     -- `ColorColumn`'s background color for unfocused ones.
@@ -142,7 +142,7 @@ cokeline.setup({
     filetype = 'NvimTree',
     components = {
       {
-        text = '  NvimTree',
+        text = '',
         fg = yellow,
         bg = get_hex('NvimTreeNormal', 'bg'),
         style = 'bold',
