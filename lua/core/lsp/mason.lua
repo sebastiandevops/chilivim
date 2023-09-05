@@ -16,7 +16,8 @@ local servers = {
   "tflint",
   "dockerls",
   "docker_compose_language_service",
-  "csharp_ls"
+  "csharp_ls",
+  "azure_pipelines_ls"
 }
 
 local settings = {

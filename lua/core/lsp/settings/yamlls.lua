@@ -19,7 +19,11 @@ local opts = {
         schemastore.yaml.schemas()
       ),
       validate = { enable = true },
-      customTags = { "!Ref", "!ImportValue" },
+      customTags = {
+        "!Ref",
+        "!ImportValue",
+        "!GetAtt"
+      },
     }
   },
 }
