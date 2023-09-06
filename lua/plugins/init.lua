@@ -35,7 +35,7 @@ return {
   -- { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
   { "willothy/nvim-cokeline" },
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
-  { "akinsho/toggleterm.nvim", lazy = true }, -- Integrated terminal
+  { "akinsho/toggleterm.nvim" }, -- Integrated terminal
   { "ahmedkhalf/project.nvim", lazy = true }, -- Provides project management functionality
   { "lukas-reineke/indent-blankline.nvim" }, -- adds indentation guides to all lines (including empty lines)
   { "goolord/alpha-nvim" }, -- Init dashboard for neovim
