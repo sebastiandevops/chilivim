@@ -30,7 +30,7 @@ illuminate.configure {
     "lir",
     "Outline",
     "spectre_panel",
-    "toggleterm",
+    "FTerm",
     "DressingSelect",
     "TelescopePrompt",
   },

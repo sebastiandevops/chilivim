@@ -22,13 +22,13 @@ indent_blankline.setup {
   show_current_context = true,
   show_current_context_start = true,
   show_end_of_line = true,
-  buftype_exclude = { "terminal", "nofile", "toggleterm", "alpha" },
+  buftype_exclude = { "terminal", "nofile", "FTerm", "alpha" },
   filetype_exclude = {
     "help",
     "packer",
     "NvimTree",
     "conf",
     "alpha",
-    "toggleterm",
+    "FTerm",
   },
 }

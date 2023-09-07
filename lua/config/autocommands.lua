@@ -93,7 +93,7 @@ autocmd("FileType", {
     "OverseerList",
     "OverseerForm",
     "fugitive",
-    "toggleterm",
+    "FTerm",
     "floggraph",
     "git",
     "cheat",
