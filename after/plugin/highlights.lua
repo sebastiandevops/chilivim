@@ -11,11 +11,11 @@ au ColorScheme * hi Whitespace                                              guif
 au ColorScheme * hi Operator                                                guifg=#bbbbbb
 au ColorScheme * hi Delimiter                                               guifg=#bbbbbb
 " au ColorScheme * hi Function                            gui=bold            guifg=#24a1ad  guibg=#13313d
-au ColorScheme * hi @function                           gui=bold            guifg=#24a1ad  guibg=#13313d
+au ColorScheme * hi @function                           gui=bold            guifg=#24a1ad  guibg=#23313d
 au ColorScheme * hi @keyword                                                guifg=#a86ec9  guibg=NONE
-au ColorScheme * hi @keyword.function                                       guifg=#a86ec9  guibg=#330570
+au ColorScheme * hi @keyword.function                                       guifg=#a86ec9  guibg=#23313d
 au ColorScheme * hi @keyword.operator                                       guifg=#a86ec9  guibg=NONE
-au ColorScheme * hi @keyword.return                     gui=bold            guifg=#b87ed9  guibg=#330570
+au ColorScheme * hi @keyword.return                     gui=bold            guifg=#c587e8  guibg=#23313d
 au ColorScheme * hi @constructor                        gui=bold            guifg=#fac29a  guibg=NONE
 
 " Selected area colour
@@ -30,7 +30,7 @@ au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocomb
 au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#403d52
 
 "Comments color
-au ColorScheme * hi Comment                                                 guifg=#6e6a86  guibg=NONE
+au ColorScheme * hi Comment                                                 guifg=#7e7a96  guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE
