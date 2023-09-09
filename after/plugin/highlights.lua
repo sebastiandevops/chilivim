@@ -10,6 +10,14 @@ au ColorScheme * hi NonText                                                 guif
 au ColorScheme * hi Whitespace                                              guifg=#403d52  guibg=NONE
 au ColorScheme * hi Operator                                                guifg=#bbbbbb
 au ColorScheme * hi Delimiter                                               guifg=#bbbbbb
+" au ColorScheme * hi Function                            gui=bold            guifg=#24a1ad  guibg=#13313d
+au ColorScheme * hi @function                           gui=bold            guifg=#24a1ad  guibg=#13313d
+au ColorScheme * hi @keyword                                                guifg=#a86ec9  guibg=NONE
+au ColorScheme * hi @keyword.function                                       guifg=#a86ec9  guibg=#330570
+au ColorScheme * hi @keyword.operator                                       guifg=#a86ec9  guibg=NONE
+au ColorScheme * hi @keyword.return                     gui=bold            guifg=#b87ed9  guibg=#330570
+au ColorScheme * hi @constructor                        gui=bold            guifg=#fac29a  guibg=NONE
+
 " Selected area colour
 " au ColorScheme * hi VisualNOS             ctermbg=NONE                                     guibg=NONE
 au ColorScheme * hi Visual                                                  guifg=#393552    guibg=#fcb2aa
