@@ -61,7 +61,7 @@ au ColorScheme * hi SelectMode            ctermbg=NONE  gui=bold            guif
 au ColorScheme * hi VisualMode            ctermbg=NONE  gui=bold            guifg=#d7827e  guibg=NONE
 
 " Normal mode
-au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#66627e   guibg=NONE
+au ColorScheme * hi LineNr                ctermbg=NONE                      guifg=#86829e   guibg=NONE
 
 " Pop-up and Float menu
 au ColorScheme * hi Pmenu                                                   guifg=#6e6a86  guibg=NONE
