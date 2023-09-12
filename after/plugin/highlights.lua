@@ -30,7 +30,7 @@ au ColorScheme * hi IndentBlanklineSpaceCharBlankline cterm=nocombine gui=nocomb
 au ColorScheme * hi IndentBlanklineSpaceChar cterm=nocombine gui=nocombine guifg=#403d52
 
 "Comments color
-au ColorScheme * hi Comment                                                 guifg=#7e7a96  guibg=NONE
+au ColorScheme * hi Comment                                                 guifg=#908ec4  guibg=NONE
 
 " hi #! lines... Both good and bad.
 au ColorScheme * hi sheBangGood  gui=bold,underline                         guifg=#b4637a  guibg=NONE
