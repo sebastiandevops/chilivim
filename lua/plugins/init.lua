@@ -3,11 +3,7 @@ return {
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
   { "rebelot/kanagawa.nvim", lazy = true },
-  { "nyoom-engineering/oxocarbon.nvim", lazy = true },
-  { "sainnhe/gruvbox-material", lazy = true },
-  { "Yazeed1s/minimal.nvim", lazy = true },
-  { "kdheepak/monochrome.nvim", lazy = true },
-  { "akinsho/horizon.nvim", version = "", lazy = false, priority = 1000 },
+  { "sebastiandevops/horizon84.nvim", version = "", lazy = false, priority = 1000 },
    -- End THEMES
 
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins
