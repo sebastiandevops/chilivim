@@ -186,7 +186,7 @@ local mappings = {
     f = { ":%!jq .<CR>",                                              "Format Json" },
     u = { "<cmd>set ff=unix<cr>",                                     "dos2unix" },
     w = { "<cmd>set ff=dos<cr>",                                      "unix2dos" },
-    c = { ":TSHighlightCapturesUnderCursor<CR>",                      "Capture Highlights Under Cursor"},
+    c = { ":Inspect<CR>",                      "Capture Highlights Under Cursor"},
     p = { "<cmd>lua _PYTHON_TOGGLE()<cr>",                            "Python" },
   },
 
