@@ -174,6 +174,13 @@ cokeline.setup({
       end,
     },
     {
+      text = function(buffer) return (buffer.is_modified == true) and ' ' or '' end,
+      fg = '#72f1b8',
+    },
+    {
+      text = ' ',
+    },
+    {
       text = '',
       on_click = function(buffer)
         buffer:delete()
