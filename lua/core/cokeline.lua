@@ -175,7 +175,7 @@ cokeline.setup({
     },
     {
       text = function(buffer) return (buffer.is_modified == true) and ' ' or '' end,
-      fg = '#72f1b8',
+      fg = '#ffefae',
     },
     {
       text = ' ',
