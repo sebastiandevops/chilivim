@@ -655,8 +655,8 @@ let g:pencil#autoformat = 0
 
 augroup pencil
   autocmd!
-  autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft', 'autoformat': 0})
-  autocmd FileType text         call pencil#init({'wrap': 'soft', 'autoformat': 0})
+  autocmd FileType markdown,mkd,yaml call pencil#init({'wrap': 'soft', 'autoformat': 0})
+  autocmd FileType text              call pencil#init({'wrap': 'soft', 'autoformat': 0})
 augroup END
 
 " augroup lsp
