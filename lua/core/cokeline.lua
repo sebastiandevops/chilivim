@@ -107,9 +107,6 @@ cokeline.setup({
         and get_hex('lualine_b_normal', 'bg')
          or "NONE"
     end,
-
-    -- default: `'NONE'`.
-    style = 'NONE',
   },
 
   -- The highlight group used to fill the tabline space
@@ -169,9 +166,7 @@ cokeline.setup({
     },
     {
       text = function(buffer) return buffer.filename .. '  ' end,
-      style = function(buffer)
-        return buffer.is_focused and 'bold' or nil
-      end,
+      bold = function(buffer) return buffer.is_focused end,
     },
     {
       text = function(buffer) return (buffer.is_modified == true) and ' ' or '' end,
