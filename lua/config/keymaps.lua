@@ -41,8 +41,8 @@ keymap("n", "<S-h>",   ":bprevious<CR>", opts)
 keymap("n", "<S-l>",   ":bnext<CR>", opts)
 
 -- Make current file executable using Eunuch.
-keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=sh<CR>:echo "File is now executable!"<CR>]], opts)
-keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=py<CR>:echo "File is now executable!"<CR>]], opts)
+-- keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=sh<CR>:echo "File is now executable!"<CR>]], opts)
+-- keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=py<CR>:echo "File is now executable!"<CR>]], opts)
 
 -- Snippets.
 keymap('n', 'sc', ':call ShowColours()<CR>', opts)
