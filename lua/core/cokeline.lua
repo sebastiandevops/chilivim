@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local get_hex = require('cokeline.utils').get_hex
+local get_hex = require('cokeline.hlgroups').get_hl_attr
 local yellow = vim.g.terminal_color_3
 
 cokeline.setup({
@@ -141,8 +141,8 @@ cokeline.setup({
       {
         text = '',
         fg = yellow,
-        bg = get_hex('NvimTreeNormal', 'bg'),
-        style = 'bold',
+        bg = "NONE",
+        bold = true,
       },
     }
   },
