@@ -31,5 +31,6 @@ require "core.matchup"
 require "core.neogen"
 require "core.docs-view"
 require "core.transparent"
+require "core.neorg"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')
