@@ -136,6 +136,7 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
+        neorg = "[Neorg]"
       })[entry.source.name]
       return vim_item
     end,

@@ -98,5 +98,5 @@ return {
   { "rhysd/vim-grammarous" }, -- grammar checker for Vim
   { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
   { "moll/vim-bbye" }, -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
-  { "nvim-neorg/neorg", build = ":Neorg sync-parsers" },
+  { "nvim-neorg/neorg", build = ":Neorg sync-parsers", dependencies = "nvim-neorg/neorg-telescope" },
 }
