@@ -55,3 +55,7 @@ set.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current c
 set.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 
 set.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+
+-- check speller
+set.spelllang = "en_us,es"
+set.spell = true
