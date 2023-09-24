@@ -15,7 +15,7 @@ neorg.setup {
     ["core.dirman"] = { -- Manages Neorg workspaces
       config = {
         workspaces = {
-          notes = "~/notes",
+          notes = "~/estudio/notes",
         },
         default_workspace = "notes",
       },
