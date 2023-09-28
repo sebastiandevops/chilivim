@@ -33,7 +33,7 @@ return {
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } }, -- neovim statusline plugin
   { "numToStr/FTerm.nvim" }, -- No-nonsense floating terminal plugin for neovim
   { "ahmedkhalf/project.nvim", lazy = true }, -- Provides project management functionality
-  { "lukas-reineke/indent-blankline.nvim" }, -- adds indentation guides to all lines (including empty lines)
+  { "lukas-reineke/indent-blankline.nvim", version = "2.20.8" }, -- adds indentation guides to all lines (including empty lines)
   { "goolord/alpha-nvim" }, -- Init dashboard for neovim
   { "folke/which-key.nvim", lazy = true }, -- Displays a popup with possible key bindings of the command you started typing
   { "jdhao/better-escape.vim", event = "InsertEnter",}, -- escape insert mode quickly using jk
