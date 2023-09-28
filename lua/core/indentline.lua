@@ -1,4 +1,4 @@
-local status_ok, indent_blankline = pcall(require, "indent_blankline")
+local status_ok, indent_blankline = pcall(require, "ibl")
 if not status_ok then
 	return
 end
@@ -12,18 +12,64 @@ vim.opt.listchars:append "extends:>"
 vim.opt.listchars:append "precedes:<"
 
 indent_blankline.setup {
+  enable = true,
   space_char_blankline = " ",
-  context_char = "▎",
+  indent = {
+    char = "▎",
+    tab_char = "▎",
+    highlight = { "IndentBlanklineChar" },
+  },
+  whitespace = {
+    enable = true,
+    remove_blankline_trail = true,
+    highlight = { "IndentBlanklineSpaceChar" },
+  },
+  scope = {
+    enabled = true,
+    char = "▎",
+    show_start = true,
+    show_end = false,
+    injected_languages = true,
+    highlight = { "IndentBlanklineContextChar" },
+    priority = 1024,
+    include = {
+      node_type = {
+        ["*"] = {
+          "^argument",
+          "^expression",
+          "^for",
+          "^if",
+          "^import",
+          "^type",
+          "arguments",
+          "block",
+          "bracket",
+          "declaration",
+          "field",
+          "func_literal",
+          "function",
+          "import_spec_list",
+          "list",
+          "return_statement",
+          "short_var_declaration",
+          "statement",
+          "switch_body",
+          "try",
+          "block_mapping_pair",
+        },
+      },
+    },
+  },
   -- char = "",
-  show_trailing_blankline_indent = true,
-  show_first_indent_level = true,
-  use_treesitter = true,
-  use_treesitter_scope = true,
-  show_current_context = true,
-  show_current_context_start = true,
-  show_end_of_line = true,
+  -- show_trailing_blankline_indent = true,
+  -- show_first_indent_level = true,
+  -- use_treesitter = true,
+  -- use_treesitter_scope = true,
+  -- show_current_context = true,
+  -- show_current_context_start = true,
+  -- show_end_of_line = true,
   buftype_exclude = { "terminal", "nofile", "FTerm", "alpha" },
-  filetype_exclude = {
+  exclude = {
     "help",
     "packer",
     "NvimTree",
