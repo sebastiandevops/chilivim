@@ -66,6 +66,8 @@ indent_blankline.setup {
           "with_statement",
           "class_declaration",
           "array",
+          "redirected_statement",
+          "object",
         },
       },
     },
