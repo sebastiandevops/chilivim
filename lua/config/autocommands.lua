@@ -121,7 +121,9 @@ autocmd("FileType", {
     "git",
     "cheat",
     "Jaq",
-    "Outline"
+    "Outline",
+    "tsplayground",
+    "query",
   },
   command = "nnoremap <buffer><silent> q :bdelete!<CR>",
 })
