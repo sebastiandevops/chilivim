@@ -35,6 +35,7 @@ configs.setup {
     "terraform",
     "vim",
     "xml",
+    "toml",
   }, -- one of "all" or a list of languages
   incremental_selection = {
     enable = true,
