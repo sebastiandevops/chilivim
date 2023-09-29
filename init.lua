@@ -32,5 +32,6 @@ require "core.neogen"
 require "core.docs-view"
 require "core.transparent"
 require "core.neorg"
+require "core.symbols-outline"
 
 vim.cmd('source ~/.config/nvim/lua/config/functions.vim')

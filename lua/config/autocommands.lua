@@ -17,6 +17,29 @@ autocmd({ "FileType" }, {
     vim.opt_local.spell = true
   end,
 })
+
+autocmd({ "FileType" }, {
+  pattern = {
+    "help",
+    "startuptime",
+    "qf",
+    "lspinfo",
+    "vim",
+    "OverseerList",
+    "OverseerForm",
+    "fugitive",
+    "FTerm",
+    "floggraph",
+    "git",
+    "cheat",
+    "Jaq",
+    "Outline"
+  },
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
+
 -- Automatically close tab/vim when nvim-tree is the last window in the tab
 vim.cmd "autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif"
 
@@ -98,6 +121,7 @@ autocmd("FileType", {
     "git",
     "cheat",
     "Jaq",
+    "Outline"
   },
   command = "nnoremap <buffer><silent> q :bdelete!<CR>",
 })
