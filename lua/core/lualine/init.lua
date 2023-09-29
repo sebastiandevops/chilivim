@@ -60,5 +60,12 @@ lualine.setup({
 		lualine_z = {},
 	},
 	tabline = {},
-	extensions = {},
+	extensions = {
+    "quickfix",
+    "lazy",
+    "nvim-tree",
+    "symbols-outline",
+    "trouble",
+    "man"
+  },
 })
