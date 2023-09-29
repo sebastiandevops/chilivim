@@ -3,7 +3,14 @@ if not on_attach_ok then
   return
 end
 
-return {
+local M = {}
+
+function M.presettings()
+  vim.g.loaded_netrw = 1
+  vim.g.loaded_netrwPlugin = 1
+end
+
+M.config = {
   auto_reload_on_write = true,
   disable_netrw = false,
   hijack_cursor = false,
@@ -100,3 +107,5 @@ return {
     timeout = 452,
   },
 }
+
+return M

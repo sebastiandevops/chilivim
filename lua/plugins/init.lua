@@ -15,17 +15,10 @@ return {
     "nvim-tree/nvim-tree.lua",
     version = "*",
     lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
     config = function()
-      vim.g.loaded_netrw = 1
-      vim.g.loaded_netrwPlugin = 1
-      local my_setup_ok, my_setup = pcall(require, "core.nvimtree.options")
-      if not my_setup_ok then
-        return
-      end
-      require("nvim-tree").setup(my_setup)
+      local options = require("core.nvimtree.options")
+      options.presettings()
+      require("nvim-tree").setup(options.config)
     end,
   }, -- A File Explorer For Neovim Written In Lua.
   -- { "akinsho/bufferline.nvim" }, --  snazzy buffer line (with tabpage integration) for Neovim
@@ -96,7 +89,13 @@ return {
   { "b0o/schemastore.nvim" },
   { "duane9/nvim-rg" }, -- run ripgrep from Neovim or Vim and shows the results in a quickfix window.
   { "rhysd/vim-grammarous" }, -- grammar checker for Vim
-  { "preservim/vim-pencil" }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
+  {
+    "preservim/vim-pencil",
+    lazy = false,
+    config = function()
+      require("core.vim-pencil").config()
+    end,
+  }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
   { "moll/vim-bbye" }, -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
   { "nvim-neorg/neorg", build = ":Neorg sync-parsers", dependencies = "nvim-neorg/neorg-telescope" },
 }

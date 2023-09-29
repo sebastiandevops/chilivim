@@ -649,31 +649,3 @@ let g:grammarous#jar_url = 'https://www.languagetool.org/download/LanguageTool-5
 
 set nocompatible
 filetype plugin on       " may already be in your .vimrc
-
-let g:pencil#wrapModeDefault = 'hard'   " default is 'hard'
-let g:pencil#autoformat = 0
-let g:pencil#textwidth = 80
-let g:pencil#cursorwrap = 1
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd,yaml,norg
-        \ call pencil#init({'wrap': 'soft', 'autoformat': 0})
-  autocmd FileType text
-        \ call pencil#init({'wrap': 'soft', 'autoformat': 0})
-augroup END
-
-" augroup lsp
-  " au!
-  " au FileType java lua require('jdtls').start_or_attach({cmd = {'java-linux-ls'}})
-" augroup end
-
-" Return to last edit position when opening files.
-" autocmd BufReadPost *
-"      \ if line("'\"") > 0 && line("'\"") <= line("$") |
-"      \   exe "normal! g`\"" |
-"      \ endif
-
-" }}}
-
-
