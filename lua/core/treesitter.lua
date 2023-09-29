@@ -8,24 +8,44 @@ if not status_ok then
 	return
 end
 
-configs.setup({
+configs.setup {
   ensure_installed = {
-        "bash",
-        "c",
-        "javascript",
-        "json",
-        "lua",
-        "python",
-        "typescript",
-        "tsx",
-        "css",
-        "rust",
-        "java",
-        "yaml",
-        "markdown",
-        "markdown_inline",
-        "html"
-    }, -- one of "all" or a list of languages
+    "bash",
+    "c",
+    "javascript",
+    "json",
+    "lua",
+    "python",
+    "typescript",
+    "tsx",
+    "css",
+    "rust",
+    "java",
+    "yaml",
+    "markdown",
+    "markdown_inline",
+    "html",
+    "dockerfile",
+    "gitignore",
+    "git_config",
+    "groovy",
+    "hcl",
+    "norg",
+    "rasi",
+    "terraform",
+    "vim",
+    "xml",
+  }, -- one of "all" or a list of languages
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn", -- set to `false` to disable one of the mappings
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+  textobjects = { enable = true },
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = true,
   -- Automatically install missing parsers when entering buffer
@@ -38,7 +58,10 @@ configs.setup({
 	autopairs = {
 		enable = true,
 	},
-	indent = { enable = true, disable = { "python", "css" } },
+	indent = {
+    enable = true,
+    disable = { "python", "css" }
+  },
   playground = {
     enable = true,
     disable = {},
@@ -65,4 +88,6 @@ configs.setup({
   autotag = {
     enable = true,
   },
-})
+}
+
+vim.treesitter.language.register("bash", "zsh")

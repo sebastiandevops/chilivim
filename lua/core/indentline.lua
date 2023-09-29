@@ -64,6 +64,8 @@ indent_blankline.setup {
           "except_clause",
           "while_statement",
           "with_statement",
+          "class_declaration",
+          "array",
         },
       },
     },

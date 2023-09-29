@@ -6,6 +6,7 @@ return {
             version = 'LuaJIT',
             },
             diagnostics = {
+                disable = { "missing-fields", "incomplete-signature-doc" },
 
             -- Get the language server to recognize the `vim` global
                 globals = {'vim', 'require', 'pcall'},
