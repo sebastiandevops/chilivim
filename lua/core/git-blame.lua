@@ -3,10 +3,8 @@ if not status_ok then
   return
 end
 
-local status_ok, configs = pcall(require, "gitblame.configs")
-if not status_ok then
-	return
-end
-
-vim.g.gitblame_enabled = 0
+gitblame.setup {
+   --Note how the `gitblame_` prefix is omitted in `setup`
+  enabled = true,
+}
 vim.cmd "highlight default link gitblame SpecialComment"

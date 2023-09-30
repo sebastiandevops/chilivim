@@ -1,6 +1,6 @@
 local M = {}
 
-function M.config()
+function M.setup()
   vim.g["pencil#wrapModeDefault"] = 'hard'
   vim.g["pencil#autoformat"] = 0
   vim.g["pencil#textwidth"] = 80
@@ -9,9 +9,7 @@ function M.config()
   vim.cmd([[
     augroup pencil
     autocmd!
-    autocmd FileType markdown,mkd,yaml,norg
-          \ call pencil#init({'wrap': 'soft', 'autoformat': 0})
-    autocmd FileType text
+    autocmd FileType markdown,mkd,yaml,norg,text
           \ call pencil#init({'wrap': 'soft', 'autoformat': 0})
     augroup END
   ]])

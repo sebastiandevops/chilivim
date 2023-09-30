@@ -5,3 +5,6 @@ gui
 indentline
 treesitter
 -ing
+yaml
+dockerfile
+nvim

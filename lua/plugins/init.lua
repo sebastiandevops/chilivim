@@ -93,7 +93,7 @@ return {
     "preservim/vim-pencil",
     lazy = false,
     config = function()
-      require("core.vim-pencil").config()
+      require("core.vim-pencil").setup()
     end,
   }, -- For editing prose-oriented file types such as text, markdown, mail, rst, tex, textile, and asciidoc.
   { "moll/vim-bbye" }, -- Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
