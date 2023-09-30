@@ -52,22 +52,22 @@ return {
   { "amrbashir/nvim-docs-view", lazy = true, cmd = { "DocsViewToggle" }, }, -- Neovim plugin to open documentation in bottom window
   { "is0n/jaq-nvim", lazy = true }, -- Code runner
   { "mfussenegger/nvim-jdtls", lazy = true, event = "BufEnter *.java" }, -- Extensions for the built-in Language Server Protocol support in Neovim
-	-- Cmp
+  -- Cmp
   { "hrsh7th/nvim-cmp" }, -- The completion plugin
   { "hrsh7th/cmp-buffer" }, -- buffer completions
   { "hrsh7th/cmp-path" }, -- path completions
-	{ "saadparwaiz1/cmp_luasnip" }, -- snippet completions
-	{ "hrsh7th/cmp-nvim-lsp" }, -- completion engine
-	{ "hrsh7th/cmp-nvim-lua" },  -- completion engine
+  { "saadparwaiz1/cmp_luasnip" }, -- snippet completions
+  { "hrsh7th/cmp-nvim-lsp" }, -- completion engine
+  { "hrsh7th/cmp-nvim-lua" },  -- completion engine
   { "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" },
-	-- Snippets
+  -- Snippets
   { "L3MON4D3/LuaSnip" }, --snippet engine
   { "rafamadriz/friendly-snippets" }, -- a bunch of snippets to use
-	-- LSP
-	{ "neovim/nvim-lspconfig" }, -- enable LSP
+  -- LSP
+  { "neovim/nvim-lspconfig" }, -- enable LSP
   { "williamboman/mason.nvim" }, -- simple to use language server installer
   { "williamboman/mason-lspconfig.nvim" }, -- mason-lspconfig bridges mason.nvim with the lspconfig plugin.
-	{ "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" },}, -- for formatters and linters
+  { "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" },}, -- for formatters and linters
   {
     "jay-babu/mason-null-ls.nvim",
     event = { "BufReadPre", "BufNewFile" },
@@ -80,9 +80,9 @@ return {
     end,
   },
   { "RRethy/vim-illuminate" }, -- plugin for automatically highlighting other uses of the word under the cursor
-	{ "nvim-telescope/telescope.nvim" }, -- Telescope
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
-	{ "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
+  { "nvim-telescope/telescope.nvim" }, -- Telescope
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }, -- provide a simple and easy way to use the interface for tree-sitter in Neovim
+  { "lewis6991/gitsigns.nvim" }, -- git decorations implemented purely in lua/teal
   { "nvim-treesitter/playground", cmd = { "TSHighlightCapturesUnderCursor" } }, -- View treesitter information directly in Neovim
   { "xiyaowong/nvim-transparent" }, -- Remove all background colors to make nvim transparent
   { "weilbith/nvim-code-action-menu", cmd = "CodeActionMenu" }, -- The plugin has a single command only: CodeActionMenu
