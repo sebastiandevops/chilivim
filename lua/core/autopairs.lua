@@ -41,6 +41,11 @@ npairs.add_rules({
     :with_move(ts_cond.after_regex("#"))
 })
 
+npairs.add_rules({
+  rule(":", ":", "norg")
+    :with_move(ts_cond.after_regex(":"))
+})
+
 local cmp_autopairs = require "nvim-autopairs.completion.cmp"
 local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
