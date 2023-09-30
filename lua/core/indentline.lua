@@ -15,7 +15,7 @@ indent_blankline.setup {
   enable = true,
   space_char_blankline = " ",
   indent = {
-    char = "▎",
+    char = "┆",
     tab_char = "▎",
     highlight = { "IndentBlanklineChar" },
   },
