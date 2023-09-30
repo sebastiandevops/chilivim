@@ -33,7 +33,8 @@ autocmd({ "FileType" }, {
     "git",
     "cheat",
     "Jaq",
-    "Outline"
+    "Outline",
+    "nvim-docs-view"
   },
   callback = function()
     vim.opt_local.spell = false
@@ -124,6 +125,7 @@ autocmd("FileType", {
     "Outline",
     "tsplayground",
     "query",
+    "nvim-docs-view"
   },
   command = "nnoremap <buffer><silent> q :bdelete!<CR>",
 })
