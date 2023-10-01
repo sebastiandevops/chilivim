@@ -19,7 +19,7 @@ barbecue.setup({
   ---Filetypes not to enable winbar in.
   ---
   ---@type string[]
-  exclude_filetypes = { "nvim-tree", "FTerm" },
+  exclude_filetypes = { "NvimTree", "FTerm" },
   ---Theme to be used for generating highlight groups dynamically.
   ---
   ---@type barbecue.Config.theme
