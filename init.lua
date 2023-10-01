@@ -31,5 +31,6 @@ require "core.docs-view"
 require "core.transparent"
 require "core.neorg"
 require "core.symbols-outline"
+require "core.barbecue"
 
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
