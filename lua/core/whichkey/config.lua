@@ -88,6 +88,15 @@ M.mappings = {
     },
   },
 
+  n = {
+    name = "Noice",
+    h = { "<cmd>Noice history<cr>",                            "Show the message history" },
+    l = { "<cmd>Noice last<cr>",                               "Shows the last message in a popup" },
+    d = { "<cmd>Noice dismiss<cr>",                            "Dismiss all visible messages" },
+    e = { "<cmd>Noice erros<cr>",                              "Shows the error messages in a split" },
+    t = { "<cmd>Noice telescope<cr>",                          "Opens message history in Telescope" },
+  },
+
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>",                   "Checkout branch" },
