@@ -35,12 +35,12 @@ indent_blankline.setup {
     include = {
       node_type = {
         ["*"] = {
-          "^argument",
-          "^expression",
-          "^for",
-          "^if",
-          "^import",
-          "^type",
+          "argument",
+          "expression",
+          "for",
+          "if",
+          "import",
+          "type",
           "arguments",
           -- "block",
           "bracket",
