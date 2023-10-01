@@ -1,6 +1,6 @@
 local status_ok, lualine = pcall(require, "lualine")
 if not status_ok then
-	return
+  return
 end
 
 local components_ok, components = pcall(require, "core.lualine.components")
@@ -28,39 +28,60 @@ horizon_custom.insert.c.bg = "none"
 horizon_custom.command.c.bg = "none"
 
 lualine.setup({
-	options = {
+  options = {
     globalstatuses = true,
-		icons_enabled = true,
-		theme = horizon_custom, -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" }, -- "","","","","",""
-		disabled_filetypes = { "alpha", "dashboard" },
-		always_divide_middle = true,
-	},
-	sections = {
-		lualine_a = { 'mode' },
-    lualine_b = { 'branch', components.python_env, 'diff' },
-		lualine_c = {
+    icons_enabled = true,
+    theme = horizon_custom, -- Choose between "auto", "auto_theme_custom" for transparent components or use colors.theme and customize your colors under colors.lua file.
+    component_separators = {
+      left = "",
+      right = ""
+    },
+    section_separators = {
+      left = "",
+      right = ""
+    }, -- "","","","","",""
+    disabled_filetypes = {
+      "alpha",
+      "dashboard"
+    },
+    always_divide_middle = true,
+  },
+  sections = {
+    lualine_a = { 'mode' },
+    lualine_b = {
+      'branch',
+      components.python_env,
+      'diff' },
+    lualine_c = {
       {
         'filename',
         path = 1,
       },
     },
-		lualine_x = { 'diagnostics', components.lsp, components.fileformat,
-      components.spaces, 'filetype' },
-		lualine_y = { 'location' },
-		lualine_z = { 'progress' },
-	},
-	inactive_sections = {
-		lualine_a = {},
-		lualine_b = {},
-		lualine_c = { "filename" },
-		lualine_x = { "location" },
-		lualine_y = {},
-		lualine_z = {},
-	},
-	tabline = {},
-	extensions = {
+    lualine_x = {
+      'diagnostics',
+      components.lsp,
+      components.fileformat,
+      components.spaces,
+      'filetype',
+      components.recording
+    },
+    lualine_y = {
+      'searchcount',
+      'location'
+    },
+    lualine_z = { 'progress' },
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = { "filename" },
+    lualine_x = { "location" },
+    lualine_y = {},
+    lualine_z = {},
+  },
+  tabline = {},
+  extensions = {
     "quickfix",
     "lazy",
     "nvim-tree",

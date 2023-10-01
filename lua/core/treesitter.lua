@@ -36,6 +36,7 @@ configs.setup {
     "vim",
     "xml",
     "toml",
+    "regex",
   }, -- one of "all" or a list of languages
   incremental_selection = {
     enable = true,

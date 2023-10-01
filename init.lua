@@ -32,5 +32,7 @@ require "core.transparent"
 require "core.neorg"
 require "core.symbols-outline"
 require "core.barbecue"
+require "core.noice"
+require "core.notify"
 
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')

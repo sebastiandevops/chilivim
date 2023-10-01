@@ -94,6 +94,11 @@ M = {
       return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
     end
   },
+  recording = {
+    require("noice").api.statusline.mode.get,
+    cond = require("noice").api.statusline.mode.has,
+    color = { fg = "#FFEFAE" },
+  },
 }
 
 return M

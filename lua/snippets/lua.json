@@ -284,5 +284,15 @@
     "description": "unpack (list [, i [, j]])",
     "prefix": "__unpack",
     "scope": "source.lua"
+  },
+  "require": {
+    "body": [
+      "local ${1}_status_ok, ${1:name} = pcall(require, '${2}')",
+      "if not ${1}_status_ok then",
+      "  return",
+      "end"
+    ],
+    "description": "pcall require",
+    "prefix": "__require"
   }
 }
