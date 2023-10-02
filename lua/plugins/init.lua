@@ -48,7 +48,7 @@ return {
   { "alexghergh/nvim-tmux-navigation" }, -- plugin that allows you to navigate seamlessly between vim and tmux splitsusing
   { "RishabhRD/nvim-cheat.sh", cmd = {"Cheat"} }, -- cheat.sh integration for neovim
   { "RishabhRD/popfix" }, -- API that helps plugin developers to write UI for their plugins easily
-  { "danymat/neogen", cmd = { "Neogen" }, dependencies = "nvim-treesitter/nvim-treesitter", config = true, },
+  { "danymat/neogen", cmd = { "Neogen" }, config = true, },
   { "amrbashir/nvim-docs-view", lazy = true, cmd = { "DocsViewToggle" }, }, -- Neovim plugin to open documentation in bottom window
   { "is0n/jaq-nvim", lazy = true }, -- Code runner
   { "mfussenegger/nvim-jdtls", lazy = true, event = "BufEnter *.java" }, -- Extensions for the built-in Language Server Protocol support in Neovim
@@ -59,7 +59,7 @@ return {
   { "saadparwaiz1/cmp_luasnip" }, -- snippet completions
   { "hrsh7th/cmp-nvim-lsp" }, -- completion engine
   { "hrsh7th/cmp-nvim-lua" },  -- completion engine
-  { "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" },
+  { "tzachar/cmp-tabnine", build = "./install.sh" },
   -- Snippets
   { "L3MON4D3/LuaSnip" }, --snippet engine
   { "rafamadriz/friendly-snippets" }, -- a bunch of snippets to use
@@ -67,7 +67,7 @@ return {
   { "neovim/nvim-lspconfig" }, -- enable LSP
   { "williamboman/mason.nvim" }, -- simple to use language server installer
   { "williamboman/mason-lspconfig.nvim" }, -- mason-lspconfig bridges mason.nvim with the lspconfig plugin.
-  { "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" },}, -- for formatters and linters
+  { "jose-elias-alvarez/null-ls.nvim" }, -- for formatters and linters
   {
     "jay-babu/mason-null-ls.nvim",
     event = { "BufReadPre", "BufNewFile" },
