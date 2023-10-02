@@ -131,7 +131,6 @@ M.mappings = {
 
   o = {
     name = "Toggle Display Options",
-    a = { ":call ToggleAll()<CR>",                             "Toggle All"},
     c = { ":call ToggleColourCursorColumn()<CR>",              "Toggle cursor Column visibility"},
     e = { ":call ToggleColourWhiteSpaceAtEndOfLine()<CR>",     "Toggle whitespace at End of line visibility"},
     d = { "<cmd>DocsViewToggle<cr>",                           "Toggle docs-view"},

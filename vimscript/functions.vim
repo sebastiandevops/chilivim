@@ -115,37 +115,6 @@ function! ToggleColourIncSearch()
     endif
 endfunction
 
-let s:markerline=1
-function! ToggleMarkerLines()
-    if s:markerline
-        let s:markerline=0
-        highlight markerLineCommentAmber        NONE
-        highlight markerLineCommentGreen        NONE
-        highlight markerLineCommentRed          NONE
-        highlight markerLineCommentBrightRed    NONE
-    else
-        let s:markerline=1
-        highlight markerLineCommentAmber               guifg=#000000     guibg=#999900
-        highlight markerLineCommentGreen               guifg=#000000     guibg=#009900
-        highlight markerLineCommentRed                 guifg=#000000     guibg=#990000
-        highlight markerLineCommentBrightRed           guifg=#000000     guibg=#FF0000
-    endif
-endfunction
-
-function ToggleAll()
-    call ToggleColourCursorColumn()
-    call ToggleColourLineTooLong()
-    call ToggleColourWhiteSpaceAtEndOfLine()
-    call ToggleColourGitBlame()
-    call ToggleColourIncSearch()
-    call ToggleMarkerLines()
-    set spell!
-    set list!
-    set foldenable!
-    highlight markerStart NONE
-    highlight markerEnd NONE
-endfunction
-
 " Delete whitespace at end of lines, and put cursor back to where it started.
 function! DeleteEndingWhiteSpace()
     let current_position=getpos(".")
@@ -155,29 +124,6 @@ function! DeleteEndingWhiteSpace()
     unlet reg
     call setpos('.', current_position)
     unlet current_position
-endfunction
-
-" Highlight a column in CSV text.
-" See: https://vim.fandom.com/wiki/Working_with_CSV_files
-" :Csv 1    " highlight first column
-" :Csv 12   " highlight twelfth column
-" :Csv 0    " switch off highlight
-highlight CsvColHeading guifg=Yellow guibg=Black
-function! CSVH(colnr)
-  if a:colnr > 1
-    let n = a:colnr - 1
-
-    execute 'match CsvColHeading /^\([^,]*,\)\{'.n.'}\zs[^,]*/'
-    " execute 'match CsvColHighlight /^\([^,|\t]*[,|\t]\)\{'.n.'}\zs[^,|\t]*/'
-    execute 'normal! 0'.n.'f,'
-    execute 'syntax match csvHeading /\%1l\%(\%("\zs\%([^"]\|""\)*\ze"\)\|\%(\zs[^,"]*\ze\)\)/'
-    execute 'highlight csvHeading guifg=Yellow guibg=Black gui=bold'
-  elseif a:colnr == 1
-    match CsvColHighlight /^[^,|\t]*/
-    normal! 0
-  else
-    match
-  endif
 endfunction
 
 function! s:SilentSudoCmd(editor) abort
@@ -303,62 +249,11 @@ function! s:doincrement(step, ...)
   endif
 endfunction
 
-" Set the vertical split character to  a space (there is a single space after '\ ')
-" :set fillchars+=vert:\
-
 " Better Folding in Neovim
-
 set nofoldenable
 set foldlevel=99
-set foldtext=CustomFoldText()
 set fillchars=fold:\ ,vert:\ ,eob:\ ,msgsep:‾ " replace ~ with spaces at endo of buffer
 setlocal foldmethod=expr
-setlocal foldexpr=GetPotionFold(v:lnum)
-function! GetPotionFold(lnum)
-  if getline(a:lnum) =~? '\v^\s*$'
-    return '-1'
-  endif
-  let this_indent = IndentLevel(a:lnum)
-  let next_indent = IndentLevel(NextNonBlankLine(a:lnum))
-  if next_indent == this_indent
-    return this_indent
-  elseif next_indent < this_indent
-    return this_indent
-  elseif next_indent > this_indent
-    return '>' . next_indent
-  endif
-endfunction
-function! IndentLevel(lnum)
-    return indent(a:lnum) / &shiftwidth
-endfunction
-function! NextNonBlankLine(lnum)
-  let numlines = line('$')
-  let current = a:lnum + 1
-  while current <= numlines
-      if getline(current) =~? '\v\S'
-          return current
-      endif
-      let current += 1
-  endwhile
-  return -2
-endfunction
-function! CustomFoldText()
-  " get first non-blank line
-  let fs = v:foldstart
-  while getline(fs) =~ '^\s*$' | let fs = nextnonblank(fs + 1)
-  endwhile
-  if fs > v:foldend
-      let line = getline(v:foldstart)
-  else
-      let line = substitute(getline(fs), '\t', repeat(' ', &tabstop), 'g')
-  endif
-  let w = winwidth(0) - &foldcolumn - (&number ? 8 : 0)
-  let foldSize = 1 + v:foldend - v:foldstart
-  let foldSizeStr = " " . foldSize . " lines "
-  let foldLevelStr = repeat("+--", v:foldlevel)
-  let expansionString = repeat(" ", w - strwidth(foldSizeStr.line.foldLevelStr))
-  return line . expansionString . foldSizeStr . foldLevelStr
-endfunction
 
 " Figure out the system Python for Neovim.
 if exists("$VIRTUAL_ENV")
@@ -370,11 +265,6 @@ endif
 vnoremap <silent> <C-H> I1<esc>:<C-U>call <SID>doincrement(v:count1)<CR>
 vnoremap <silent> <C-J> :<C-U>call <SID>doincrement(v:count1)<CR>
 vnoremap <silent> <C-K> :<C-U>call <SID>doincrement(v:count1, 1)<CR>
-" }}}2
-
-" }}}1
-
-" Settings {{{1
 
 " For Ranger, for some reason does not work in the lua config.
 let bufferline = get(g:, 'bufferline', {})
@@ -382,10 +272,7 @@ let bufferline.icons="both"
 let bufferline.icon_close_tab_modified=''
 let bufferline.icon_custom_colors="false"
 
-let g:github_enterprise_urls = ['https://bitbucket.org']
-let g:startify_session_dir=['~/.config/nvim/sessions']
 let g:neovide_cursor_animation_length=0
-let g:neovide_fullscreen=v:true
 
 " If running diff two or more files then....
 " See: https://neovim.io/doc/user/options.html
@@ -413,11 +300,6 @@ set nobackup               " This is recommended by various posts
 set nowritebackup          " This is recommended by various posts
 set incsearch              " Highlight all matches
 set guifont=FiraCode\ Nerd\ Font\ Mono:h11
-
-" " Setup spelling
-" set spell
-" setlocal spell spelllang=en_gb
-" set spellfile=~/bin/dictionaries/dictionary.add
 
 " Abbreviations {{{1
 

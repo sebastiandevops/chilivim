@@ -55,9 +55,6 @@ keymap('n', 'ge', ':call DeleteEndingWhiteSpace()<CR>', opts)
 -- nnoremap ; :
 keymap('n', ';', ':', {})
 
--- Highlight column in CSV
-vim.cmd('command! -nargs=1 Csv call CSVH(<args>)')
-
 -- Run macro q with just typing Q.
 keymap('n', 'Q', '@q', opts)
 
@@ -72,9 +69,6 @@ keymap('v', '<A-j>', ":m '>+1<CR>gv=gv", opts)
 keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
 
 -- Function keys.
--- keymap('n', '<F1>', ':Cheat<CR>', opts)
--- keymap('n', '<F2>', ':call FoldingToggle()<CR>', {})
--- keymap('n', '<F3>', ':call ToggleAll()<CR>', {})
 keymap('n', '<F4>', ':NvimTreeToggle<CR>', opts)
 -- F5 reserved for kitty, open selected.
 -- Use to replace last :s command on a range
