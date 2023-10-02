@@ -13,25 +13,19 @@ vim.opt.listchars:append "precedes:<"
 
 indent_blankline.setup {
   enable = true,
-  space_char_blankline = " ",
   indent = {
     char = "┆",
     tab_char = "▎",
     highlight = { "IndentBlanklineChar" },
   },
   whitespace = {
-    enable = true,
-    remove_blankline_trail = true,
     highlight = { "IndentBlanklineSpaceChar" },
   },
   scope = {
     enabled = true,
     char = "▎",
-    show_start = true,
     show_end = false,
-    injected_languages = true,
     highlight = { "IndentBlanklineContextChar" },
-    priority = 1024,
     include = {
       node_type = {
         ["*"] = {
@@ -72,21 +66,14 @@ indent_blankline.setup {
       },
     },
   },
-  -- char = "",
-  -- show_trailing_blankline_indent = true,
-  -- show_first_indent_level = true,
-  -- use_treesitter = true,
-  -- use_treesitter_scope = true,
-  -- show_current_context = true,
-  -- show_current_context_start = true,
-  -- show_end_of_line = true,
-  buftype_exclude = { "terminal", "nofile", "FTerm", "alpha" },
   exclude = {
-    "help",
-    "packer",
-    "NvimTree",
-    "conf",
-    "alpha",
-    "FTerm",
+    filetypes = {
+      "help",
+      "packer",
+      "NvimTree",
+      "conf",
+      "alpha",
+      "FTerm",
+    },
   },
 }
