@@ -25,7 +25,7 @@ M.config = {
   on_attach = my_keymaps.on_attach,
   select_prompts = false,
   update_focused_file = {
-    enable = true,
+    enable = false,
     update_root = true, -- enable this feature may cause an error related with function 'cmd'
   },
   renderer = {
