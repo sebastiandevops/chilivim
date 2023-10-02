@@ -6,6 +6,3 @@ end
 local colorscheme = "horizon"
 
 utils.set_theme(colorscheme)
-
--- Custom configuration
-vim.cmd "let &fcs='eob: '"

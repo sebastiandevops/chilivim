@@ -1,3 +1,8 @@
+local utils_status_ok, utils = pcall(require, 'utils.get_python_host')
+if not utils_status_ok then
+  return
+end
+
 local set = vim.opt -- global options
 
 set.backup = false                          -- creates a backup file
@@ -59,3 +64,12 @@ set.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based fo
 -- check speller
 set.spelllang = "en_us,es"
 set.spell = true
+
+-- Better Folding in Neovim
+set.foldenable = false
+set.foldlevel = 99
+
+-- hide vertical lines and replace ~ with spaces at end of buffer
+vim.cmd "let &fcs='fold: ,vert: ,eob: ,msgsep:‾'"
+
+vim.g.python3_host_prog = utils.get_python3_host_prog()
