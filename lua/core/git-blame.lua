@@ -7,4 +7,5 @@ gitblame.setup {
    --Note how the `gitblame_` prefix is omitted in `setup`
   enabled = true,
 }
-vim.cmd "highlight default link gitblame SpecialComment"
+vim.g["gitblame_highlight_group"] = "GitSignsCurrentLineBlame"
+vim.g["gitblame_date_format"] = "%x"
