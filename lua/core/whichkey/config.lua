@@ -149,18 +149,8 @@ M.mappings = {
 
   j = {
     name = "Show/Jump various dev info",
-    a = { ":silent exec '!jump Artifact %:p:h'<CR>",           "Jump Artifactory (project)"},
-    c = { ":silent exec '!jump Ci %:p:h'<CR>",                 "Jump Ci (project)"},
     h = { ":call OpenHelpPage()<CR>",                          "Jump vim Help page for word under cursor"},
-    i = { ":silent exec '!jump Live %:p:h'<CR>",               "Jump lIve (project)"},
-    j = { ":call JumpToSelection()<CR>",                       "Jump to url or hex color or git etc"},
-    l = { ":silent exec '!jump Lint %:p:h'<CR>",               "Jump Lint (project)"},
     m = { ":<C-U>exe 'Man' v:count '<C-R><C-W>'<CR>",          "Jump linux Man page for word under cursor"},
-    n = { ":silent exec '!jump Notes %:p:h'<CR>",              "Jump Notes (project search in confluence)"},
-    r = { ":silent exec '!jump Repo %:p:h'<CR>",               "Jump Repo (git or bitbucket)"},
-    s = { ":call ShowJira()<CR>",                              "Show jira ticket in new buffer"},
-    t = { ":silent exec '!jump Ticket %:p:h'<CR>",             "Jump jira Ticket in browser"},
-    u = { ":silent exec '!jump TestReports %:p:h'<CR>",        "Jump Unit test reports"}
   },
 
   r = {

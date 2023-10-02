@@ -1,39 +1,4 @@
 " Functions {{{1
-" Add (push) spaces to make next word align with line above.
-function! PushLine()
-    let s:h=virtcol('.')
-    normal w
-    let s:clp=virtcol('.')
-    execute "normal! " . s:h . "|"
-    normal khw
-    let s:plp=virtcol('.')
-
-    if (s:plp - s:clp) > 0
-        execute "normal! " . s:clp . "|"
-        normal j
-        execute "normal! " . (s:plp - s:clp) . "i "
-    else
-        execute "normal! " . s:plp . "|"
-        normal j
-        execute "normal! dw"
-    endif
-
-    execute "normal! " . s:h . "|"
-    normal j
-endfunction
-
-function! ShowColours()
-    :e new.txt
-    set spell!
-    call termopen("showcolors")
-endfunction
-
-function! ShowChars()
-    :e new.txt
-    set spell!
-    call termopen("showchars")
-endfunction
-
 function! SnippetList()
     let cmd="snippetsList " . &ft
     :e new.txt
@@ -81,79 +46,6 @@ function! SnippetSave()
 
     call writefile(newlist, fname)
     silent exec ":e " . fname
-endfunction
-
-function! PrettyPrintFile()
-    silent write
-    silent exec ':!prettyPrint "'.expand("%:p").'"'
-    echo "Code not formatted"
-endfunction
-
-function! SqlFlip()
-    silent exec ':!$HOME/bin/sak sqlflip'
-endfunction
-
-" Jump, looks under the cursor for a URL, Hex Code, GithubProject or Word!
-function! JumpToSelection()
-  let url=matchstr(expand("<cWORD>"), 'http[s]*:\/\/[^ >,;)]*')
-  " let url=matchstr(expand("<cWORD>"), 'https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/')
-  " let url=matchstr(expand("<cWORD>"), 'https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/')
-
-  " Is it a url?
-  if url != ""
-      silent exec ":!xdg-open '".url."'" | redraw!
-      echo "Opening URL ".url
-  else
-      let wordUnderCursor = expand("<cWORD>")
-      let hexcode = matchstr(wordUnderCursor, '[0-9a-fA-F]\{6}')
-
-      " Is it a hex colour code?
-      if hexcode != ""
-          let url="https://www.colorhexa.com/" . hexcode
-          silent exec ':!xdg-open "'.url.'"' | redraw!
-          echo "Opened HEX colour ".url
-      else
-          let projectPath = matchstr(wordUnderCursor, '[0-9a-zA-Z-]\{3,}/[0-9a-z-A-Z\.]\{3,}')
-
-          " Is it a GitHub project?
-          if projectPath != ""
-              let url="https://github.com/" . projectPath
-              silent exec ':!xdg-open "'.url.'"' | redraw!
-              echo "Opened GitHub project : ".projectPath
-          else
-              let jiraTicket = matchstr(wordUnderCursor, '[a-zA-Z]\{2,4}-[0-9]\{1,7}')
-
-              " Is it a Jira ticket number project?
-              if jiraTicket != ""
-                  exec ':!$HOME/bin/Jira open '.jiraTicket
-              else
-                  let url='https://cheat.sh/' . &filetype . '/' . wordUnderCursor
-
-                  if url != ""
-                      let $CURLCMDVIM='https://cheat.sh/' . &filetype . '/' . wordUnderCursor
-                      term curl -s $CURLCMDVIM
-                      echo "Opened Cheat ".url
-                  else
-                      echo "No URL, HEX colour sequence, GitHub Project or Keyword under cursor."
-                  endif
-              endif
-          endif
-      endif
-  endif
-endfunction
-
-" Use Jira command line tool to show info for current ticket (if under cursor)
-" or branch for current project file is in.
-function! ShowJira()
-    let wordUnderCursor = expand("<cWORD>")
-    let jiraTicket = matchstr(wordUnderCursor, '[a-zA-Z]\{2,4}-[0-9]\{1,7}')
-
-    if jiraTicket != ""
-        let $TICKET=jiraTicket
-        term $HOME/bin/Jira show $TICKET
-    else
-        term $HOME/bin/Jira show
-    endif
 endfunction
 
 function! OpenHelpPage()
@@ -223,22 +115,6 @@ function! ToggleColourIncSearch()
     endif
 endfunction
 
-function! ToggleGutter()
-    if &foldcolumn == 1
-        set foldcolumn=0
-        set nonumber
-        set norelativenumber
-        Gitsigns detach
-    else
-        set foldcolumn=1
-        set number
-        highlight LineNr          guifg=RoyalBlue1  guibg=Gray19
-        set relativenumber
-        highlight CursorLineNr    guifg=Yellow      guibg=Gray19
-        Gitsigns attach
-    endif
-endfunction
-
 let s:markerline=1
 function! ToggleMarkerLines()
     if s:markerline
@@ -302,43 +178,6 @@ function! CSVH(colnr)
   else
     match
   endif
-endfunction
-
-function FoldingToggle()
-    if &foldmethod == 'diff'
-        if &foldenable == 1
-            set foldenable!
-            echo "Folding switched off"
-            highlight markerStart              NONE
-            highlight markerEnd                NONE
-        else
-            highlight markerStart              guifg=#777777     guibg=#000000
-            highlight markerEnd                guifg=#777777     guibg=#000000
-            set foldenable
-            set foldmethod=manual
-            echo "Folding method set to Manual"
-        endif
-    elseif &foldmethod == 'manual'
-        set foldenable
-        set foldmethod=indent
-        echo "Folding method set to Indent"
-    elseif &foldmethod == 'indent'
-        set foldenable
-        set foldmethod=marker
-        echo "Folding method set to Marker"
-    elseif &foldmethod == 'marker'
-        set foldenable
-        set foldmethod=syntax
-        echo "Folding method set to Syntax"
-    elseif &foldmethod == 'syntax'
-        set foldenable
-        set foldmethod=diff
-        echo "Folding method set to Diff"
-    endif
-endfunction
-
-function FullScreenToggle()
-    let g:neovide_fullscreen=!g:neovide_fullscreen
 endfunction
 
 function! s:SilentSudoCmd(editor) abort

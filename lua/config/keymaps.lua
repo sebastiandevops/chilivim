@@ -45,16 +45,11 @@ keymap("n", "<S-l>",   ":bnext<CR>", opts)
 -- keymap('n', '<A-e>', [[:!chmod u+x %<CR>:set filetype=py<CR>:echo "File is now executable!"<CR>]], opts)
 
 -- Snippets.
-keymap('n', 'sc', ':call ShowColours()<CR>', opts)
-keymap('n', 'sC', ':call ShowChars()<CR>', opts)
 keymap('n', 'sl', ':call SnippetList()<CR>', opts)
 keymap('n', 'sL', ':LuaSnipListAvailable<CR>', opts)
 keymap('n', 'ss', ':call SnippetSave()<CR>', opts)
 keymap('n', 'se', ':call SnippetEdit()<CR>', opts)
 keymap('n', 'ge', ':call DeleteEndingWhiteSpace()<CR>', opts)
-
--- Push line
-keymap('n', '<A-p>', ':call PushLine()<CR>', opts)
 
 -- Saves a few key presses.
 -- nnoremap ; :
@@ -62,10 +57,6 @@ keymap('n', ';', ':', {})
 
 -- Highlight column in CSV
 vim.cmd('command! -nargs=1 Csv call CSVH(<args>)')
-
--- " SQL and Java flipping.
--- vnoremap <silent> <A-s> :call SqlFlip()<CR>
--- " nmap <silent> <leader>F :call PrettyPrintFile()<CR>
 
 -- Run macro q with just typing Q.
 keymap('n', 'Q', '@q', opts)
@@ -79,9 +70,6 @@ keymap('i', '<A-j>', '<Esc>:m .+1<CR>==gi', {})
 keymap('i', '<A-k>', '<Esc>:m .-2<CR>==gi', {})
 keymap('v', '<A-j>', ":m '>+1<CR>gv=gv", opts)
 keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
-
--- Jump
-keymap('n', 'gj', ':call JumpToSelection()<CR>', opts)
 
 -- Function keys.
 -- keymap('n', '<F1>', ':Cheat<CR>', opts)
