@@ -12,7 +12,6 @@ vim.opt.listchars:append "extends:>"
 vim.opt.listchars:append "precedes:<"
 
 indent_blankline.setup {
-  enable = true,
   indent = {
     char = "┆",
     tab_char = "▎",
