@@ -30,7 +30,7 @@ M.config = {
         bottom = "─",
         none = " ",
       },
-  },
+    },
     icons = {
       web_devicons = {
         file = {
