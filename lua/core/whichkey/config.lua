@@ -43,6 +43,7 @@ M.mappings = {
   ["q"] = { "<cmd>q!<CR>",                                                      "Quit" },
   ["w"] = { "<cmd>w!<CR>",                                                      "Save" },
   ["?"] = { "<cmd>Cheat<CR>",                                                   "Cheatsheets" },
+  ["%"] = { "<cmd>source%<CR>",                                                 "Source Neovim Configuration"},
 
   L = {
     name = "Lazy",
