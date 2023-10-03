@@ -8,4 +8,4 @@ gitblame.setup {
   enabled = true,
 }
 vim.g["gitblame_highlight_group"] = "GitSignsCurrentLineBlame"
-vim.g["gitblame_date_format"] = "%d/%m/%Y"
+vim.g["gitblame_date_format"] = "%d-%b-%Y"
