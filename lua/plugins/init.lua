@@ -84,7 +84,6 @@ return {
   { "weilbith/nvim-code-action-menu", cmd = "CodeActionMenu" }, -- The plugin has a single command only: CodeActionMenu
   { "b0o/schemastore.nvim" },
   { "duane9/nvim-rg" }, -- run ripgrep from Neovim or Vim and shows the results in a quickfix window.
-  { "rhysd/vim-grammarous" }, -- grammar checker for Vim
   {
     "preservim/vim-pencil",
     lazy = false,
