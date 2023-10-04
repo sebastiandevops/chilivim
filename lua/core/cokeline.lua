@@ -5,6 +5,7 @@ end
 
 local get_hex = require('cokeline.hlgroups').get_hl_attr
 local yellow = vim.g.terminal_color_3
+local green = vim.g.terminal_color_2
 
 cokeline.setup({
   -- The default highlight group values.
@@ -43,7 +44,7 @@ cokeline.setup({
     filetype = 'NvimTree',
     components = {
       {
-        text = '',
+        text = ' ',
         fg = yellow,
         bg = "NONE",
         bold = true,
@@ -52,10 +53,10 @@ cokeline.setup({
   },
   components = {
     {
-      text = function(buffer) return (buffer.index ~= 1) and '▏' or '' end,
+      text = '▍',
     },
     {
-      text = '  ',
+      text = ' ',
     },
     {
       text = function(buffer)
