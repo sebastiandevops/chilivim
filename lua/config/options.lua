@@ -73,3 +73,43 @@ set.foldlevel = 99
 vim.cmd "let &fcs='fold: ,vert: ,eob: ,msgsep:‾'"
 
 vim.g.python3_host_prog = utils.get_python3_host_prog()
+
+-- Check if Neovim is running in diff mode
+if vim.o.diff then
+    -- Set diff options
+    vim.o.diffopt = vim.o.diffopt .. ',algorithm:patience'
+    vim.o.diffopt = vim.o.diffopt .. ',indent-heuristic'
+    vim.g.diff_translations = 0 -- Speed up syntax
+    vim.cmd('set syntax=diff')
+    vim.cmd('set wrap') -- Lines wrap to following lines
+    vim.cmd('set nolist') -- Do not display whitespace
+else
+    vim.cmd('set nowrap') -- Display long lines as just one line
+    vim.cmd('set list') -- Do not display whitespace
+end
+
+-- Define text abbreviations
+vim.cmd('iabbrev waht what')
+vim.cmd('iabbrev Vari Variables')
+vim.cmd('iabbrev teh the')
+vim.cmd('iabbrev tehn then')
+vim.cmd('iabbrev Req Request')
+vim.cmd('iabbrev fb foobar')
+vim.cmd('iabbrev Attr Attributes')
+vim.cmd('iabbrev Appl Application')
+vim.cmd('iabbrev adn and')
+--
+-- -- Ignore CamelCase words when spell checking
+vim.cmd([[
+  function! IgnoreCamelCaseSpell()
+    syn match CamelCase /\\<\\u\\l\\+\\u\\l.\\{-}\\>/ contains=@NoSpell transparent
+    syn cluster Spell add=CamelCase
+  endfunction
+  autocmd BufRead,BufNewFile * :call IgnoreCamelCaseSpell()
+]])
+--
+-- -- Copy to clipboard with <Ctrl-c> and yy, paste with <Shift-Insert>
+vim.cmd([[
+  vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+  vmap yy    y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+]])

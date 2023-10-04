@@ -132,24 +132,23 @@ M.mappings = {
 
   o = {
     name = "Toggle Display Options",
-    c = { ":call ToggleColourCursorColumn()<CR>",              "Toggle cursor Column visibility"},
-    e = { ":call ToggleColourWhiteSpaceAtEndOfLine()<CR>",     "Toggle whitespace at End of line visibility"},
-    d = { "<cmd>DocsViewToggle<cr>",                           "Toggle docs-view"},
-    h = { ":ColorizerToggle<CR>",                              "Toggle Hex colour and colour name matches"},
-    i = { ":call ToggleColourIncSearch()<CR>",                 "Toggle hIghlight matching words under cursor"},
-    l = { ":call ToggleColourCursorLine()<CR>",                "Toggle cursor Line visibility"},
-    m = { ":call ToggleMarkerLines()<CR>",                     "Toggle Marker lines"},
-    r = { ":set wrap!<CR>",                                    "Toggle line wRap"},
-    s = { ":set spell!<CR>",                                   "Toggle Spell checking"},
-    t = { ":call ToggleColourLineTooLong()<CR>",               "Toggle line Too long highlighting"},
-    w = { ":set list!<CR>",                                    "Toggle Whitespace visibility"},
-    y = { ":call ToggleColourSyntax()<CR>",                    "Toggle sYntax highlighting"},
-    R = { ":set relativenumber!<CR>",                          "Toggle Relativenumbers"}
+    c = { ":lua require('config.functions').ToggleColourCursorColumn()<CR>",          "Toggle cursor Column visibility"},
+    e = { ":lua require('config.functions').ToggleColourWhiteSpaceAtEndOfLine()<CR>", "Toggle whitespace at End of line visibility"},
+    d = { "<cmd>DocsViewToggle<cr>",                                                  "Toggle docs-view"},
+    h = { ":ColorizerToggle<CR>",                                                     "Toggle Hex colour and colour name matches"},
+    i = { ":lua require('config.functions').ToggleColourIncSearch()<CR>",             "Toggle hIghlight matching words under cursor"},
+    l = { ":lua require('config.functions').ToggleColourCursorLine()<CR>",            "Toggle cursor Line visibility"},
+    r = { ":set wrap!<CR>",                                                           "Toggle line wRap"},
+    s = { ":set spell!<CR>",                                                          "Toggle Spell checking"},
+    t = { ":lua require('config.functions').ToggleColourLineTooLong()<CR>",           "Toggle line Too long highlighting"},
+    w = { ":set list!<CR>",                                                           "Toggle Whitespace visibility"},
+    y = { ":lua require('config.functions').ToggleColourSyntax()<CR>",                "Toggle sYntax highlighting"},
+    R = { ":set relativenumber!<CR>",                                                 "Toggle Relativenumbers"}
   },
 
   j = {
     name = "Show/Jump various dev info",
-    h = { ":call OpenHelpPage()<CR>",                          "Jump vim Help page for word under cursor"},
+    h = { ":lua require('config.functions').OpenHelpPage()<CR>",                          "Jump vim Help page for word under cursor"},
     m = { ":<C-U>exe 'Man' v:count '<C-R><C-W>'<CR>",          "Jump linux Man page for word under cursor"},
   },
 

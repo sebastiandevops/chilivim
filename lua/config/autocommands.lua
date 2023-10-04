@@ -84,12 +84,6 @@ autocmd({ "BufWinEnter" }, {
   end,
 })
 
-autocmd("BufEnter", {
-  pattern = { "*" },
-  -- enable wrap mode for json files only
-  command = "setlocal wrap",
-})
-
 autocmd("FileType", {
   pattern = "zsh",
   callback = function()
@@ -179,7 +173,7 @@ vim.cmd([[let g:terraform_align=1]])
 autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   -- command = [[%s/\s\+$//e]],
-  command = ":call DeleteEndingWhiteSpace()"
+  command = ":lua require('config.functions').DeleteEndingWhiteSpace()"
 })
 
 vim.cmd([[let g:nvim_tree_respect_buf_cwd=1]])
