@@ -16,7 +16,7 @@ M.config = {
   on_attach = my_keymaps.on_attach,
   sync_root_with_cwd = true, --Changes the tree root directory on `DirChanged` and refreshes the tree
   update_focused_file = {
-    enable = false,
+    enable = true,
     update_root = true, -- enable this feature may cause an error related with function 'cmd'
   },
   renderer = {
