@@ -85,19 +85,28 @@ M = {
       vim.list_extend(buf_client_names, supported_linters)
 
       local unique_client_names = vim.fn.uniq(buf_client_names)
-      local language_servers = "[" .. table.concat(unique_client_names, ", ") .. "]"
+      local language_servers = "[ " .. table.concat(unique_client_names, ", ") .. "]"
       return language_servers
     end
   },
   spaces = {
     function()
-      return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+      return "󱁐 " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
     end
   },
   recording = {
     require("noice").api.statusline.mode.get,
     cond = require("noice").api.statusline.mode.has,
     color = { fg = "#FFEFAE" },
+  },
+  schema = {
+    function()
+      local schema = require("yaml-companion").get_buf_schema(0)
+      if schema.result[1].name == "none" then
+        return ""
+      end
+      return "[ " .. schema.result[1].name .. "]"
+    end
   },
 }
 

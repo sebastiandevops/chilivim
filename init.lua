@@ -35,5 +35,6 @@ require "core.symbols-outline"
 require "core.barbecue"
 require "core.noice"
 require "core.notify"
+require "core.yaml-companion"
 
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')

@@ -95,4 +95,5 @@ return {
   { "nvim-neorg/neorg", build = ":Neorg sync-parsers", dependencies = "nvim-neorg/neorg-telescope" },
   { "utilyre/barbecue.nvim", name = "barbecue", version = "*", dependencies = "SmiteshP/nvim-navic" },
   { "folke/noice.nvim", event = "VeryLazy", dependencies = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" } },
+  { "someone-stole-my-name/yaml-companion.nvim" },
 }

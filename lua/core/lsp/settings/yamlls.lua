@@ -12,13 +12,15 @@ local extend_schemas = {
 local opts = {
   settings = {
     yaml = {
-      schemas = vim.list_extend(
-        {
-          extend_schemas,
-        },
-        schemastore.yaml.schemas()
-      ),
-      validate = { enable = true },
+      schemaStore = {
+        -- You must disable built-in schemaStore support if you want to use
+        -- this plugin and its advanced options like `ignore`.
+        enable = false,
+        -- Avoid TypeError: Cannot read properties of undefined (reading 'length')
+        url = "",
+      },
+      schemas = schemastore.yaml.schemas(),
+      -- validate = { enable = true },
       customTags = {
         "!Ref",
         "!ImportValue",

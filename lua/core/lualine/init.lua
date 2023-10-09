@@ -60,11 +60,12 @@ lualine.setup({
     },
     lualine_x = {
       'diagnostics',
-      components.lsp,
       components.fileformat,
       components.spaces,
+      components.lsp,
+      components.schema,
       'filetype',
-      components.recording
+      components.recording,
     },
     lualine_y = {
       'searchcount',

@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 telescope.load_extension("noice")
+telescope.load_extension("yaml_schema")
 
 local actions = require "telescope.actions"
 
