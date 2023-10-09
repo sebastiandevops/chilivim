@@ -51,7 +51,7 @@ M.config = {
     show_on_open_dirs = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
   modified = {
     enable = true,
