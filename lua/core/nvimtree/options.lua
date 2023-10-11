@@ -67,7 +67,7 @@ M.config = {
     centralize_selection = false,
     cursorline = true,
     debounce_delay = 51,
-    width = 30,
+    width = 35,
     side = "left",
   },
 }
