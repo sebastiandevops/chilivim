@@ -20,6 +20,7 @@ M.config = {
     update_root = true, -- enable this feature may cause an error related with function 'cmd'
   },
   renderer = {
+    root_folder_label = ":t",
     group_empty = true,
     indent_markers = {
       enable = false,
@@ -41,6 +42,17 @@ M.config = {
         folder = {
           enable = false,
           color = true,
+        },
+      },
+      glyphs = {
+        git = {
+          unstaged = "",
+          staged = "S",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "U",
+          deleted = "",
+          ignored = "◌",
         },
       },
     },
@@ -67,7 +79,7 @@ M.config = {
     centralize_selection = false,
     cursorline = true,
     debounce_delay = 51,
-    width = 35,
+    width = 30,
     side = "left",
   },
 }
