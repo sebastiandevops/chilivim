@@ -16,7 +16,7 @@ notify.setup({
   level = 2,
   minimum_width = 50,
   render = "compact",
-  stages = "static",
-  timeout = 1000,
+  stages = "fade",
+  timeout = 3000,
   top_down = false
 })
