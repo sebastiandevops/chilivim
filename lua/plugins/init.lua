@@ -2,8 +2,8 @@ return {
   -- THEMES
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
-  { "rebelot/kanagawa.nvim", lazy = true },
-  { "sebastiandevops/horizon84.nvim", version = "", lazy = false, priority = 1000 },
+  { "rebelot/kanagawa.nvim", lazy = false, priority = 1000 },
+  { "sebastiandevops/horizon84.nvim", version = "", lazy = true },
    -- End THEMES
 
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins
