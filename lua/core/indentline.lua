@@ -18,7 +18,7 @@ indent_blankline.setup {
     highlight = { "IndentBlanklineChar" },
   },
   whitespace = {
-    highlight = { "IndentBlanklineSpaceChar" },
+    highlight = { "IndentBlanklineChar" },
   },
   scope = {
     enabled = true,

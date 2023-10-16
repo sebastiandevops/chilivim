@@ -2,8 +2,15 @@ return {
   -- THEMES
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
-  { "rebelot/kanagawa.nvim", lazy = false, priority = 1000 },
+  { "rebelot/kanagawa.nvim", lazy = true },
   { "sebastiandevops/horizon84.nvim", version = "", lazy = true },
+  { "sebastiandevops/chili.nvim", version = "", lazy = false, priority = 1000 },
+  {
+    "sainnhe/gruvbox-material", lazy = true,
+    config = function()
+      require("config.colorschemes.gruvbox").setup()
+    end,
+  },
    -- End THEMES
 
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins

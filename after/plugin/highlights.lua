@@ -10,8 +10,4 @@ call matchadd('sheBangBad', '^#!.*')
 
 "hi URL
 au ColorScheme * hi hiUrl cterm=underline ctermfg=31    gui=underline       guifg=#31748f
-
-" au ColorScheme * hi IndentBlanklineChar guifg=#605D62 guibg=NONE
-" au ColorScheme * hi IndentBlanklineSpaceChar guifg=#605D62 guibg=NONE
-" au ColorScheme * hi IndentBlanklineContextChar guifg=#B5ABFD'
 ]])
