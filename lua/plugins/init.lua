@@ -2,9 +2,18 @@ return {
   -- THEMES
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
-  { "rebelot/kanagawa.nvim", lazy = false, priority = 1000 },
+  { "rebelot/kanagawa.nvim", lazy = true },
   { "sebastiandevops/horizon84.nvim", version = "", lazy = true },
   { "sebastiandevops/chili.nvim", version = "", lazy = true },
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = false,
+    priority = 1000,
+    config = function ()
+      local options = require("config.colorschemes.github-theme")
+      require("github-theme").setup(options)
+    end
+  },
   {
     "sainnhe/gruvbox-material", lazy = true,
     config = function()
