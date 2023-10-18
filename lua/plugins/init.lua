@@ -2,9 +2,9 @@ return {
   -- THEMES
   -- lazy=false and priority=1000 should be used
   -- just in the colorscheme that you are currently using.
-  { "rebelot/kanagawa.nvim", lazy = true },
+  { "rebelot/kanagawa.nvim", lazy = false, priority = 1000 },
   { "sebastiandevops/horizon84.nvim", version = "", lazy = true },
-  { "sebastiandevops/chili.nvim", version = "", lazy = false, priority = 1000 },
+  { "sebastiandevops/chili.nvim", version = "", lazy = true },
   {
     "sainnhe/gruvbox-material", lazy = true,
     config = function()
