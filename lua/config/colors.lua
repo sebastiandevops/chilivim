@@ -3,6 +3,6 @@ if not status_ok then
   return
 end
 
-local colorscheme = "github_dark"
+local colorscheme = "github_dark_dimmed"
 
 utils.set_theme(colorscheme)
