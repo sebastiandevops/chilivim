@@ -4,15 +4,7 @@ return {
   -- just in the colorscheme that you are currently using.
   { "sebastiandevops/horizon84.nvim", version = "", lazy = true },
   { "sebastiandevops/chili.nvim", version = "", lazy = true },
-  {
-    "projekt0n/github-nvim-theme",
-    lazy = false,
-    priority = 1000,
-    config = function ()
-      local options = require("config.colorschemes.github-theme")
-      require("github-theme").setup(options)
-    end
-  },
+  { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
    -- End THEMES
 
   { "nvim-lua/plenary.nvim" }, -- Useful lua functions used by lots of plugins
