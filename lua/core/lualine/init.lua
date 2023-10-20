@@ -60,7 +60,7 @@ lualine.setup({
     },
     lualine_x = {
       'diagnostics',
-      components.fileformat,
+      'fileformat',
       components.spaces,
       components.lsp,
       components.schema,
