@@ -13,7 +13,6 @@ local servers = {
   "terraformls",
   "vimls",
   "marksman",
-  "tflint",
   "dockerls",
   "docker_compose_language_service",
   "csharp_ls",
