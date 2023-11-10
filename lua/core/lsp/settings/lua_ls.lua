@@ -17,7 +17,7 @@ return {
               --   [vim.fn.expand("$VIMRUNTIME/lua")] = true,
               --   [vim.fn.stdpath("config") .. "/lua"] = true,
               library = vim.api.nvim_get_runtime_file("", true),
-              checkThirdParty = false, -- THIS IS THE IMPORTANT LINE TO ADD
+              checkThirdParty = "Disable", -- THIS IS THE IMPORTANT LINE TO ADD
               -- }
             },
             -- Do not send telemetry data containing a randomized but unique identifier
