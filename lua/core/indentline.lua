@@ -39,6 +39,7 @@ indent_blankline.setup {
       "conf",
       "alpha",
       "FTerm",
+      "yaml",
     },
   },
 }
