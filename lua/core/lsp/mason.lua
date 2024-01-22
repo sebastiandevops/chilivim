@@ -16,6 +16,7 @@ local servers = {
   "dockerls",
   "docker_compose_language_service",
   "csharp_ls",
+  "azure_pipelines_ls",
 }
 
 local settings = {
