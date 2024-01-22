@@ -72,6 +72,7 @@ local kind_icons = {
   Operator = "󰆕",
   TypeParameter = " ",
   Misc = " ",
+  TabNine = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
