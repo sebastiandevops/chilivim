@@ -4,7 +4,11 @@ if not copilot_status_ok then
 end
 
 copilot.setup({
-  suggestion = { enabled = false },
+  suggestion = {
+    enabled = false,
+    auto_trigger = true,
+    debounce = 300,
+  },
   panel = { enabled = false },
   filetypes = {
     yaml = true,
