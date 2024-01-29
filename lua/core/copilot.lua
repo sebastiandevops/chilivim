@@ -4,6 +4,8 @@ if not copilot_status_ok then
 end
 
 copilot.setup({
+  suggestion = { enabled = false },
+  panel = { enabled = false },
   filetypes = {
     yaml = true,
     markdown = true,
