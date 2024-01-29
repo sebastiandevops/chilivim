@@ -59,6 +59,7 @@ lualine.setup({
       },
     },
     lualine_x = {
+      'copilot',
       'diagnostics',
       'fileformat',
       components.spaces,

@@ -36,5 +36,6 @@ require "core.barbecue"
 require "core.noice"
 require "core.notify"
 require "core.yaml-companion"
+require "core.copilot"
 
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')

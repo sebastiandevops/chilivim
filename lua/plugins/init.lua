@@ -98,4 +98,14 @@ return {
   { "folke/noice.nvim", event = "VeryLazy", dependencies = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" } },
   { "someone-stole-my-name/yaml-companion.nvim" },
   { "wakatime/vim-wakatime" },
+
+  -- Copilot plugins
+  { "zbirenbaum/copilot.lua", cmd = "Copilot", event = "InsertEnter" },
+  {
+    "zbirenbaum/copilot-cmp",
+    config = function()
+        require("copilot_cmp").setup()
+    end,
+  },
+  { 'AndreM222/copilot-lualine' },
 }

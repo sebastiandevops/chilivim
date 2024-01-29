@@ -73,6 +73,7 @@ local kind_icons = {
   TypeParameter = " ",
   Misc = " ",
   TabNine = "",
+  Copilot = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -132,6 +133,7 @@ cmp.setup {
       -- vim_item.kind = kind_icons[vim_item.kind]
       vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        copilot = "[Copilot]",
         nvim_lsp = "[LSP]",
         cmp_tabnine = "[Tabnine]",
         nvim_lua = "[Nvim_Lua]",
@@ -144,6 +146,7 @@ cmp.setup {
     end,
   },
   sources = {
+    { name = "copilot" },
     { name = "nvim_lsp" },
     { name = "cmp_tabnine" },
     { name = "nvim_lua" },
