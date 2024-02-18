@@ -114,3 +114,7 @@ keymap('v', '<C-s>', [[y/\V<C-R>=escape(@",'/\')<CR><CR>Ncgn]], opts)
 vimkeymap("c", "<S-Enter>", function()
   require("noice").redirect(vim.fn.getcmdline())
   end, { desc = "Redirect Cmdline" })
+
+
+-- Create a command alias for CopilotChat
+vim.cmd("command! -nargs=1 CC lua require('config.functions').copilot_chat_with_text(<q-args>)")
