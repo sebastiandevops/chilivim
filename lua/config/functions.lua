@@ -87,4 +87,12 @@ function M.ToggleColourIncSearch()
     end
 end
 
+-- Define the function to execute CopilotChat with an argument
+function M.copilot_chat_with_text(text)
+    -- Escape single quotes in the text argument
+    text = text:gsub("'", "'\\''")
+    -- Execute the CopilotChat command with the provided text
+    vim.cmd("CopilotChat '" .. text .. "'")
+end
+
 return M
