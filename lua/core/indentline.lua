@@ -41,6 +41,7 @@ indent_blankline.setup {
       "FTerm",
       "yaml",
       "text",
+      "markdown",
     },
   },
 }
