@@ -19,7 +19,8 @@ M.vopts = {
 }
 
 M.vmappings = {
-  ["/"] = { "<Plug>(comment_toggle_linewise_visual)",                 "Comment toggle linewise (visual)" },
+  ["/"] = { "<Plug>(comment_toggle_linewise_visual)", "Comment toggle linewise (visual)" },
+  ["x"] = { "<cmd>CopilotChatInPlace<cr>",            "CopilotChat - In-place code explanation" },
 }
 
 M.mappings = {
@@ -156,6 +157,16 @@ M.mappings = {
     name = "RipGrep",
     g = { ":Rg<CR>",                                           "Ripgrep Prompt"},
     w = { ":Rg <cword><CR>",                                   "Search for word under the cursor"}
+  },
+
+  x = {
+    name = "Copilot Chat",
+    c = { ":CopilotChat ",                                       "CopilotChat - Prompt" },
+    e = { ":CopilotChatExplain ",                                "CopilotChat - Explain code" },
+    i = { "<cmd>CopilotChatInPlace<cr>",                         "CopilotChat - In-place code explanation" },
+    t = { "<cmd>CopilotChatTests<cr>",                           "CopilotChat - Generate tests" },
+    r = { "<cmd>CopilotChatReview<cr>",                          "CopilotChat - Review code" },
+    R = { "<cmd>CopilotChatRefactor<cr>",                        "CopilotChat - Refactor code" },
   },
 }
 
