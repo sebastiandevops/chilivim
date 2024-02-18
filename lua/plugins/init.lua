@@ -108,4 +108,13 @@ return {
     end,
   },
   { 'AndreM222/copilot-lualine' },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    opts = require("core.copilot-chat").options,
+    build = function()
+      require("core.copilot-chat").build_function()
+    end,
+    event = "VeryLazy",
+    -- keys = require("core.copilot-chat").keymaps,
+  },
 }
