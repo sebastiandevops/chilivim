@@ -115,6 +115,6 @@ return {
       require("core.copilot-chat").build_function()
     end,
     event = "VeryLazy",
-    -- keys = require("core.copilot-chat").keymaps,
+    keys = require("core.copilot-chat").keymaps,
   },
 }

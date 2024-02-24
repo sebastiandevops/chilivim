@@ -161,12 +161,12 @@ M.mappings = {
 
   x = {
     name = "Copilot Chat",
-    c = { ":CopilotChat ",                                       "CopilotChat - Prompt" },
-    e = { ":CopilotChatExplain ",                                "CopilotChat - Explain code" },
-    i = { "<cmd>CopilotChatInPlace<cr>",                         "CopilotChat - In-place code explanation" },
-    t = { "<cmd>CopilotChatTests<cr>",                           "CopilotChat - Generate tests" },
-    r = { "<cmd>CopilotChatReview<cr>",                          "CopilotChat - Review code" },
-    R = { "<cmd>CopilotChatRefactor<cr>",                        "CopilotChat - Refactor code" },
+    -- c = { ":CopilotChat ",                                       "CopilotChat - Prompt" },
+    -- e = { ":CopilotChatExplain ",                                "CopilotChat - Explain code" },
+    -- i = { "<cmd>CopilotChatInPlace<cr>",                         "CopilotChat - In-place code explanation" },
+    -- t = { "<cmd>CopilotChatTests<cr>",                           "CopilotChat - Generate tests" },
+    -- r = { "<cmd>CopilotChatReview<cr>",                          "CopilotChat - Review code" },
+    -- R = { "<cmd>CopilotChatRefactor<cr>",                        "CopilotChat - Refactor code" },
   },
 }
 

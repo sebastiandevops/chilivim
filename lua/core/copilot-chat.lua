@@ -1,11 +1,11 @@
 local M = {}
 
 M.options = {
-  -- show_help = "yes", -- Show help text for CopilotChatInPlace, default: yes
-  -- debug = false, -- Enable or disable debug mode, the log file will be in ~/.local/state/nvim/CopilotChat.nvim.log
-  -- hide_system_prompt = "yes", -- Hide system prompt text for CopilotChat
+  show_help = "yes", -- Show help text for CopilotChatInPlace, default: yes
+  debug = true, -- Enable or disable debug mode, the log file will be in ~/.local/state/nvim/CopilotChat.nvim.log
+  hide_system_prompt = "yes", -- Hide system prompt text for CopilotChat
   -- disable_extra_info = 'no', -- Disable extra information (e.g: system prompt) in the response.
-  -- language = "English",
+  language = "English",
   --
   prompts = {
     Explain = "Explain how it works.",
@@ -20,27 +20,40 @@ function M.build_function()
 end
 
 M.keymaps = {
-  -- Show help actions with telescope
-  {
-    "<leader>xch",
+  { "<leader>xb",
     function()
-      require("CopilotChat.code_actions").show_help_actions()
+      local input = vim.fn.input("Chat with buffer: ")
+      if input ~= "" then
+        vim.cmd("CopilotChatBuffer " .. input)
+      end
     end,
-    desc = "CopilotChat - Help actions",
+    desc = "CopilotChat - Chat with current buffer",
   },
-  -- Show prompts actions with telescope
+  { "<leader>xe", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
+  -- { "<leader>xt", "<cmd>CopilotChatTests<cr>", desc = "CopilotChat - Generate tests" },
+  -- Create input for CopilotChat
   {
-    "<leader>xcp",
+    "<leader>xi",
     function()
-      require("CopilotChat.code_actions").show_prompt_actions()
+      local input = vim.fn.input("Ask Copilot: ")
+      if input ~= "" then
+        vim.cmd("CopilotChat " .. input)
+      end
     end,
-    desc = "CopilotChat - Help actions",
+    desc = "CopilotChat - Ask input",
   },
+  -- { "<leader>xr", "<cmd>CopilotChatReview<cr>", desc = "CopilotChat - Review code" },
+  { "<leader>xR", "<cmd>CopilotChatRefactor<cr>", desc = "CopilotChat - Refactor code" },
+  -- Quick chat with Copilot
   {
-    "<leader>xcp",
-    ":lua require('CopilotChat.code_actions').show_prompt_actions(true)<CR>",
-    mode = "x",
-    desc = "CopilotChat - Prompt actions",
+    "<leader>xq",
+    function()
+      local input = vim.fn.input("Quick Chat: ")
+      if input ~= "" then
+        vim.cmd("CopilotChatBuffer " .. input)
+      end
+    end,
+    desc = "CopilotChat - Quick chat",
   },
 }
 
