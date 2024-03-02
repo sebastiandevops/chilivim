@@ -31,12 +31,12 @@
     "venv"
   ],
   "diagnostic-languageserver.filetypes": {
-    "python": "flake8"
+    "python": "pylint"
   },
   "diagnostic-languageserver.linters": {
-    "flake8": {
-      "sourceName": "flake8",
-      "command": "flake8",
+    "pylint": {
+      "sourceName": "pylint",
+      "command": "pylint",
       "debounce": 200,
       "rootPatterns": [".git", "pyproject.toml", "setup.py"],
       "args": [

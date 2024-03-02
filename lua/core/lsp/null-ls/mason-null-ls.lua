@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 local linters = {
-  "flake8",
+  "pylint",
   "quick-lint-js",
   "vale",
 }
