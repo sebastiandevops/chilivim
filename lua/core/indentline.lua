@@ -40,7 +40,7 @@ indent_blankline.setup {
       "alpha",
       "FTerm",
       "yaml",
-      "text",
+      -- "text",
       "markdown",
     },
   },
