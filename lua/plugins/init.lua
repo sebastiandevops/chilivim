@@ -60,7 +60,6 @@ return {
   { "saadparwaiz1/cmp_luasnip" }, -- snippet completions
   { "hrsh7th/cmp-nvim-lsp" }, -- completion engine
   { "hrsh7th/cmp-nvim-lua" },  -- completion engine
-  { "tzachar/cmp-tabnine", build = "./install.sh" },
   -- Snippets
   { "L3MON4D3/LuaSnip" }, --snippet engine
   { "rafamadriz/friendly-snippets" }, -- a bunch of snippets to use
